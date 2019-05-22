@@ -175,7 +175,6 @@ body {
         background: $white;
         @include padding-y(20px, 20px);
         @include margin-x(-15px, -15px);
-        padding-left: 40px;
         margin-top: -1px;
         border-top: 1px solid $light-gray;
 
@@ -185,6 +184,7 @@ body {
         }
 
         .services-menu {
+            padding-left: 52px;
             display:flex;
 
             .bold {
@@ -1104,6 +1104,7 @@ body {
     top: -400px;
     margin-bottom: -230px;
     z-index: 500;
+    position: relative;
 
     @media screen and (max-width: $screen-768) {
         width: 100%;
