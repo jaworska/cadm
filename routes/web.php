@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
+
+Route::get('/group', function () {
+    return view('group');
+})->name('group');

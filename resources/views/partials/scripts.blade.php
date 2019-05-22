@@ -107,7 +107,21 @@
             jQuery(".nav-drop-sectors,.nav-drop-group,.nav-drop-services,.nav-drop-careers").addClass('d-none');
         });
 
+        jQuery(".grow-click").click(function() {
+            jQuery(this).siblings().find("span").removeClass("active");
+            jQuery(this).find("span").addClass("active");
 
+            if (jQuery(this).hasClass("empl")) {
+                jQuery(".img-project").hide( "slide", {direction: "left" }, 1000 );
+                jQuery(".img-employee").show( "slide", {direction: "right" }, 1000 );
+            }
+
+            if (jQuery(this).hasClass("proj")) {
+                jQuery(".img-employee").hide( "slide", {direction: "right" }, 1000 );
+                jQuery(".img-project").removeClass("d-none").show( "slide", {direction: "left" }, 1000 );
+            }
+
+        });
 
 
     });

@@ -8,7 +8,7 @@
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
-                    <li class="d-inline position-relative group-main-drop"><a href="#">Group</a></li>
+                    <li class="d-inline position-relative group-main-drop"><a href="{{ route("group") }}">Group</a></li>
                     <li class="d-inline position-relative services-main-drop"><a href="#">Services</a></li>
                     <li class="d-inline position-relative sectors-main-drop"><a href="#">Sectors</a></li>
                     <li class="d-inline position-relative careers-main-drop"><a href="#">Careers</a></li>
