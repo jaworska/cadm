@@ -154,7 +154,7 @@
 
     <div class="container-fluid values group">
         <div class="row">
-            <div class="col-md-4 offset-md-1 col-12">
+            <div class="col-md-4 offset-md-1 col-12 value-change">
                 <div class="text-left title-big">
                     <span>Our values</span>
                 </div>
@@ -168,7 +168,7 @@
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-top">
-                            <svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="lock">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-928.000000, -3720.000000)" fill="#2C2E34" fill-rule="nonzero">
                                         <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -185,14 +185,14 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none">Our valuesasas</span>
+                            <span class="d-none"></span>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center ">
                         <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center unactive-left">
-                            <svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="puzzle">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-799.000000, -3819.000000)" fill="#2C2E34" fill-rule="nonzero">
                                         <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -213,7 +213,7 @@
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="values-box position-relative  active position-relative d-flex flex-column justify-content-center align-items-center">
-                            <svg width="29px" height="37px" viewBox="0 0 29 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="29px" height="37px" viewBox="0 0 29 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="quality">
                             <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="CADM_group_do-UI-" transform="translate(-927.000000, -3824.000000)" fill="#E95C1B" fill-rule="nonzero">
                                     <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -232,12 +232,12 @@
                                 </g>
                             </g>
                         </svg>
-                            <span class="value-title text-center">Quality</span>
+                            <span class="value-title text-center quality">Quality</span>
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center  ">
                         <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center unactive-right">
-                            <svg width="39px" height="33px" viewBox="0 0 39 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="39px" height="33px" viewBox="0 0 39 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow-up">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-1037.000000, -3820.000000)" fill="#2C2E34" fill-rule="nonzero">
                                         <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -260,7 +260,7 @@
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-bottom-left">
-                            <svg width="44px" height="35px" viewBox="0 0 44 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="44px" height="35px" viewBox="0 0 44 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chats">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-850.000000, -3946.000000)" fill="#2C2E34" fill-rule="nonzero">
                                         <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -281,7 +281,7 @@
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-bottom-right">
-                            <svg width="47px" height="49px" viewBox="0 0 47 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="47px" height="49px" viewBox="0 0 47 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="bulb">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-987.000000, -3936.000000)" fill="#2C2E34" fill-rule="nonzero">
                                         <g id="Group-27" transform="translate(-227.000000, 2415.000000)">
@@ -368,8 +368,73 @@
         </div>
     </div>
 
-    <div class="container-fluid group carousel-group">
+    <div class="container-fluid group carousel-group d-none d-md-block">
+        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
+            <div class="carousel-inner v-2" role="listbox">
+
+                <div class="carousel-item active">
+                    <figure class="col-md-4 d-md-inline-block">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(77).jpg" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="col-md-4 d-md-inline-block">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="col-md-4 d-md-inline-block">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="col-md-4 d-md-inline-block">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="col-md-4 d-md-inline-block">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" class="img-fluid">
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#carousel-example-multi" data-slide="prev">
+                <img src="img/arrow-left.png">
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-multi" data-slide="next">
+                <img src="img/arrow-right.png">
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid group carousel-group-mobile d-md-none d-sm-block">
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/join.jpeg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/join.jpeg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/join.jpeg" alt="New York">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                <img src="img/arrow-left.png">
+            </a>
+            <a class="carousel-control-next" href="#slides" data-slide="next">
+                <img src="img/arrow-right.png">
+            </a>
+        </div>
     </div>
 
     <div class="container-fluid help partners group">
