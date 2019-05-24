@@ -112,13 +112,28 @@
             jQuery(this).find("span").addClass("active");
 
             if (jQuery(this).hasClass("empl")) {
-                jQuery(".img-project").hide( "slide", {direction: "left" }, 1000 );
-                jQuery(".img-employee").show( "slide", {direction: "right" }, 1000 );
+                jQuery(".img-project").hide( "slide", {direction: "right" }, 1000 );
+                jQuery(".img-employee").show( "slide", {direction: "left" }, 1000 );
             }
 
             if (jQuery(this).hasClass("proj")) {
-                jQuery(".img-employee").hide( "slide", {direction: "right" }, 1000 );
-                jQuery(".img-project").removeClass("d-none").show( "slide", {direction: "left" }, 1000 );
+                jQuery(".img-employee").hide( "slide", {direction: "left" }, 1000 );
+                jQuery(".img-project").removeClass("transparent").show( "slide", {direction: "right" }, 1000 );
+            }
+
+        });
+
+        jQuery(".values-circle svg, .values-circle .value-title").click(function(){
+
+            if(jQuery(".values-box").hasClass("chose")) {
+                jQuery(".values-box").removeClass("chose");
+            }
+
+            jQuery(this).closest(".values-box").addClass("chose");
+            jQuery(".values-box.active").addClass("disactive");
+
+            if(jQuery(this).parent().hasClass("disactive")) {
+                jQuery(".values-box.active").removeClass("disactive");
             }
 
         });

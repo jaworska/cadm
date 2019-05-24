@@ -2,7 +2,7 @@
     <div class="nav_container">
         <div class="row">
             <div class="col-2 logo">
-                <a href="#"><img src="img/logo-cadm@3x.png"
+                <a href="{{ route("home") }}"><img src="img/logo-cadm@3x.png"
                                  srcset="img/logo-cadm@2x.png 2x,
              img/logo-cadm@3x.png 3x"></a>
             </div>
