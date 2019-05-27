@@ -2,14 +2,14 @@
     <div class="nav_container">
         <div class="row">
             <div class="col-2 logo">
-                <a href="#"><img src="img/logo-cadm@3x.png"
+                <a href="{{ route("home") }}"><img src="img/logo-cadm@3x.png"
                                  srcset="img/logo-cadm@2x.png 2x,
              img/logo-cadm@3x.png 3x"></a>
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
                     <li class="d-inline position-relative group-main-drop"><a href="{{ route("group") }}">Group</a></li>
-                    <li class="d-inline position-relative services-main-drop"><a href="#">Services</a></li>
+                    <li class="d-inline position-relative services-main-drop"><a href="{{ route("services") }}">Services</a></li>
                     <li class="d-inline position-relative sectors-main-drop"><a href="#">Sectors</a></li>
                     <li class="d-inline position-relative careers-main-drop"><a href="#">Careers</a></li>
                     <li class="d-inline position-relative contact-main-drop"><a href="#">Contact</a></li>
@@ -22,8 +22,8 @@
                     <a href="#"><img src="img/instagram.svg" class="instagram"></a>
                 </div>
                 <button type="button" class="btn btn-login">Login</button>
-                <span class="lang">ENG</span>
-                <span class="lang-arrow position-relative"><img src="img/orange.svg" class="orange"></span>
+                <span class="lang d-none">ENG</span>
+                <span class="lang-arrow position-relative d-none"><img src="img/orange.svg" class="orange"></span>
             </div>
         </div>
     </div>

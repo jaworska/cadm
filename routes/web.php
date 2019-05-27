@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/group', function () {
     return view('group');
 })->name('group');
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
 
 Auth::routes();
 
@@ -26,3 +29,4 @@ Route::get('/auth/home', 'HomeController@index')->name('auth.home');
 
 Route::resource('/auth/offer','OfferController');
 Route::post('/auth/offer','OfferController@updatePriority') -> name('offer.update.priority');
+
