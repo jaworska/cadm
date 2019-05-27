@@ -28,5 +28,10 @@ Auth::routes();
 Route::get('/auth/home', 'HomeController@index')->name('auth.home');
 
 Route::resource('/auth/offer','OfferController');
-Route::post('/auth/offer','OfferController@updatePriority') -> name('offer.update.priority');
+Route::post('/auth/offer/priority','OfferController@updatePriority') -> name('offer.update.priority');
+
+Route::get('/career','OfferController@career') -> name('career');
+Route::get('/career/{offer}','OfferController@careerShow') -> name('career.show');
+Route::resource('/cv','CVController');
+
 

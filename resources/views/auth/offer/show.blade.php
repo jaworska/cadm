@@ -17,7 +17,7 @@
                         <p>{{ $cv -> name }}</p>
                         <p>{{ $cv -> phone }}</p>
                         <p>{{ $cv -> email }}</p>
-                        <a class="btn btn-primary" href="{{ $cv -> file }}">CV</a>
+                        <a class="btn btn-primary" href="{{ Storage::url($cv -> file) }}">CV</a>
                     </div>
                 </li>
             @endforeach

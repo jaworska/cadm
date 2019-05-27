@@ -6,7 +6,7 @@
     <header class="mb-auto">
         @include('partials.navigation')
     </header>
-    <main>
+    <main style="margin-top: 64px;">
         @yield('content')
     </main>
 

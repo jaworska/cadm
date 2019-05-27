@@ -59,6 +59,9 @@
             </form>
         </div>
     </div>
+
+@endsection
+@section('scripts')
     <script>
         (function () {
             'use strict'
