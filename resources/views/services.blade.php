@@ -51,7 +51,7 @@
                             <li>Prototyping</li>
                             <li>Learn more</li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
                 <div class="col-md-2 col-8 pl-0 pr-0">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
