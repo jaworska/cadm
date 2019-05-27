@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('/group', function () {
     return view('group');
 })->name('group');
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');

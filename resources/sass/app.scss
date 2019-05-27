@@ -323,7 +323,7 @@ body {
         border-radius: 0;
         font-size: 12px;
         font-weight: 500;
-        margin-right: 50px;
+        //margin-right: 50px;
         padding: 6px 36px;
         margin-top: -3px;
     }
@@ -1394,8 +1394,8 @@ body {
 
 /*******group*******/
 
-.jumbotron {
-    &.group {
+.group {
+    &.jumbotron {
         .video-text {
             .text-center {
                 p {
@@ -1404,9 +1404,6 @@ body {
             }
         }
     }
-}
-
-.group {
 
     .bold {
         font-weight: 500;
@@ -2197,6 +2194,97 @@ body {
 
         .carousel-control-next {
             right: -10px;
+        }
+    }
+}
+
+.services {
+    .bold {
+        font-weight: 500;
+    }
+
+    .title-big {
+        font-size: 36px;
+        font-weight: bold;
+        color: $gray-nav;
+    }
+
+    &.jumbotron {
+        max-height: 50vh;
+
+        .video-text {
+            .text-center {
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &.why {
+        .why_span {
+            padding-top: 30px;
+        }
+
+        .why_span-bottom {
+            padding-bottom: 20px;
+
+            p {
+                opacity: 0.6;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.4px;
+                color: $polygon-fill;
+                font-weight: 400;
+                padding-top: 5px;
+            }
+        }
+
+        .title-big-mini {
+            font-weight: bold;
+            color: $gray-nav;
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .padding-title-mini {
+            @include padding-y(20px,30px);
+        }
+
+        .why-content {
+            height: 70px;
+
+            &:hover {
+                -webkit-transform: none;
+                transform: none;
+            }
+
+            &.active {
+                color: $main-orange;
+                position: relative;
+                background: $white;
+                border: none;
+                box-shadow: 1px 3px 18px 5px rgba(35, 32, 32, 0.08);
+                transition: opacity 0.2s ease-in-out;
+                z-index: 20;
+
+                span {
+                    color: $main-orange;
+                }
+
+                &::after {
+                    @include triangle(0 0 20px 20px,transparent transparent $main-orange transparent);
+                    right: 10px;
+                    bottom: 10px;
+                }
+            }
+        }
+
+        li {
+            &:hover {
+                font-weight: bold;
+                color: $main-orange;
+            }
         }
     }
 }
