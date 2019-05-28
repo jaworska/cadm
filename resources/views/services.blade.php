@@ -8,7 +8,7 @@
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
-                    <p class="position-relative">@lang('pages.services.jumbotron')</p>
+                    <p class="position-relative">{!! trans('pages.group.jumbotron') !!}</p>
                 </div>
             </div>
         </div>
@@ -31,41 +31,81 @@
                 <div class="col-12 text-center padding-title-mini">
                     <span class="text-uppercase title-big-mini">@lang('pages.services.our-services')</span>
                 </div>
-                <div class="col-md-2 col-8 why-content d-flex align-items-center justify-content-center col-hover">
-                    <div class="text-center">
+            </div>
+            <div class="row services-row align-items-baseline justify-content-sm-between">
+                <div class="col-md-2 col-11 pl-0 pr-0 services-toggle">
+                    <div class="text-center why-content d-flex align-items-center justify-content-center col-hover">
                         <span>@lang('pages.services.concept')</span>
                     </div>
+                    <div class="text-right">
+                        <ul>
+                            <li>@lang('pages.services.cas')</li>
+                            <li>@lang('pages.services.cad')</li>
+                            <li>@lang('pages.services.cae')</li>
+                            <li>@lang('pages.services.electronic-hardware')</li>
+                            <li>@lang('pages.services.electronic-software')</li>
+                            <li>@lang('pages.services.software')</li>
+                            <li>@lang('pages.services.prototyping')</li>
+                            <li>@lang('pages.services.learn-more')</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-2 col-8 pl-0 pr-0">
+                <div class="col-md-2 col-11 pl-0 pr-0 services-toggle">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center active">
                         <span>@lang('pages.services.development')</span>
                     </div>
                     <div class="text-right">
-                        <ul>
-                            <li>CAS / CLASS-A</li>
-                            <li>CAD / Construction</li>
-                            <li>CAE / Simulation</li>
-                            <li>Electronic hardware</li>
-                            <li>Electronic software</li>
-                            <li>Software</li>
-                            <li>Prototyping</li>
-                            <li>Learn more</li>
+                        <ul class="active">
+                            <li>@lang('pages.services.cas')</li>
+                            <li>@lang('pages.services.cad')</li>
+                            <li>@lang('pages.services.cae')</li>
+                            <li>@lang('pages.services.electronic-hardware')</li>
+                            <li>@lang('pages.services.electronic-software')</li>
+                            <li>@lang('pages.services.software')</li>
+                            <li>@lang('pages.services.prototyping')</li>
+                            <li>@lang('pages.services.learn-more')</li>
                         </ul>
-                    </div> 
+                    </div>
                 </div>
-                <div class="col-md-2 col-8 pl-0 pr-0">
+                <div class="col-md-2 col-11 pl-0 pr-0 services-toggle">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.simulation')</span>
                     </div>
+                    <div class="text-right">
+                        <ul>
+                            <li>@lang('pages.services.cas')</li>
+                            <li>@lang('pages.services.cad')</li>
+                            <li>@lang('pages.services.cae')</li>
+                            <li>@lang('pages.services.electronic-hardware')</li>
+                            <li>@lang('pages.services.learn-more')</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-2 col-8 pl-0 pr-0">
+                <div class="col-md-2 col-11 pl-0 pr-0 services-toggle">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.production')</span>
                     </div>
+                    <div class="text-right">
+                        <ul>
+                            <li>@lang('pages.services.cas')</li>
+                            <li>@lang('pages.services.cad')</li>
+                            <li>@lang('pages.services.learn-more')</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-2 col-8 pl-0 pr-0">
+                <div class="col-md-2 col-11 pl-0 pr-0 services-toggle">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.managment')</span>
+                    </div>
+                    <div class="text-right">
+                        <ul>
+                            <li>@lang('pages.services.cas')</li>
+                            <li>@lang('pages.services.electronic-hardware')</li>
+                            <li>@lang('pages.services.electronic-software')</li>
+                            <li>@lang('pages.services.software')</li>
+                            <li>@lang('pages.services.prototyping')</li>
+                            <li>@lang('pages.services.learn-more')</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -95,8 +135,8 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Automotive</span>
-                        <span>We are passionate about automotive, we lead in providing the best solutions</span>
+                        <span>@lang('pages.services.automotive')</span>
+                        <span>@lang('pages.services.automotive-span')</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-11 companies-hover">
@@ -124,8 +164,8 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Rolling stock</span>
-                        <span>We are steaming ahead with changes in the design of rolling stock</span>
+                        <span>@lang('pages.services.rolling')</span>
+                        <span>@lang('pages.services.rolling-span')</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-11 companies-hover d-flex">
@@ -143,8 +183,8 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Maritime</span>
-                        <span>We are making waves in maritime industry development</span>
+                        <span>@lang('pages.services.maritime')</span>
+                        <span>@lang('pages.services.maritime-span')</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-11 companies-hover d-flex">
@@ -156,8 +196,8 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Aerospace</span>
-                        <span>We are flying aviation to new heights</span>
+                        <span>@lang('pages.services.aerospace')</span>
+                        <span>@lang('pages.services.aerospace-span')</span>
                     </div>
                 </div>
             </div>
@@ -172,8 +212,8 @@
                                 </g>
                             </g>
                         </svg>
-                        <span>Others</span>
-                        <span>We support customers from the medical, energy and white goods industries</span>
+                        <span>@lang('pages.services.others')</span>
+                        <span>@lang('pages.services.others-span')</span>
                     </div>
                 </div>
             </div>
