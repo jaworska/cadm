@@ -17,10 +17,10 @@ class Offer extends Model
         return Validator::make($this -> toArray(), [
             'title' => ['required', 'string'],
             'location' => ['required', 'numeric'],
-            'description' => ['required', 'string'],
             'range' => ['required', 'string'],
             'offer' => ['required', 'string'],
-            'requirements' => ['required', 'string']
+            'requirements' => ['required', 'string'],
+            'start_date' => ['required']
         ]);
     }
     public function cvs(){

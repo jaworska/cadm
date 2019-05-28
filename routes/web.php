@@ -37,11 +37,16 @@ Route::get('/admin/login','Auth\LoginController@showLoginForm') ->name('login');
 Route::post('/admin/login','Auth\LoginController@login');
 Route::post('/logout','Auth\LoginController@logout') -> name('logout');
 
-Route::resource('/admin/offer','OfferController');
+Route::resource('/admin/offer','OfferController') -> except('destroy');
+Route::delete('/admin/offer/{offer?}','OfferController@destroy') -> name('offer.destroy');
 Route::post('/admin/offer/priority','OfferController@updatePriority') -> name('offer.update.priority');
 
 Route::get('/career','OfferController@career') -> name('career');
 Route::get('/career/{offer}','OfferController@careerShow') -> name('career.show');
 Route::resource('/cv','CVController');
+Route::post('/password/email','Auth\ForgotPasswordController@sendResetLinkEmail') -> name('password.email');
+Route::post('/password/reset','Auth\ResetPasswordController@reset') -> name('password.update');
+Route::get('/password/reset/{token}','Auth\ResetPasswordController@showResetForm')-> name('password.reset');
+
 
 

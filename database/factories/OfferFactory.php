@@ -8,11 +8,11 @@ use Faker\Generator as Faker;
 $factory->define(Offer::class, function (Faker $faker) {
     return [
         'title' => $faker -> sentence($nbWords = 6, $variableNbWords = true),
-        'description' => $faker -> paragraph($nbSentences = 3, $variableNbSentences = true),
-        'location' => rand(0,1),
+        'location' => rand(1,2),
         'range' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'offer' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'requirements' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
+        'start_date' => $faker->date($format = 'Y-m-d', $max = 'now'),
         'priority' =>  Offer::all() -> max('priority')+1??1
     ];
 });
