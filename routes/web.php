@@ -28,6 +28,10 @@ Route::get('/sectors', function () {
     return view('sectors');
 })->name('sectors');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Auth::routes();
 
 Route::get('/auth/home', 'HomeController@index')->name('auth.home');

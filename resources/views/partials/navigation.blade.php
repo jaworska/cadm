@@ -216,9 +216,9 @@
                 </nav>
                 <div class="collapse position-absolute" id="navbarToggleExternalContent">
                     <ul>
-                        <li><a href="#">@lang("pages.navigation.group")</a></li>
-                        <li><a href="#">@lang("pages.navigation.services")</a></li>
-                        <li><a href="#">@lang("pages.navigation.sectors")</a></li>
+                        <li><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
+                        <li><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
                         <li><a href="#">@lang("pages.navigation.careers")</a></li>
                         <li><a href="#">@lang("pages.navigation.contact")</a></li>
                     </ul>
