@@ -98,29 +98,29 @@
     <div class="container-fluid logos group d-sm-flex flex-column">
         <div class="row text-center">
             <div class="col-md-6 col-12 logos-col">
-                <div class="col-12">
-                    <img src="img/catia.png" srcset="img/catia@2x.png 2x, img/catia@3x.png 3x" class="bw">
-                    <img src="img/bw_10.png" srcset="img/bw_10@2x.png 2x, img/bw_10@3x.png 3x" class="bw">
-                    <img src="img/bw_11.png" srcset="img/bw_11@2x.png 2x, img/bw_11@3x.png 3x" class="bw">
-                    <img src="img/bw_12.png" srcset="img/bw_12@2x.png 2x, img/bw_12@3x.png 3x" class="bw">
+                <div class="col-12 mb-4">
+                    <img src="img/volkswagen.png" class="bw volkswagen">
+                    <img src="img/varroc.png" class="bw varroc">
+                    <img src="img/magna.png" class="bw magna">
+                    <img src="img/alstom-logo.png" class="bw alstom-logo">
+                </div>
+                <div class="col-12 mb-4">
+                    <img src="img/aptiv-logo@2x.png" class="bw aptiv-logo">
+                    <img src="img/csi@2x.png" class="bw csi">
+                    <img src="img/semcon.png" class="bw semcon">
+                    <img src="img/saargummi.png" class="bw saargummi">
+                </div>
+                <div class="col-12 mb-4">
+                    <img src="img/valmet.png" class="bw valmet">
+                    <img src="img/ktp.png" class="bw ktp">
+                    <img src="img/antolin.png" class="bw antolin">
+                    <img src="img/yanfeng.png" class="bw yanfeng">
                 </div>
                 <div class="col-12">
-                    <img src="img/bw_9.png" srcset="img/bw_9@2x.png 2x, img/bw_9@3x.png 3x" class="bw">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
-                    <img src="img/bw_13.png" srcset="img/bw_13@2x.png 2x, img/bw_13@3x.png 3x" class="bw">
-                    <img src="img/bw.png" srcset="img/bw@2x.png 2x, img/bw@3x.png 3x" class="bw">
-                </div>
-                <div class="col-12">
-                    <img src="img/bw_13.png" srcset="img/bw_14.png" class="bw">
-                    <img src="img/bw_4.png" srcset="img/bw_4@2x.png 2x, img/bw_4@3x.png 3x" class="bw">
-                    <img src="img/bw_2.png" srcset="img/bw_2@2x.png 2x, img/bw_2@3x.png 3x" class="bw">
-                    <img src="img/bw_13.png" srcset="img/bw_15.png" class="bw">
-                </div>
-                <div class="col-12">
-                    <img src="img/bw_6.png" srcset="img/bw_6@2x.png 2x, img/bw_6@3x.png 3x" class="bw">
-                    <img src="img/bw_6.png" srcset="img/bw_6@2x.png 2x, img/bw_6@3x.png 3x" class="bw">
-                    <img src="img/bw_5.png" srcset="img/bw_5@2x.png 2x, img/bw_5@3x.png 3x" class="bw">
-                    <img src="img/bw_3.png" srcset="img/bw_3@2x.png 2x, img/bw_3@3x.png 3x" class="bw">
+                    <img src="img/bos.png" class="bw bos">
+                    <img src="img/phiaro.png" class="bw phiaro">
+                    <img src="img/stogda.png" class="bw stogda">
+                    <img src="img/stogda.png" class="bw stogda">
                 </div>
             </div>
             <div class="col-md-6 col-12 text-logos">
