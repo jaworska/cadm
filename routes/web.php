@@ -19,9 +19,14 @@ Route::get('/', function () {
 Route::get('/group', function () {
     return view('group');
 })->name('group');
+
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
+Route::get('/sectors', function () {
+    return view('sectors');
+})->name('sectors');
 
 Auth::routes();
 

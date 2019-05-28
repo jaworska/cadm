@@ -8,11 +8,11 @@
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
-                    <li class="d-inline position-relative group-main-drop"><a href="{{ route("group") }}">Group</a></li>
-                    <li class="d-inline position-relative services-main-drop"><a href="{{ route("services") }}">Services</a></li>
-                    <li class="d-inline position-relative sectors-main-drop"><a href="#">Sectors</a></li>
-                    <li class="d-inline position-relative careers-main-drop"><a href="#">Careers</a></li>
-                    <li class="d-inline position-relative contact-main-drop"><a href="#">Contact</a></li>
+                    <li class="d-inline position-relative group-main-drop"><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
+                    <li class="d-inline position-relative services-main-drop"><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
+                    <li class="d-inline position-relative sectors-main-drop"><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
+                    <li class="d-inline position-relative careers-main-drop"><a href="#">@lang("pages.navigation.careers")</a></li>
+                    <li class="d-inline position-relative contact-main-drop"><a href="#">@lang("pages.navigation.contact")</a></li>
                 </ul>
             </div>
             <div class="col-4 text-right">
@@ -21,8 +21,8 @@
                     <a href="#"><img src="img/linkedin.svg" class="linkedin"></a>
                     <a href="#"><img src="img/instagram.svg" class="instagram"></a>
                 </div>
-                <button type="button" class="btn btn-login">Login</button>
-                <span class="lang d-none">ENG</span>
+                <button type="button" class="btn btn-login">@lang("pages.navigation.login")</button>
+                <span class="lang d-none">@lang("pages.navigation.eng")</span>
                 <span class="lang-arrow position-relative d-none"><img src="img/orange.svg" class="orange"></span>
             </div>
         </div>
@@ -31,13 +31,13 @@
         <div class="row">
             <div class="offset-2 col-10 text-left group-menu">
                 <ul class="position-relative">
-                    <li class="position-relative"><a href="#">The Group</a></li>
-                    <li class="position-relative"><a href="#">Clients</a></li>
-                    <li class="position-relative"><a href="#">Our values</a></li>
-                    <li class="position-relative"><a href="#">Code of ethics</a></li>
-                    <li class="position-relative"><a href="#">EU Grants</a></li>
-                    <li class="position-relative"><a href="#">We love to help</a></li>
-                    <li class="position-relative"><a href="#">Partners</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.the-group")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.clients")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.values")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.ethics")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.grants")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.help")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.partners")</a></li>
                 </ul>
             </div>
         </div>
@@ -45,57 +45,57 @@
     <div class="nav-drop-services d-none">
         <div class="row range">
             <div class="offset-2 col-10 text-left services-menu">
-                <span class="bold">Range of services</span>
+                <span class="bold">@lang("pages.navigation.range")</span>
             </div>
         </div>
         <div class="row">
             <div class="offset-2 col-10 services-menu">
                 <div>
                     <ul>
-                        <li class="bold">Concept</li>
-                        <li><a href="#">Benchmarking</a></li>
-                        <li><a href="#">Product &amp; market analysis</a></li>
-                        <li><a href="#">Sales support</a></li>
-                        <li><a href="#">Product definition</a></li>
-                        <li><a href="#">Capacity &amp; layout</a></li>
-                        <li><a href="#">Product costing &amp; calculation</a></li>
-                        <li><a href="#">Model drafting</a></li>
-                        <li><a href="#">Styling</a></li>
+                        <li class="bold">@lang("pages.navigation.concept")</li>
+                        <li><a href="#">@lang("pages.navigation.benchmarking")</a></li>
+                        <li><a href="#">@lang("pages.navigation.product")</a></li>
+                        <li><a href="#">@lang("pages.navigation.sales")</a></li>
+                        <li><a href="#">@lang("pages.navigation.definition")</a></li>
+                        <li><a href="#">@lang("pages.navigation.capacity")</a></li>
+                        <li><a href="#">@lang("pages.navigation.costing")</a></li>
+                        <li><a href="#">@lang("pages.navigation.model")</a></li>
+                        <li><a href="#">@lang("pages.navigation.styling")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">Development</li>
-                        <li><a href="#">CAS / CLASS-A</a></li>
-                        <li><a href="#">CAD / Construction</a></li>
-                        <li><a href="#">APQP/QM Plan</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Prototyping</a></li>
-                        <li><a href="#">Test & Validation</a></li>
-                        <li><a href="#">Electronic hardware</a></li>
-                        <li><a href="#">Electronic software</a></li>
+                        <li class="bold">@lang("pages.navigation.development")</li>
+                        <li><a href="#">@lang("pages.navigation.cas")</a></li>
+                        <li><a href="#">@lang("pages.navigation.cad")</a></li>
+                        <li><a href="#">@lang("pages.navigation.apqp")</a></li>
+                        <li><a href="#">@lang("pages.navigation.documentation")</a></li>
+                        <li><a href="#">@lang("pages.navigation.prototyping")</a></li>
+                        <li><a href="#">@lang("pages.navigation.test")</a></li>
+                        <li><a href="#">@lang("pages.navigation.electronic-hardware")</a></li>
+                        <li><a href="#">@lang("pages.navigation.electronic-software")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">Production</li>
-                        <li><a href="#">Mold design</a></li>
-                        <li><a href="#">Tooling &amp; equipment</a></li>
-                        <li><a href="#">Gauges &amp; checking fixture</a></li>
-                        <li><a href="#">Production launch support</a></li>
-                        <li><a href="#">Production support &amp; trouble shooting</a></li>
-                        <li><a href="#">Production transfers</a></li>
-                        <li><a href="#">Process improvements</a></li>
-                        <li><a href="#">Product cost optimization</a></li>
+                        <li class="bold">@lang("pages.navigation.production")</li>
+                        <li><a href="#">@lang("pages.navigation.mold")</a></li>
+                        <li><a href="#">@lang("pages.navigation.tooling")</a></li>
+                        <li><a href="#">@lang("pages.navigation.gauges")</a></li>
+                        <li><a href="#">@lang("pages.navigation.launch")</a></li>
+                        <li><a href="#">@lang("pages.navigation.trouble")</a></li>
+                        <li><a href="#">@lang("pages.navigation.transfer")</a></li>
+                        <li><a href="#">@lang("pages.navigation.improvements")</a></li>
+                        <li><a href="#">@lang("pages.navigation.optimization")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">Management</li>
-                        <li><a href="#">Project management</a></li>
-                        <li><a href="#">Interim management</a></li>
-                        <li><a href="#">Supplier management</a></li>
-                        <li><a href="#">Quality management</a></li>
+                        <li class="bold">@lang("pages.navigation.management")</li>
+                        <li><a href="#">@lang("pages.navigation.project-management")</a></li>
+                        <li><a href="#">@lang("pages.navigation.interim-management")</a></li>
+                        <li><a href="#">@lang("pages.navigation.supplier")</a></li>
+                        <li><a href="#">@lang("pages.navigation.quality")</a></li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span>Automotive</span>
+                            <span>@lang("pages.navigation.automotive")</span>
                         </a></li>
                     <li class="rolling d-inline position-relative"><a href="#">
                             <svg width="71px" height="33px" viewBox="0 0 71 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -145,7 +145,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span>Rolling stock</span>
+                            <span>@lang("pages.navigation.rolling")</span>
                         </a></li>
                     <li class="maritime d-inline position-relative"><a href="#">
                             <svg width="64px" height="34px" viewBox="0 0 64 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -161,7 +161,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span>Maritime</span></a></li>
+                            <span>@lang("pages.navigation.maritime")</span></a></li>
                     <li class="aerospace d-inline position-relative"><a href="#">
                             <svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -170,7 +170,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span>Aerospace</span>
+                            <span>@lang("pages.navigation.aerospace")</span>
                         </a></li>
                     <li class="others d-inline position-relative"><a href="#">
                             <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
@@ -181,7 +181,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span>Others</span>
+                            <span>@lang("pages.navigation.others")</span>
                         </a></li>
                 </ul>
             </div>
@@ -191,10 +191,10 @@
         <div class="row">
             <div class="col-2 text-left careers-menu">
                 <ul class="position-fixed">
-                    <li class="position-relative"><a href="#">Meet the team</a></li>
-                    <li class="position-relative"><a href="#">Friendly company</a></li>
-                    <li class="position-relative"><a href="#">Application process</a></li>
-                    <li class="position-relative"><a href="#">Current job offers</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.meet")/a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.friendly")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.application")</a></li>
+                    <li class="position-relative"><a href="#">@lang("pages.navigation.current-job")</a></li>
                 </ul>
             </div>
         </div>
@@ -216,11 +216,11 @@
                 </nav>
                 <div class="collapse position-absolute" id="navbarToggleExternalContent">
                     <ul>
-                        <li><a href="#">Group</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Sectors</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">@lang("pages.navigation.group")</a></li>
+                        <li><a href="#">@lang("pages.navigation.services")</a></li>
+                        <li><a href="#">@lang("pages.navigation.sectors")</a></li>
+                        <li><a href="#">@lang("pages.navigation.careers")</a></li>
+                        <li><a href="#">@lang("pages.navigation.contact")</a></li>
                     </ul>
                 </div>
             </div>
