@@ -28,12 +28,13 @@ Route::get('/sectors', function () {
     return view('sectors');
 })->name('sectors');
 
-Auth::routes();
+Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('/admin/login','Auth\LoginController@showLoginForm') ->name('login');
+Route::post('/admin/login','Auth\LoginController@login');
+Route::post('/logout','Auth\LoginController@logout') -> name('logout');
 
-Route::get('/auth/home', 'HomeController@index')->name('auth.home');
-
-Route::resource('/auth/offer','OfferController');
-Route::post('/auth/offer/priority','OfferController@updatePriority') -> name('offer.update.priority');
+Route::resource('/admin/offer','OfferController');
+Route::post('/admin/offer/priority','OfferController@updatePriority') -> name('offer.update.priority');
 
 Route::get('/career','OfferController@career') -> name('career');
 Route::get('/career/{offer}','OfferController@careerShow') -> name('career.show');
