@@ -503,7 +503,7 @@
                     document.getElementById('map-container').innerHTML = content;
                     infoWindow.setContent(content);
                     // infoWindow.open(map,marker);
-                    marker.setIcon("img/dot-2.png");
+                    marker.setIcon("img/dot-4.png");
                     marker.setZIndex(-20);
                 };
             })(marker,content,infoWindow));

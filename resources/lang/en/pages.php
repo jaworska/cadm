@@ -30,7 +30,7 @@ return [
         'cae' => 'CAE / Simulation',
         'electronic-hardware' => 'Electronic hardware',
         'electronic-software' => 'Electronic software',
-        'spftware' => 'Software',
+        'software' => 'Software',
         'prototyping' => 'Prototyping',
         'learn-more' => 'Learn more',
         'automotive' => 'Automotive',
@@ -165,6 +165,7 @@ return [
         'cae' => 'CAE / Simulation',
         'electronic-hardware' => 'Electronic hardware',
         'electronic-software' => 'Electronic software',
+        'software' => 'Software',
         'prototyping' => 'Prototyping',
         'apqp' => 'APQP/QM Plan',
         'documentation' => 'Documentation',
@@ -212,21 +213,24 @@ return [
         'more' => 'Learn more',
         'contact' => 'Contact Us',
         'others' => 'Others',
-        'others-bold' => 'Others',
-        'others-text' => 'Others',
+        'others-bold' => 'Dostrzegamy zwiększone zapotrzebowanie na specjalistyczne usługi projektowe również w takich branżach, jak medyczna, czy AGD i to zarówno ze strony start-upów, jak i przedsiębiorstw z długoletnim doświadczeniem na rynku.',
+        'others-text' => 'Wychodząc naprzeciw ich potrzebom, CADM Automotive zdecydowała się poszerzyć swój zakres działalności. Naszą ambicją jest sprostanie całkowicie nowym wymogom rynku, oferowanie rozwiązań atrakcyjnych wizualnie, a przy tym spełniających najwyższe kryteria technologiczne.',
         'automotive' => 'Automotive',
-        'automotive-bold' => 'Automotive',
-        'automotive-text' => 'Automotive',
+        'automotive-bold' => 'Automotive industry is one of the most rapidly developing branches of global economy.
+Due to its continuous dynamic growth, it promotes innovations and forces the progress in many other areas.',
+        'automotive-text' => 'New technologies and trends result in the fact that it is not enough to produce vehicles of high quality to meet changing expectations of the market, improve the flow and efficiency
+of production. We believe that it is necessary to search for innovative construction solutions and prepare innovative tools for adapting the designing and manufacturing process to new conditions. That is why we are open to support our customers in each field of their activity and each project stage, providing novel and customized solutions. Our team fully of high qualified and experienced engineers is ready to take every challenge.',
         'rolling' => 'Rolling stock',
-        'rolling-bold' => 'Automotive',
-        'rolling-text' => 'Automotive',
+        'rolling-bold' => 'Rolling Stock industry is undergoing a major change after years of a deadlock. Rail transport services require higher conditions and levels of safety, possibility for the rapid retrofitting and reconfiguration of vehicle’s systems and construction. ',
+        'rolling-text' => 'Our rolling stock team consists of highly-qualified, deeply experienced professionals, with a high degree of expertise, and young and enthusiastic engineers, who begin their rail careers. This motivates us to generate fresh, innovative solutions complemented with in-depth knowledge. It provides the creative approach to reality with an outlook for the future.',
         'maritime' => 'Maritime',
-        'maritime-bold' => 'Automotive',
-        'maritime-text' => 'Automotive',
+        'maritime-bold' => 'The Maritime industry has its wind into the sails currently. There is a big demand for new eco-solutions in both, the Offshore and Marine businesses.',
+        'maritime-text' => 'Although the hybrid technology is well known there and has been exploited for tens of years, the focus is oriented on exhaust gases and their content. A huge number of scrubbers are being designed, calculated and installed in all ships at Baltic Sea while no sulfur emission will be allowed soon for them. We take part in these development directions. Our engineers are ready to approach all tasks resulting from further projects. Besides strength calculations due to the classification rules, we offer conversion of all kinds of documentation to 3D models as well. ',
         'aerospace' => 'Aerospace',
-        'aerospace-bold' => 'Automotive',
-        'aerospace-text' => 'Automotive'
+        'aerospace-bold' => 'The Aerospace faces new challenges regarding size of the planes and safety. New materials including composites are being applied in series now.',
+        'aerospace-text' => 'Our tools and services will help you to be effective and to provide light structures in perfect topological solutions. We are ready to support your internal teams by tool knowledge as well as by direct contribution to your strength calculations and design.'
     ],
+
     'career' => [
         'location' => [
             'text' => 'Location',
@@ -236,6 +240,24 @@ return [
         'range' => 'Zakres obowiązków',
         'requirements' => 'Wymagania',
         'offer' => 'Oferujemy',
+        'jumbotron' => 'Join one of the best teams in poland',
+        'team' => 'Our team',
+        'team-p' => 'CADM’s brand is not only based on our showcase of projects but most of all on our
+employees. The essential pillar of our company’s growth is a good team which is built on
+kindness, mutual trust and teamwork culture. Our team consists of young and enthusiastic
+engineers as well as those who have long standing experience.',
+        'meet' => 'Meet the Team',
+        'application' => 'Application Process',
+        'positions' => 'Open positions',
+        'notfound' => 'Haven’t found a position for you? Apply anyway!',
+        'notfound-text' => 'Don’t give up on sending your application. Fill in the expression of interest form – maybe you’ll hear from us sooner than you expect!',
+        'apply' => 'Apply',
+        'friendly' => 'Friendly Company',
+        'friendly-p' => 'All employees share fundamental and clear values which form the roots of our social culture. Our relationships are based on simple and transparent principles:'
+    ],
+
+    'contact' => [
+        'locations' => 'Our locations'
     ]
 
 ];
