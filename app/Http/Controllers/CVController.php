@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\CV;
+use App\Mail\NewCV;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class CVController extends Controller
 {
@@ -48,11 +50,11 @@ class CVController extends Controller
         $cv -> term_3 = $request -> term_3??0;
         $cv -> offer_id = $request -> offer_id;
 
-        $path = $request->file('file')->store('','public');
+        $path = $request->file('file')->store('cv','public');
 
         $cv -> file = $path;
         $cv -> save();
-
+        Mail::to('contact@cadm.pl') -> send(new NewCV($cv));
         return back();
     }
 
