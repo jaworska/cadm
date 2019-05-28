@@ -82,5 +82,25 @@
                 })
             }, false)
         }())
+        $('#description').summernote({
+            placeholder: 'Opis',
+            tabsize: 2,
+            height: 100
+        });
+        $('#requirements').summernote({
+            placeholder: 'Opis',
+            tabsize: 2,
+            height: 100
+        });
+        $('#offer').summernote({
+            placeholder: 'Opis',
+            tabsize: 2,
+            height: 100
+        });
+        $('#range').summernote({
+            placeholder: 'Opis',
+            tabsize: 2,
+            height: 100
+        });
     </script>
 @endsection

@@ -226,6 +226,16 @@ return [
         'aerospace' => 'Aerospace',
         'aerospace-bold' => 'Automotive',
         'aerospace-text' => 'Automotive'
+    ],
+    'career' => [
+        'location' => [
+            'text' => 'Location',
+            '1' => 'Kraków HQ',
+            '2' => 'Remote',
+        ],
+        'range' => 'Zakres obowiązków',
+        'requirements' => 'Wymagania',
+        'offer' => 'Oferujemy',
     ]
 
 ];
