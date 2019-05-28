@@ -14,7 +14,7 @@
                 <div class="text-md-left text-sm-center">
                     <p class="bold">@lang('pages.sectors.automotive-bold')</p>
                     <p class="text-p2 d-none d-md-block">@lang('pages.sectors.automotive-text')</p>
-                    <p></p>
+                    <p></p> 
                     <button type="button" class="btn btn-more">@lang('pages.sectors.more')</button>
                 </div>
             </div>
