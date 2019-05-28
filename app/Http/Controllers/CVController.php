@@ -35,7 +35,25 @@ class CVController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cv = new CV;
+
+        if($cv -> validator($request) -> fails())
+            return response() -> json($cv -> validator($request) -> errors());
+
+        $cv -> name = $request -> name;
+        $cv -> phone = $request -> phone;
+        $cv -> email = $request -> email;
+        $cv -> term_1 = $request -> term_1??0;
+        $cv -> term_2 = $request -> term_2??0;
+        $cv -> term_3 = $request -> term_3??0;
+        $cv -> offer_id = $request -> offer_id;
+
+        $path = $request->file('file')->store('','public');
+
+        $cv -> file = $path;
+        $cv -> save();
+
+        return back();
     }
 
     /**

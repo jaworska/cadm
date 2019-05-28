@@ -4,9 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Offer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class OfferController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth')->except('career','careerShow');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -106,6 +116,11 @@ class OfferController extends Controller
      */
     public function destroy(Offer $offer)
     {
+
+        foreach ($offer -> cvs as $cv){
+            Storage::disk('public')->delete($cv -> file,'public');
+            $cv -> delete();
+        }
         $offer -> delete();
         return back();
     }
@@ -124,5 +139,13 @@ class OfferController extends Controller
             $offer -> save();
         }
         return response('ok');
+    }
+
+    public function career(){
+        $offers = Offer::all();
+        return view('career.index',compact('offers'));
+    }
+    public function careerShow(Offer $offer){
+        return view('career.show',compact('offer'));
     }
 }
