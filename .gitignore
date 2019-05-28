@@ -5,6 +5,8 @@
 /public/js
 /public/images
 /public/img
+/public/metronic
+/resources/meronic/tools/node_modules
 /storage/*.key
 /vendor
 .env

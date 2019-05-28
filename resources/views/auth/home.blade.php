@@ -1,38 +1,51 @@
 @extends('auth.app')
 
 @section('content')
-    <div class="my-3 p-3 bg-white rounded shadow-sm">
-        <div class="row justify-content-between border-bottom border-gray pb-2 px-3 mb-0">
-            <h6 class="">Oferty pracy</h6>
-            <a href="{{ route('offer.create') }}" class="btn btn-primary">Dodaj nową ofertę</a>
+    <div class="kt-portlet kt-portlet--height-fluid">
+        <div class="kt-portlet__head">
+            <div class="kt-portlet__head-label">
+                <h3 class="kt-portlet__head-title">
+                    Oferty pracy
+                </h3>
+            </div>
+            <div class="kt-portlet__head-toolbar">
+                <a href="{{ route('offer.create') }}" class="btn btn-primary">Dodaj nową ofertę</a>
+            </div>
         </div>
-        <ul id="sortable">
-        @foreach($offers -> sortBy('priority') as $offer)
-        <li class="text-muted p-3 row" data-id="{{$offer -> id}}">
-            <div class="col-md-12 ">
-                <div class="row justify-content-between">
-                    <h3 class="d-block text-gray-dark">{{ $offer -> title }}</h3>
-                    <div>
-                        <a href="{{ route('offer.edit',$offer) }}" class="btn btn-primary">Edytuj ofertę</a>
-                        <form method="post" action="{{ route('offer.destroy',$offer) }}">
-                            @method('delete')
-                            @csrf
-                            <button type="submit" class="btn btn-danger">Usuń ofertę</button>
-                        </form>
-
+        <div class="kt-portlet__body">
+            <div class="kt-widget5" id="sortable">
+                @foreach($offers -> sortBy('priority') as $offer)
+                <div class="kt-widget5__item" data-id="{{$offer -> id}}">
+                    <div class="kt-widget5__content">
+                        <div class="kt-widget5__section">
+                            <a href="{{ route('offer.edit',$offer) }}" class="kt-widget5__title">
+                                {{ $offer -> title }}
+                            </a>
+                            <p class="kt-widget5__desc">
+                                {{--{!! $offer -> description !!}--}}
+                            </p>
+                            <div class="kt-widget5__info">
+                                <span>Lokacja:</span>
+                                <span class="kt-font-dark">@lang('pages.career.location.'.$offer -> location)</span>
+                                <span>Start:</span>
+                                <span class="kt-font-dark">{{$offer -> start_date}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kt-widget5__content">
+                        <div class="kt-widget5__stats">
+                            <span class="kt-widget5__number">{{ $offer -> cvs() -> count() }}</span>
+                            <span class="kt-widget5__sales">CVs</span>
+                        </div>
+                        <div class="btn-group btn-group" role="group" aria-label="...">
+                            <a href="{{ route('offer.edit',$offer) }}" class="btn-brand btn">Edytuj</a>
+                            <button type="button" class="btn btn-label-brand delete" data-id="{{$offer -> id}}">Usuń</button>
+                        </div>
                     </div>
                 </div>
+                @endforeach
             </div>
-            <div class="pb-3 mb-0 border-bottom border-gray col-md-12">
-                <p>{{ $offer -> description }}</p>
-                <p>{{ $offer -> range }}</p>
-                <p>{{ $offer -> offer }}</p>
-                <p>{{ $offer -> requirements }}</p>
-                <a href="{{ route('offer.show',$offer) }}">CVs</a>
-            </div>
-        </li>
-        @endforeach
-        </ul>
+        </div>
     </div>
 @endsection
 @section('scripts')
@@ -43,7 +56,7 @@
             revert: true,
             stop:function( event, ui ) {
                 var priority = [];
-                $('#sortable li').each(function(key){
+                $('.kt-widget5__item').each(function(key){
                     priority.push({ priority: key+1, id: $(this).attr('data-id')});
                 });
                 $.post('{{route('offer.update.priority')}}',{
@@ -57,7 +70,49 @@
                 })
             }
         });
-        $( "ul, li" ).disableSelection();
     } );
+    $('.delete').click(function(e) {
+
+        swal.fire({
+            title: 'Jesteś pewny?',
+            text: "Nie będziesz miał możliwości cofnięcia tej akcji!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Tak, jestem pewny!',
+            cancelButtonText: 'Jednak nie!',
+            reverseButtons: true
+        }).then(function(result){
+            if (result.value) {
+                $.post('{{route('offer.destroy')}}/'+$(e.target).data('id'),{
+                    _method:'delete',
+                    _token: '{{ csrf_token() }}'
+                }).done(function(){
+                    $('.kt-widget5__item[data-id="'+ $(e.target).data('id') +'"]').remove();
+                    swal.fire(
+                        'Usunięto!',
+                        'Oferta została usunięta.',
+                        'success'
+                    )
+                }).fail(function(e){
+                    console.log(e);
+                    swal.fire(
+                        'Ooops!',
+                        'Coś poszło nie tak!.',
+                        'error'
+                    )
+                });
+
+                // result.dismiss can be 'cancel', 'overlay',
+                // 'close', and 'timer'
+            } else if (result.dismiss === 'cancel') {
+                swal.fire(
+                    'Zrezygnowano',
+                    'Twoja oferta jest bezpieczna :)',
+                    'error'
+                )
+            }
+        });
+    });
 </script>
+
 @endsection

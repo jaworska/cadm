@@ -5,6 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Offer;
 use App\CV;
+use App\User;
+
 
 class Migrate extends Command
 {
@@ -42,5 +44,6 @@ class Migrate extends Command
         $this->call('migrate:fresh');
         factory(Offer::class, 8)->create();
         factory(CV::class, 50)->create();
+        factory(User::class, 1) -> create();
     }
 }
