@@ -4,17 +4,16 @@
 
     <div class="container-fluid sectors img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0">
-                <img src="img/join.jpeg" class=""/>
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
             </div>
-            <div class="col-md-6 offset-md-1 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center">
+            <div class="col-md-6 offset-md-1 col-12 order-sm-2 order-md-2 pl-0 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-big">
                     <span>@lang('pages.sectors.automotive')</span>
                 </div>
                 <div class="text-md-left text-sm-center">
                     <p class="bold">@lang('pages.sectors.automotive-bold')</p>
                     <p class="text-p2 d-none d-md-block">@lang('pages.sectors.automotive-text')</p>
-                    <p></p> 
+                    <p></p>
                     <button type="button" class="btn btn-more">@lang('pages.sectors.more')</button>
                 </div>
             </div>
@@ -23,7 +22,7 @@
 
     <div class="container-fluid sectors text-img">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center">
+            <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
                     <span>@lang('pages.sectors.rolling')</span>
                 </div>
@@ -34,18 +33,17 @@
                     <button type="button" class="btn btn-more">@lang('pages.sectors.more')</button>
                 </div>
             </div>
-            <div class="col-md-7 col-12 order-sm-1 order-md-2 pr-0 overflow-hidden">
-                <img src="img/join.jpeg" class=""/>
+            <div class="col-md-6 offset-md-1 col-12 order-sm-1 order-md-2 pr-0 rolling-img">
+                {{--<img src="img/join.jpeg" class=""/>--}}
             </div>
         </div>
     </div>
 
-    <div class="container-fluid sectors img-text padding-top">
+    <div class="container-fluid sectors img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0">
-                <img src="img/join.jpeg" class="smaller-padding"/>
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 maritime-img">
             </div>
-            <div class="col-md-6 offset-md-1 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center">
+            <div class="col-md-6 offset-md-1 col-12 order-sm-2 order-md-2 pl-0 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
                     <span>@lang('pages.sectors.maritime')</span>
                 </div>
@@ -61,7 +59,7 @@
 
     <div class="container-fluid sectors text-img">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center">
+            <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
                     <span>@lang('pages.sectors.aerospace')</span>
                 </div>
@@ -72,8 +70,7 @@
                     <button type="button" class="btn btn-more">@lang('pages.sectors.more')</button>
                 </div>
             </div>
-            <div class="col-md-7 col-12 order-sm-1 order-md-2 pr-0 overflow-hidden">
-                <img src="img/join.jpeg" class=""/>
+            <div class="col-md-6 offset-md-1 col-12 order-sm-1 order-md-2 pr-0 aerospace-img">
             </div>
         </div>
     </div>

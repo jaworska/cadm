@@ -11,8 +11,8 @@
                     <li class="d-inline position-relative group-main-drop"><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
                     <li class="d-inline position-relative services-main-drop"><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
                     <li class="d-inline position-relative sectors-main-drop"><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
-                    <li class="d-inline position-relative careers-main-drop"><a href="#">@lang("pages.navigation.careers")</a></li>
-                    <li class="d-inline position-relative contact-main-drop"><a href="#">@lang("pages.navigation.contact")</a></li>
+                    <li class="d-inline position-relative careers-main-drop"><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a></li>
+                    <li class="d-inline position-relative contact-main-drop"><a href="{{ route("contact") }}">@lang("pages.navigation.contact")</a></li>
                 </ul>
             </div>
             <div class="col-4 text-right">
@@ -219,8 +219,8 @@
                         <li><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
                         <li><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
-                        <li><a href="#">@lang("pages.navigation.careers")</a></li>
-                        <li><a href="#">@lang("pages.navigation.contact")</a></li>
+                        <li><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a></li>
+                        <li><a href="{{ route("contact") }}">@lang("pages.navigation.contact")</a></li>
                     </ul>
                 </div>
             </div>
