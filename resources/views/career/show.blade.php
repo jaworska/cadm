@@ -14,23 +14,23 @@
                     <h2>{{ $offer -> title }}</h2>
                 </div>
                 <div class="col-md-12">
-                    <h5>@lang('career.location.text'):<strong> @lang('career.location.'.$offer -> location)</strong></h5>
-                    <h5>@lang('career.start_date'):<strong> {{$offer -> start_date}}</strong></h5>
+                    <h5>@lang('pages.career.location.text'):<strong> @lang('pages.career.location.'.$offer -> location)</strong></h5>
+                    <h5>@lang('pages.career.start_date'):<strong> {{$offer -> start_date}}</strong></h5>
                 </div>
                 <div class="col-md-12">
-                    <h3>@lang('career.range')</h3>
+                    <h3>@lang('pages.career.range')</h3>
                     <div class="range">
                         {!! $offer -> range !!}
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <h3>@lang('career.requirements')</h3>
+                    <h3>@lang('pages.career.requirements')</h3>
                     <div class="requirements">
                         {!! $offer -> requirements !!}
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <h3>@lang('career.offer')</h3>
+                    <h3>@lang('pages.career.offer')</h3>
                     <div class="offer">
                         {!! $offer -> offer !!}
                     </div>
@@ -42,19 +42,19 @@
                 @csrf
                 <input type="hidden" value="{{$offer -> id}}" name="offer_id">
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="@lang('career.name')" required>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="@lang('pages.career.name')" required>
                     <div class="invalid-feedback" style="width: 100%;">
                         @lang('validation.career.name')
                     </div>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="@lang('career.phone')" required>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="@lang('pages.career.phone')" required>
                     <div class="invalid-feedback" style="width: 100%;">
                         @lang('validation.career.phone')
                     </div>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="@lang('career.email')" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="@lang('pages.career.email')" required>
                     <div class="invalid-feedback" style="width: 100%;">
                         @lang('validation.career.email')
                     </div>
@@ -63,7 +63,7 @@
                 <div class="mb-3">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="cv_file" name="file">
-                        <label class="custom-file-label" for="customFile">@lang('career.choose')</label>
+                        <label class="custom-file-label" for="customFile">@lang('pages.career.choose')</label>
                     </div>
                     <div class="invalid-feedback" style="width: 100%;">
                         @lang('validation.career.file')

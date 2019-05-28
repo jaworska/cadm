@@ -216,6 +216,17 @@ return [
         'rolling' => 'Rolling stock',
         'maritime' => 'Maritime',
         'aerospace' => 'Aerospace',
+    ],
+    'career' => [
+        'location' => [
+            'text' => 'Location',
+            '1' => 'Kraków HQ',
+            '2' => 'Remote',
+        ],
+        'range' => 'Zakres obowiązków',
+        'requirements' => 'Wymagania',
+        'offer' => 'Oferujemy',
+
     ]
 
 ];
