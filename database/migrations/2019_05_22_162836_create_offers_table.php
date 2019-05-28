@@ -18,10 +18,10 @@ class CreateOffersTable extends Migration
             $table->integer('priority');
             $table->text('title');
             $table->integer('location');
-            $table->text('description');
             $table->text('range');
             $table->text('offer');
             $table->text('requirements');
+            $table->string('start_date');
             $table->timestamps();
         });
     }
