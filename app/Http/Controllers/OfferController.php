@@ -24,7 +24,7 @@ class OfferController extends Controller
      */
     public function index()
     {
-        //
+        abort(404);
     }
 
     /**
@@ -48,7 +48,7 @@ class OfferController extends Controller
         $offer =  new Offer;
         $offer -> title  = $request -> title;
         $offer -> location  = $request -> location;
-        $offer -> description  = $request -> description;
+        $offer -> start_date  = $request -> start_date;
         $offer -> range  = $request -> range;
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
@@ -58,7 +58,7 @@ class OfferController extends Controller
         }
         else {
             $offer->save();
-            return back();
+            return redirect('admin');
         }
     }
 
@@ -70,6 +70,7 @@ class OfferController extends Controller
      */
     public function show(Offer $offer)
     {
+        abort(404);
         return view('auth.offer.show',compact('offer'));
     }
 
@@ -95,7 +96,7 @@ class OfferController extends Controller
     {
         $offer -> title  = $request -> title;
         $offer -> location  = $request -> location;
-        $offer -> description  = $request -> description;
+        $offer -> start_date  = $request -> start_date;
         $offer -> range  = $request -> range;
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
@@ -104,7 +105,7 @@ class OfferController extends Controller
         }
         else {
             $offer->save();
-            return back();
+            return redirect('admin');
         }
     }
 

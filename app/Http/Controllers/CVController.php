@@ -14,7 +14,7 @@ class CVController extends Controller
      */
     public function index()
     {
-        //
+        abort(404);
     }
 
     /**
@@ -24,7 +24,7 @@ class CVController extends Controller
      */
     public function create()
     {
-        //
+        abort(404);
     }
 
     /**
@@ -64,7 +64,7 @@ class CVController extends Controller
      */
     public function show(CV $cV)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -75,7 +75,7 @@ class CVController extends Controller
      */
     public function edit(CV $cV)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -87,7 +87,7 @@ class CVController extends Controller
      */
     public function update(Request $request, CV $cV)
     {
-        //
+        abort(404);
     }
 
     /**
@@ -98,6 +98,6 @@ class CVController extends Controller
      */
     public function destroy(CV $cV)
     {
-        //
+        abort(404);
     }
 }
