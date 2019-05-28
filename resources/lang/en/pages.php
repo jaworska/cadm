@@ -212,10 +212,20 @@ return [
         'more' => 'Learn more',
         'contact' => 'Contact Us',
         'others' => 'Others',
+        'others-bold' => 'Others',
+        'others-text' => 'Others',
         'automotive' => 'Automotive',
+        'automotive-bold' => 'Automotive',
+        'automotive-text' => 'Automotive',
         'rolling' => 'Rolling stock',
+        'rolling-bold' => 'Automotive',
+        'rolling-text' => 'Automotive',
         'maritime' => 'Maritime',
+        'maritime-bold' => 'Automotive',
+        'maritime-text' => 'Automotive',
         'aerospace' => 'Aerospace',
+        'aerospace-bold' => 'Automotive',
+        'aerospace-text' => 'Automotive'
     ],
     'career' => [
         'location' => [
@@ -226,7 +236,6 @@ return [
         'range' => 'Zakres obowiązków',
         'requirements' => 'Wymagania',
         'offer' => 'Oferujemy',
-
     ]
 
 ];

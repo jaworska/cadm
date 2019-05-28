@@ -2359,14 +2359,77 @@ body {
     }
 
     &.img-text {
+        @include padding-y(40px,50px);
         background: $light-gray;
-        padding-top: 77px;
-        padding-bottom: 77px;
-        padding-right: 112px;
+        padding-right: 120px;
+
+        img {
+            padding: 0 0 0 120px;
+            margin-top: 40px;
+        }
+
+        .smaller-padding {
+            padding: 0 0 0 40px;
+            margin-top: 0;
+
+            @media screen and (max-width: $screen-768) {
+                padding: 0;
+            }
+        }
+
+        &.padding-top {
+            padding-top: 50px;
+
+            @media screen and (max-width: $screen-768) {
+                padding-top: 0;
+            }
+        }
+    }
+
+    &.text-img {
+        @include padding-y(30px,30px);
+        background: $white;
+        padding-left: 120px;
+
+        .overflow-hidden {
+            max-height: 350px;
+        }
+
+        img {
+            padding: 0;
+        }
+
+    }
+
+    &.img-text, &.text-img {
+
+        @media screen and (max-width: $screen-768) {
+            margin-top: 0;
+            @include padding-y(0,40px);
+            @include padding-x(0,0);
+        }
 
         img {
             width: 100%;
-            padding: 40px 60px 0 120px;
+
+            @media screen and (max-width: $screen-768) {
+                margin-top: 0;
+                padding: 0;
+            }
+        }
+
+        .text-sm-center {
+            @media screen and (max-width: $screen-768) {
+                @include padding-x(30px,30px);
+                text-align: center !important;
+            }
+        }
+
+        .title-big {
+            @media screen and (max-width: $screen-768) {
+                padding-top: 20px;
+                text-align: center !important;
+            }
         }
 
         .text-p2 {
@@ -2375,11 +2438,29 @@ body {
             line-height: 1.71;
             letter-spacing: normal;
             color: $group-span;
+
         }
 
         .bold {
-            line-height: 2;
+            line-height: 1.7;
             font-size: 14px;
+
+            @media screen and (max-width: $screen-768) {
+                text-align: left !important;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .order-sm-2 {
+        @media screen and (max-width: $screen-768) {
+            order: 2;
+        }
+    }
+
+    .order-sm-1{
+        @media screen and (max-width: $screen-768) {
+            order: 1;
         }
     }
 
@@ -2395,13 +2476,28 @@ body {
     }
 
     &.others {
-        @include padding-y(50px,30px);
+        @include padding-y(50px,50px);
         background: #f6f6f6;
 
         p {
             line-height: 1.67;
             font-size: 14px;
             color: $gray-nav;
+
+            &.text-p2 {
+                opacity: 0.6;
+                font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: normal;
+                color: $group-span;
+            }
+
+            &.bold {
+                @media screen and (max-width: $screen-768) {
+                    text-align: left !important;
+                    font-size: 16px;
+                }
+            }
         }
     }
 }
