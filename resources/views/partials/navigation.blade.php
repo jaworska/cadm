@@ -2,9 +2,9 @@
     <div class="nav_container">
         <div class="row">
             <div class="col-2 logo">
-                <a href="{{ route("home") }}"><img src="/img/logo-cadm@3x.png"
-                                 srcset="/img/logo-cadm@2x.png 2x,
-             /img/logo-cadm@3x.png 3x"></a>
+                <a href="{{ route("home") }}"><img src="img/logo-cadm@3x.png"
+                                 srcset="img/logo-cadm@2x.png 2x,
+             img/logo-cadm@3x.png 3x"></a>
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
@@ -216,9 +216,9 @@
                 </nav>
                 <div class="collapse position-absolute" id="navbarToggleExternalContent">
                     <ul>
-                        <li><a href="#">@lang("pages.navigation.group")</a></li>
-                        <li><a href="#">@lang("pages.navigation.services")</a></li>
-                        <li><a href="#">@lang("pages.navigation.sectors")</a></li>
+                        <li><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
+                        <li><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
                         <li><a href="#">@lang("pages.navigation.careers")</a></li>
                         <li><a href="#">@lang("pages.navigation.contact")</a></li>
                     </ul>

@@ -28,6 +28,10 @@ Route::get('/sectors', function () {
     return view('sectors');
 })->name('sectors');
 
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/login','Auth\LoginController@showLoginForm') ->name('login');
 Route::post('/admin/login','Auth\LoginController@login');
