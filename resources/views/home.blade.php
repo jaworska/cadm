@@ -8,8 +8,8 @@
     <div class="container-fluid video-text position-absolute">
         <div class="row">
             <div class="col-md-10 col-sm-12 offset-md-1 text-center">
-                <p class="position-relative">a creative look at the engineering world</p>
-                <button type="button" class="btn btn-started">Get started</button>
+                <p class="position-relative">@lang("pages.home.jumbotron")</p>
+                <button type="button" class="btn btn-started">@lang("pages.home.started")</button>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-12 d-flex align-items-md-center flex-sm-column flex-xs-column flex-md-row justify-content-between padding-container">
             <div class="text-left d-flex float-left align-items-center justify-content-between">
-                <span>Trusted by</span>
+                <span>@lang("pages.home.trusted")</span>
                 <img src="img/volkswagen-logo.png"
                      srcset="img/volkswagen-logo@2x.png 2x,
              img/volkswagen-logo@3x.png 3x"
@@ -61,10 +61,10 @@
     <div class="row">
         <div class="col-12 padding-container">
             <div class="text-center why_span">
-                <span>Why CADM Automotive?</span>
+                <span>@lang("pages.home.why")</span>
             </div>
             <div class="text-center why_span-bottom">
-                <span>We undertake projects through concept stage and right up to the final implementation or production.</span>
+                <span>@lang("pages.home.why-span")</span>
             </div>
         </div>
     </div>
@@ -72,20 +72,20 @@
         <div class="row why-row align-items-center justify-content-sm-center">
             <div class="col-md-3 col-8 why-content d-flex align-items-center justify-content-center col-hover">
                 <div class="text-center">
-                    <span>Continuous improvement</span>
-                    <p>We are constantly seeking new ways and possibilities to develop and raise our know-how.</p>
+                    <span>@lang("pages.home.improvement")</span>
+                    <p>@lang("pages.home.improvement-span").</p>
                 </div>
             </div>
             <div class="col-md-3 col-8 why-column pl-0 pr-0">
                 <div class="col-12 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>Interdisciplinary</br>approach</span>
-                        <p>Coverage of key market sectors.</p>
+                        <span>{!! trans('pages.home.individually') !!})</span>
+                        <p>@lang("pages.home.individually-span")</p>
                     </div>
                 </div>
                 <div class="col-12 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>A wide-range projects portfolio</span>
+                        <span>@lang("pages.home.portfolio")</span>
 
                     </div>
                 </div>
@@ -93,8 +93,8 @@
             </div>
             <div class="col-md-3 col-8 why-content col-hover mr-0 d-flex align-items-center justify-content-center">
                 <div class="text-center">
-                    <span>Individually fitted business models</span>
-                    <p>Based on the nature of the project and customers’ needs.</p>
+                    <span>@lang("pages.home.individually")</span>
+                    <p>@lang("pages.home.individually-span")</p>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
 <div class="container-fluid customers">
     <div class="row">
         <div class="col-12 text-center">
-            <p>More than <span class="number-span">80</span> customers worldwide</p>
+            <p>{!! trans('pages.home.customers') !!}</p>
         </div>
     </div>
 </div>
@@ -126,8 +126,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span>Automotive</span>
-                    <span>We are passionate about automotive, we lead in providing the best solutions</span>
+                    <span>@lang('pages.home.automotive')</span>
+                    <span>@lang('pages.home.automotive-span')</span>
                 </div>
             </div>
             <div class="col-md-3 col-11 companies-hover">
@@ -155,8 +155,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span>Rolling stock</span>
-                    <span>We are steaming ahead with changes in the design of rolling stock</span>
+                    <span>@lang('pages.home.rolling')</span>
+                    <span>@lang('pages.home.rolling-span')k</span>
                 </div>
             </div>
             <div class="col-md-3 col-11 companies-hover d-flex">
@@ -174,8 +174,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span>Maritime</span>
-                    <span>We are making waves in maritime industry development</span>
+                    <span>@lang('pages.home.maritime')</span>
+                    <span>@lang('pages.home.maritime-span')</span>
                 </div>
             </div>
             <div class="col-md-3 col-11 companies-hover d-flex">
@@ -187,8 +187,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span>Aerospace</span>
-                    <span>We are flying aviation to new heights</span>
+                    <span>@lang('pages.home.aerospace')</span>
+                    <span>@lang('pages.home.aerospace-span')</span>
                 </div>
             </div>
         </div>
@@ -203,8 +203,8 @@
                             </g>
                         </g>
                     </svg>
-                    <span>Others</span>
-                    <span>We support customers from the medical, energy and white goods industries</span>
+                    <span>@lang('pages.home.others')</span>
+                    <span>@lang('pages.home.others-span')</span>
                 </div>
             </div>
         </div>
@@ -270,23 +270,23 @@
         <div class="row d-none d-md-flex">
             <div class="col-6 image-col d-flex flex-column align-items-end">
                 <img src="img/join.jpeg" class="image-triangle"/>
-                <span>Forbes write about us. Read it <a href="#" target="_blank" class="orange-company">here</a></span>
+                <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-6 d-flex flex-column justify-content-center text-left image-col2">
-                <p class="title-join">Want to be a part of our team?</p>
-                <p class="text-join">Maybe we are looking for someone like you! Check our open positions and get noticed!</p>
-                <button type="button" class="btn btn-login">Join us</button>
+                <p class="title-join">@lang('pages.home.team')</p>
+                <p class="text-join">@lang('pages.home.team-p2')</p>
+                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
             </div>
         </div>
         <div class="row d-sm-block d-md-none">
             <div class="col-12 image-col-responsive2">
-                <p class="title-join">Want to be a part of our team?</p>
+                <p class="title-join">@lang('pages.home.team')</p>
                 <img src="img/join.jpeg" class=""/>
-                <span>Forbes write about us. Read it <a href="#" target="_blank" class="orange-company">here</a></span>
+                <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-12 image-col-responsive">
-                <p class="text-join">Maybe we are looking for someone like you! Check our open positions and get noticed!</p>
-                <button type="button" class="btn btn-login">Join us</button>
+                <p class="text-join">@lang('pages.home.team-p2')</p>
+                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
             </div>
         </div>
     </div>

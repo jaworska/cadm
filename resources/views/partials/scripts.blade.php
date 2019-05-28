@@ -116,13 +116,13 @@
             jQuery(this).find("span").addClass("active");
 
             if (jQuery(this).hasClass("empl")) {
-                jQuery(".img-project").hide( "slide", {direction: "right" }, 1000 );
-                jQuery(".img-employee").show( "slide", {direction: "left" }, 1000 );
+                jQuery(".img-project").hide( "slide", {direction: "right" }, 500 );
+                jQuery(".img-employee").show( "slide", {direction: "left" }, 500 );
             }
 
             if (jQuery(this).hasClass("proj")) {
-                jQuery(".img-employee").hide( "slide", {direction: "left" }, 1000 );
-                jQuery(".img-project").removeClass("transparent").show( "slide", {direction: "right" }, 1000 );
+                jQuery(".img-employee").hide( "slide", {direction: "left" }, 500 );
+                jQuery(".img-project").removeClass("transparent").show( "slide", {direction: "right" }, 500 );
             }
 
         });
@@ -143,34 +143,34 @@
             }
 
             if(jQuery(this).hasClass("lock")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Our value 1</span> </div> <div class="text-left text-value"><p>111 We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');
             }
 
             if(jQuery(this).hasClass("puzzle")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Our value 2</span> </div> <div class="text-left text-value"><p>222 We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');
             }
 
             if(jQuery(this).hasClass("quality")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Quality</span> </div> <div class="text-left text-value"><p>We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');
             }
 
             if(jQuery(this).hasClass("arrow-up")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Our value 4</span> </div> <div class="text-left text-value"><p>333 We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');
             }
 
             if(jQuery(this).hasClass("chats")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Our value 5</span> </div> <div class="text-left text-value"><p>444 We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');
             }
 
             if(jQuery(this).hasClass("bulb")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>Our value 6</span> </div> <div class="text-left text-value"><p>555 We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p><p>Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.</p></div>');
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');
             }
 
         });
 
         //carousel group
 
-        $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+        jQuery('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
             var next = $(this).next();
             if (!next.length) {
                 next = $(this).siblings(':first');
@@ -184,6 +184,18 @@
                 }
                 next.children(':first-child').clone().appendTo($(this));
             }
+        });
+
+        jQuery('.services-toggle').click(function(){
+            jQuery(this).find('.why-content').toggleClass('active');
+            jQuery(this).find('ul').slideToggle("slow");
+
+            // if (jQuery(this).find('.why-content').hasClass('active')) {
+            //     jQuery(this).find('ul').removeClass('d-none');
+            // } else {
+            //     jQuery(this).find('ul').addClass('d-none');
+            // }
+
         });
 
     });

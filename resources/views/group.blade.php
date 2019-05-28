@@ -8,7 +8,7 @@
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
-                    <p class="position-relative">The highest standards, perfect solutions,<br/> best people</p>
+                    <p class="position-relative">{!! trans('pages.group.jumbotron') !!}</p>
                 </div>
             </div>
         </div>
@@ -18,14 +18,14 @@
             <div class="row">
                 <div class="offset-md-1 col-md-10 col-12">
                     <div class="text-center why_span">
-                        <span>A symbol of passion, high quality and expertise</span>
+                        <span>@lang('pages.group.why')</span>
                     </div>
                     <div class="text-center symbol">
-                        <p>CADM Automotive is a cross-industry provider of comprehensive high-calibre engineering solutions for automotive, railway, maritime and aerospace industries.</p>
-                        <p>As a global partner and a local leader, we specialize in development of detailed components, modules as well as entire systems ensuring their functionality and fault free assembly within their surrounding environments. We create and implement innovative solutions to reduce production costs and consumption of materials, and develop smart mobility solutions.</p>
+                        <p>@lang('pages.group.why-span')</p>
+                        <p>@lang('pages.group.why-span2')</p>
                     </div>
                     <div class="text-center why_span why_span-bottom">
-                        <span>Why CADM?</span>
+                        <span>@lang('pages.group.why-cadm')</span>
                     </div>
                 </div>
             </div>
@@ -34,20 +34,20 @@
             <div class="row why-row align-items-center justify-content-sm-center">
                 <div class="col-md-3 col-8 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>Complexity</span>
-                        <p>The ability to undertake projects from concept to final implementation/production.</p>
+                        <span>@lang('pages.group.complexity')</span>
+                        <p>@lang('pages.group.complexity-span')</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-8 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>Interdisciplinary</br>approach</span>
-                        <p>Coverage of key market sectors.</p>
+                        <span>{!! trans('pages.group.approach') !!}</span>
+                        <p>@lang('pages.group.approach-span')</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-8 why-content mr-0 d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>Individually fitted business models</span>
-                        <p>Based on the nature of the project and customers’ needs.</p>
+                        <span>@lang('pages.group.individually')</span>
+                        <p>@lang('pages.group.individually-span')</p>
                     </div>
                 </div>
             </div>
@@ -55,18 +55,18 @@
             <div class="row why-row align-items-center justify-content-sm-center">
                 <div class="col-md-3 col-8 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>Continuous improvement</span>
-                        <p>We are constantly seeking new ways and possibilities to develop and raise our know-how.</p>
+                        <span>@lang('pages.group.improvement')</span>
+                        <p>@lang('pages.group.improvement-span')</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-8 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>A wide-range portfolio</span>
+                        <span>@lang('pages.group.portfolio')</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-8 why-content mr-0 d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>More than 80 customers worldwide</span>
+                        <span>@lang('pages.group.customers')</span>
                     </div>
                 </div>
             </div>
@@ -78,14 +78,14 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center title-big">
-                        <span>We are constantly growing</span>
+                        <span>@lang('pages.group.growing')</span>
                     </div>
                 </div>
                 <div class="col-6 text-md-right text-center grow-click empl">
-                    <span class="active">Number of employees</span>
+                    <span class="active">@lang('pages.group.num-employee')</span>
                 </div>
                 <div class="col-6 text-md-left text-center grow-click proj">
-                    <span>Number of projects</span>
+                    <span>@lang('pages.group.num-projects')</span>
                 </div>
                 <div class="col-md-8 offset-md-2 col-12 d-flex img-col">
                     <img src="img/group_wykres.JPG" class="img-project position-absolute transparent"/>
@@ -125,12 +125,11 @@
             </div>
             <div class="col-md-6 col-12 text-logos">
                 <div class="text-left title-big">
-                    <span>We collaborate worldwide</span>
+                    <span>@lang('pages.group.worldwide')</span>
                 </div>
                 <div class="text-left">
-                    <p class="bold">We offer individually fitted business models, based on the nature of the project and customers’ needs.</p>
-                    <p >We conduct both external and in-house projects. We support our customers by placing resident engineers at their sites or in one of our 6 offices (<span class="locations">5 locations in Poland, 1 in Germany</span>), ensuring smooth cooperation and flow of information, effective
-                        communication and timely exchange of project data at all times.</p>
+                    <p class="bold">@lang('pages.group.we-offer')</p>
+                    <p >{!! trans('pages.group.we-conduct') !!}</p>
                 </div>
             </div>
         </div>
@@ -145,8 +144,8 @@
                     </video>
                 </div>
                 <div class="col-md-10 offset-md-1 col-12 d-flex flex-column justify-content-center team-box position-relative">
-                    <p class="text-left">“Choć tworzą jedynie elementy wnętrz i karoserii aut, to bez nich najatrakcyjniejsza wizja auta najlepszego nawet stylisty nie zaistnieje na rynku. Firma CADM Automotive to wyróżniający się team projektantów samochodowych. W pięć lat zdobyli kilkudziesięciu klientów z całego świata.”</p>
-                    <span class="text-right"><span class="orange-company">Samochodowi designerzy z Krakowa podbijają świat </span> in <span class="bold"> Forbes</span> </span>
+                    <p class="text-left">@lang('pages.group.forbes')</p>
+                    <span class="text-right">{!! trans('pages.group.forbes-span') !!}</span>
                 </div>
             </div>
         </div>
@@ -156,12 +155,11 @@
         <div class="row">
             <div class="col-md-4 offset-md-1 col-12 value-change">
                 <div class="text-left title-big">
-                    <span>Our values</span>
+                    <span>@lang('pages.group.value')</span>
                 </div>
                 <div class="text-left">
-                    <p>We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.</p>
-                    <p>Our success is measured by our customers’ satisfaction.
-                        Whilst realizing our mission, we are guided by our core values.</p>
+                    <p>@lang('pages.group.values')</p>
+                    <p>@lang('pages.group.values2')</p>
                 </div>
             </div>
             <div class="col-md-4 offset-md-1 col-12 values-circle">
@@ -232,7 +230,7 @@
                                 </g>
                             </g>
                         </svg>
-                            <span class="value-title text-center quality">Quality</span>
+                            <span class="value-title text-center quality">@lang('pages.group.quality')</span>
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center  ">
@@ -312,25 +310,21 @@
             </div>
             <div class="col-md-7 col-12 order-sm-1 order-md-2">
                 <div class="text-left title-big">
-                    <span>Code of ethics</span>
+                    <span>@lang('pages.group.ethics')</span>
                 </div>
                 <div class="text-left">
-                    <p >CADM Automotive is fully aware of its responsibilities with regard to the environment in which we operate. The Code of Ethics defines the principles and common values that we follow in interpersonal and business relations and creates a positive image of the company.</p>
+                    <p>@lang('pages.group.ethics-text')</p>
                 </div>
 
                 <div class="row">
                     <div class="col-md-4 col-12 text-left">
-                        <p class="bold">Employees - we place emphasis on ensuring high standards regarding working conditions
-                            and health and safety at work</p>
+                        <p class="bold">@lang('pages.group.employees')</p>
                     </div>
                     <div class="col-md-4 col-12 text-left">
-                        <p class="bold">Suppliers – we guarantee the best standards of cooperation and communication, as our
-                            business relationships are based on mutual respect and trust; our aim is to provide services
-                            of the highest quality</p>
+                        <p class="bold">@lang('pages.group.suppliers')</p>
                     </div>
                     <div class="col-md-4 col-12 text-left">
-                        <p class="bold">Market organisations - we are committed to principles of fair competition, legal regulations
-                            and good practices</p>
+                        <p class="bold">@lang('pages.group.market')</p>
                     </div>
                 </div>
             </div>
@@ -342,12 +336,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="title-big">
-                        <span class="text-center eu-title">EU Grants</span>
+                        <span class="text-center eu-title">@lang('pages.group.grants')</span>
                         <span class="text-right float-right"> <img src="img/fe-ir-rgb-2.png" srcset="img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2"></span>
                     </div>
-                    <p class="bold text-center">CADM Automotive has received funding from the Operational Programme Smart Growth for a project titled ‘Launch of a R&D Center dedicated to the automotive industry’.</p>
-                    <p class="text-center">The project aims to create a R&D center implementing industrial research and development for new opportunities of innovative construction elements, with main focus on components utilizing optical properties of materials.<br/>Total project value: <span class="bold">2.533.800,00 PLN</span><br/>EU funding: <span class="bold">721.000,00 PLN</span>
-                    </p>
+                    <p class="bold text-center">@lang('pages.group.grants-p')</p>
+                    <p class="text-center">{!! trans('pages.group.grants-p2') !!}</p>
                 </div>
             </div>
         </div>
@@ -358,11 +351,9 @@
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
                     <div class="title-big text-center">
-                        <span class="">We love to help!</span>
+                        <span class="">@lang('pages.group.help')</span>
                     </div>
-                    <p class="text-center bold">
-                        We attach great weight to CSR-related issues. Thanks to the involvement of our employees, we are able to support various initiatives that create positive values. We not only support our local community, we are also involved in numerous charity events.
-                    </p>
+                    <p class="text-center bold">@lang('pages.group.help-p')</p>
                 </div>
             </div>
         </div>
@@ -417,13 +408,13 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/join.jpeg" alt="Los Angeles">
+                    <img src="img/join.jpeg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="Chicago">
+                    <img src="img/join.jpeg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="New York">
+                    <img src="img/join.jpeg" alt="">
                 </div>
             </div>
 
@@ -442,11 +433,9 @@
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
                     <div class="title-big text-center">
-                        <span class="">Our partners</span>
+                        <span class="">@lang('pages.group.partners')</span>
                     </div>
-                    <p class="text-center bold">
-                        We are open to cooperation with companies/institutions with diverse business profiles.
-                    </p>
+                    <p class="text-center bold">@lang('pages.group.open')</p>
                 </div>
             </div>
             <div class="row logos-partners">
