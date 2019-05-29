@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Validator;
 
 class CV extends Model
 {
+    public function offer(){
+        return $this->belongsTo('App\Offer');
+    }
     /**
      * Get a validator for an incoming registration request.
      * @param Request $request

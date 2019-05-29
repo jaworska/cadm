@@ -3,12 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\CV;
+use App\Exports\CVExport;
 use App\Mail\NewCV;
+use App\Offer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CVController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth') -> except('store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -40,7 +52,7 @@ class CVController extends Controller
         $cv = new CV;
 
         if($cv -> validator($request) -> fails())
-            return response() -> json($cv -> validator($request) -> errors());
+            return back() -> withErrors($cv -> validator($request) -> errors());
 
         $cv -> name = $request -> name;
         $cv -> phone = $request -> phone;
@@ -55,7 +67,7 @@ class CVController extends Controller
         $cv -> file = $path;
         $cv -> save();
         Mail::to('contact@cadm.pl') -> send(new NewCV($cv));
-        return back();
+        return back() -> withErrors(['success' => true]);
     }
 
     /**
@@ -101,5 +113,11 @@ class CVController extends Controller
     public function destroy(CV $cV)
     {
         abort(404);
+    }
+    public function export(Offer $offer){
+        return Excel::download(new CVExport($offer), 'cvs.xlsx');
+    }
+    public function exportAll(){
+        return Excel::download(new CVExport, 'cvs.xlsx');
     }
 }

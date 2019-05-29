@@ -28,7 +28,7 @@
                         <select name="location" class="custom-select d-block w-100" id="location" required>
                             <option value="">Wybierz</option>
                             <option value="1">Kraków HQ</option>
-                            <option value="2">Praca zdalna</option>
+                            <option value="2">Pozostałe</option>
                         </select>
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację

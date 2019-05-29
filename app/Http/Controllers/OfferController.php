@@ -129,7 +129,6 @@ class OfferController extends Controller
      * Update the resources priorities in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Offer  $offer
      * @return \Illuminate\Http\Response
      */
     public function updatePriority(Request $request)
@@ -141,9 +140,13 @@ class OfferController extends Controller
         }
         return response('ok');
     }
-
+    public function updateActive(Offer $offer){
+        $offer -> active = $offer -> active ==1?0:1;
+        $offer -> save();
+        return response('ok');
+    }
     public function career(){
-        $offers = Offer::all();
+        $offers = Offer::where('active',1) ->orderBy('priority') -> get();
         return view('career.index',compact('offers'));
     }
     public function careerShow(Offer $offer){

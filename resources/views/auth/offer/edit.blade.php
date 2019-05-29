@@ -29,7 +29,7 @@
                         <select name="location" class="custom-select d-block w-100" id="location" required>
                             <option value="">Wybierz</option>
                             <option value="1" @if($offer -> location ==1) selected @endif>Kraków HQ</option>
-                            <option value="2" @if($offer -> location ==2) selected @endif>Praca zdalna</option>
+                            <option value="2" @if($offer -> location ==2) selected @endif>Pozostałe</option>
                         </select>
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację

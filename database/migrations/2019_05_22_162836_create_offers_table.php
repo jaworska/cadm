@@ -22,6 +22,7 @@ class CreateOffersTable extends Migration
             $table->text('offer');
             $table->text('requirements');
             $table->string('start_date');
+            $table->boolean('active');
             $table->timestamps();
         });
     }

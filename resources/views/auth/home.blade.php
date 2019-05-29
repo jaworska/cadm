@@ -9,6 +9,7 @@
                 </h3>
             </div>
             <div class="kt-portlet__head-toolbar">
+                <a href="{{ route('cv.export.all') }}" class="btn-secondary btn">Eksportuj CV</a>
                 <a href="{{ route('offer.create') }}" class="btn btn-primary">Dodaj nową ofertę</a>
             </div>
         </div>
@@ -39,6 +40,8 @@
                         </div>
                         <div class="btn-group btn-group" role="group" aria-label="...">
                             <a href="{{ route('offer.edit',$offer) }}" class="btn-brand btn">Edytuj</a>
+                            <a href="{{ route('cv.export',$offer) }}" class="btn-secondary btn">Eksportuj CV</a>
+                            <button type="button" class="btn @if($offer -> active) btn-brand @else btn-secondary @endif activate" data-id="{{$offer -> id}}">@if($offer -> active) Aktywna @else Nieaktywna @endif</button>
                             <button type="button" class="btn btn-label-brand delete" data-id="{{$offer -> id}}">Usuń</button>
                         </div>
                     </div>
@@ -71,6 +74,31 @@
             }
         });
     } );
+    $('.activate').click(function(){
+        var id = $(this).data('id');
+        button =$(this);
+        button.addClass('kt-spinner kt-spinner--right kt-spinner--dark disabled');
+        $.post('{{route('offer.update.active')}}/'+id,{ _token : '{{ csrf_token() }}'})
+            .done(function(){
+                setTimeout(function(){
+                    button.toggleClass('btn-brand').toggleClass('btn-secondary');
+                    button.hasClass('btn-secondary')?button.text('Nieaktywna'):button.text('Aktywna');
+                    button.removeClass('kt-spinner kt-spinner--right kt-spinner--dark disabled');
+                },500)
+            })
+            .fail(function(e){
+                console.log(e);
+                swal.fire(
+                    'Ooops!',
+                    'Coś poszło nie tak!.',
+                    'error'
+                );
+                setTimeout(function(){ button.removeClass('kt-spinner kt-spinner--right kt-spinner--lg kt-spinner--light disabled');},500)
+
+            });
+
+
+    });
     $('.delete').click(function(e) {
 
         swal.fire({
