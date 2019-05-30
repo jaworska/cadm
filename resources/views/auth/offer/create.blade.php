@@ -17,12 +17,14 @@
                 @csrf
                 <div class="form-group row form-group-marginless kt-margin-t-20">
                     <label class="col-lg-1 col-form-label">Tytuł:</label>
-                    <div class="col-lg-3">
+                    <div class="col-lg-12">
                         <input type="text" name="title" id="title" class="form-control" placeholder="Tytuł">
                         <div class="invalid-feedback" style="width: 100%;">
                             Tytuł jest wymagany
                         </div>
                     </div>
+                </div>
+                <div class="form-group row form-group-marginless kt-margin-t-20">
                     <label class="col-lg-1 col-form-label">Lokalizacja:</label>
                     <div class="col-lg-3">
                         <select name="location" class="custom-select d-block w-100" id="location" required>
@@ -43,6 +45,15 @@
                         <div class="invalid-feedback">
                             Proszę podać datę
                         </div>
+                    </div>
+                    <label class="col-lg-1 col-form-label">Aktywna:</label>
+                    <div class="col-lg-3">
+                        <span class="kt-switch">
+                            <label>
+                                <input type="checkbox" checked="checked" name="active" />
+                                <span></span>
+                            </label>
+                        </span>
                     </div>
                 </div>
                 <div class="form-group row form-group-marginless kt-margin-t-20">

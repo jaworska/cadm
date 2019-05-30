@@ -17,7 +17,7 @@
                 @csrf
                 @method('patch')
                 <div class="form-group row form-group-marginless kt-margin-t-20">
-                    <label class="col-lg-1 col-form-label">Imię:</label>
+                    <label class="col-lg-1 col-form-label">Nazwa użytkownika:</label>
                     <div class="col-lg-5">
                         <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" required placeholder="Imię" value="{{$user -> name}}">
                         @error('name')
@@ -26,7 +26,7 @@
                         </span>
                         @else
                             <div class="invalid-feedback" style="width: 100%;">
-                                Imię jest wymagane
+                                Nazwa użytkownika jest wymagana
                             </div>
                             @enderror
                     </div>

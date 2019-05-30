@@ -53,6 +53,7 @@ class OfferController extends Controller
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
         $offer -> priority = Offer::all() -> max('priority')+1??1;
+        $offer -> active = isset($request -> active)?1:0;
         if(($offer-> validator ->fails())) {
             return $offer -> validator -> errors();
         }
@@ -94,12 +95,14 @@ class OfferController extends Controller
      */
     public function update(Request $request, Offer $offer)
     {
+
         $offer -> title  = $request -> title;
         $offer -> location  = $request -> location;
         $offer -> start_date  = $request -> start_date;
         $offer -> range  = $request -> range;
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
+        $offer -> active = isset($request -> active)?1:0;
         if(($offer-> validator ->fails())) {
             return $offer -> validator -> errors();
         }

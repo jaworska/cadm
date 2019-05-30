@@ -64,7 +64,7 @@ class UserController extends Controller
         $user -> email = $request -> email;
         $user -> password = Hash::make($request -> password);
         $user -> save();
-        return redirect('user.index');
+        return redirect(route('user.index'));
     }
 
     /**
@@ -100,7 +100,7 @@ class UserController extends Controller
     {
         $validator = Validator::make($request -> all(), [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore(Auth::user())],
+            'email' => ['required', 'string', 'email', 'max:255', Rule::unique('users')->ignore($user)],
         ]);
         $validator->sometimes('password', 'required|string|min:8|confirmed', function ($request) {
             return isset($request->password);
@@ -115,7 +115,7 @@ class UserController extends Controller
 
 
         $user -> save();
-        return redirect('user.index');
+        return redirect(route('user.index'));
     }
 
     /**

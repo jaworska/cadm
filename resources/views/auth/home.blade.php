@@ -9,14 +9,14 @@
                 </h3>
             </div>
             <div class="kt-portlet__head-toolbar">
-                <a href="{{ route('cv.export.all') }}" class="btn-secondary btn">Eksportuj CV</a>
+                <a href="{{ route('cv.export.all') }}" class="btn-secondary btn">Eksportuj wszystkie CV</a>
                 <a href="{{ route('offer.create') }}" class="btn btn-primary">Dodaj nową ofertę</a>
             </div>
         </div>
         <div class="kt-portlet__body">
             <div class="kt-widget5" id="sortable">
                 @foreach($offers -> sortBy('priority') as $offer)
-                <div class="kt-widget5__item" data-id="{{$offer -> id}}">
+                <div class="kt-widget5__item p-3" data-id="{{$offer -> id}}">
                     <div class="kt-widget5__content">
                         <div class="kt-widget5__section">
                             <a href="{{ route('offer.edit',$offer) }}" class="kt-widget5__title">
@@ -39,8 +39,8 @@
                             <span class="kt-widget5__sales">CVs</span>
                         </div>
                         <div class="btn-group btn-group" role="group" aria-label="...">
-                            <a href="{{ route('offer.edit',$offer) }}" class="btn-brand btn">Edytuj</a>
-                            <a href="{{ route('cv.export',$offer) }}" class="btn-secondary btn">Eksportuj CV</a>
+                            <a href="{{ route('cv.export',$offer) }}" class="btn-brand btn">Eksportuj CV</a>
+                            <a href="{{ route('offer.edit',$offer) }}" class="btn-secondary btn">Edytuj</a>
                             <button type="button" class="btn @if($offer -> active) btn-brand @else btn-secondary @endif activate" data-id="{{$offer -> id}}">@if($offer -> active) Aktywna @else Nieaktywna @endif</button>
                             <button type="button" class="btn btn-label-brand delete" data-id="{{$offer -> id}}">Usuń</button>
                         </div>
@@ -74,6 +74,11 @@
             }
         });
     } );
+    $('.kt-widget5__item').hover(function(){
+        $(this).addClass('bg-light');
+    },function(){
+        $(this).removeClass('bg-light');
+    })
     $('.activate').click(function(){
         var id = $(this).data('id');
         button =$(this);
