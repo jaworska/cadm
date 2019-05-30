@@ -11,36 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/','HomeController@home')->name('home');
 
 
-Route::get('/group', function () {
-    return view('group');
-})->name('group');
+Route::get('/group', 'HomeController@group')->name('group');
 
-Route::get('/services', function () {
-    return view('services');
-})->name('services');
+Route::get('/services', 'HomeController@services')->name('services');
 
-Route::get('/sectors', function () {
-    return view('sectors');
-})->name('sectors');
+Route::get('/sectors', 'HomeController@sectors')->name('sectors');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', 'HomeController@contact')->name('contact');
 
-Route::get('/team', function () {
-    $offers = \App\Offer::all();
-    return view('team',compact('offers'));
-})->name('team');
+Route::get('/team', 'HomeController@team')->name('team');
 
-Route::get('/application', function () {
-    $offers = \App\Offer::all();
-    return view('application',compact('offers'));
-})->name('application');
+Route::get('/application','HomeController@application')->name('application');
+
+Route::get('/career','HomeController@career') -> name('career');
+Route::get('/career/{offer}','HomeController@careerShow') -> name('career.show');
+Route::post('/career','HomeController@filter');
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/login','Auth\LoginController@showLoginForm') ->name('login');
@@ -52,8 +40,7 @@ Route::delete('/admin/offer/{offer?}','OfferController@destroy') -> name('offer.
 Route::post('/admin/offer/priority','OfferController@updatePriority') -> name('offer.update.priority');
 Route::post('/admin/offer/activate/{offer?}','OfferController@updateActive') -> name('offer.update.active');
 
-Route::get('/career','OfferController@career') -> name('career');
-Route::get('/career/{offer}','OfferController@careerShow') -> name('career.show');
+
 Route::resource('/cv','CVController');
 Route::get('/export/all','CVController@exportAll')->name('cv.export.all');
 Route::get('/export/{offer}','CVController@export')->name('cv.export');

@@ -232,6 +232,7 @@ of production. We believe that it is necessary to search for innovative construc
     ],
 
     'career' => [
+        'success' => '<strong>CV sent!</strong> Application was sent to us. We will answer in no time!',
         'location' => [
             'text' => 'Location',
             '1' => 'Kraków HQ',

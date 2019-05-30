@@ -201,66 +201,29 @@
             jQuery(this).addClass('active');
 
             var filterValue =   jQuery(this).data("location");
-
-
-                if (filterValue === 'all') {
-                    var i = 0;
-
-                    jQuery(".positions .col-hover").each(function(){
-                        jQuery(this).removeClass("d-none");
-                        jQuery(this).addClass("d-flex");
-                        i++;
-
-                        if (i % 4 === 0) {
-                            jQuery(this).css('margin-right','0');
-                        } else {
-                            jQuery(this).css('margin-right','16px');
-                        }
-                    });
-                }
-
-                if (filterValue === 'other') {
-                    var j = 0;
-
-                    jQuery(".positions .col-hover").each(function() {
-                        if (jQuery(this).data("location") != '1' && jQuery(this).data("location") != '2') {
-                            jQuery(this).removeClass("d-none");
-                            jQuery(this).addClass("d-flex");
-                            j++;
-
-                            if (j % 4 === 0) {
-                                jQuery(this).css('margin-right','0');
-                            } else {
-                                jQuery(this).css('margin-right','16px');
-                            }
-
-                        }  else {
-                            jQuery(this).removeClass("d-flex");
-                            jQuery(this).addClass("d-none");
-                        }
-                    });
-                }
-
-                if (filterValue == '1' || filterValue == '2') {
-                    var k = 0;
-                    jQuery(".positions .col-hover").each(function(){
-
-                        if(jQuery(this).data("location") === filterValue) {
-                            jQuery(this).removeClass("d-none").addClass("d-flex");
-                            k++;
-                            if (k % 4 === 0) {
-                                jQuery(this).css('margin-right','0');
-                            } else {
-                                jQuery(this).css('margin-right','16px');
-                            }
-                        } else {
-                            jQuery(this).removeClass("d-flex");
-                            jQuery(this).addClass("d-none");
-                        }
-
-                    });
-                }
-
+            var number = jQuery('#offers_list').children().length;
+            $.post('{{ route('career') }}',{
+                _token:'{{ csrf_token() }}',
+                filter: filterValue,
+                number: number
+            }).done(function(e){
+                $('#offers_list').html(e);
+            }).fail(function(e){
+                console.log(e);
+            });
+        });
+        jQuery('#more-offers').click(function(){
+            var filterValue =   jQuery('.choose-button.active').data("location");
+            var number = jQuery('#offers_list').children().length;
+            $.post('{{ route('career') }}',{
+                _token:'{{ csrf_token() }}',
+                filter: filterValue,
+                number:number*1+4
+            }).done(function(e){
+                $('#offers_list').html(e);
+            }).fail(function(e){
+                console.log(e);
+            });
         });
 
     });

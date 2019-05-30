@@ -20,7 +20,8 @@ class CV extends Model
     {
         return Validator::make($request  -> all(), [
             'name' => ['required', 'string'],
-            'phone' => ['required', 'string'],
+            'surname' => ['required', 'string'],
+            'phone' => ['required', 'numeric'],
             'email' => ['required', 'email'],
             'term_1' => ['required', 'string'],
             'term_2' => ['required', 'string'],

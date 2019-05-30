@@ -41,7 +41,7 @@
                             <div class="invalid-feedback" style="width: 100%;">
                                 Email jest wymagany
                             </div>
-                            @enderror
+                        @enderror
                     </div>
                 </div>
                 <hr class="mb-4">
