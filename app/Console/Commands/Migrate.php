@@ -42,8 +42,8 @@ class Migrate extends Command
     public function handle()
     {
         $this->call('migrate:fresh');
-        factory(Offer::class, 8)->create();
-        factory(CV::class, 50)->create();
+        factory(Offer::class, 40)->create();
+        factory(CV::class, 100)->create();
         factory(User::class, 1) -> create();
     }
 }
