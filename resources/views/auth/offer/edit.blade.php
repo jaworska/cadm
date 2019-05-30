@@ -18,18 +18,20 @@
                 @method('patch')
                 <div class="form-group row form-group-marginless kt-margin-t-20">
                     <label class="col-lg-1 col-form-label">Tytuł:</label>
-                    <div class="col-lg-3">
+                    <div class="col-lg-11">
                         <input type="text" name="title" id="title" class="form-control" placeholder="Tytuł" value="{{$offer -> title}}">
                         <div class="invalid-feedback" style="width: 100%;">
                             Tytuł jest wymagany
                         </div>
                     </div>
+                </div>
+                <div class="form-group row form-group-marginless kt-margin-t-20">
                     <label class="col-lg-1 col-form-label">Lokalizacja:</label>
                     <div class="col-lg-3">
                         <select name="location" class="custom-select d-block w-100" id="location" required>
                             <option value="">Wybierz</option>
                             <option value="1" @if($offer -> location ==1) selected @endif>Kraków HQ</option>
-                            <option value="2" @if($offer -> location ==2) selected @endif>Praca zdalna</option>
+                            <option value="2" @if($offer -> location ==2) selected @endif>Pozostałe</option>
                         </select>
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację
@@ -44,6 +46,15 @@
                         <div class="invalid-feedback">
                             Proszę podać datę
                         </div>
+                    </div>
+                    <label class="col-lg-1 col-form-label">Aktywna:</label>
+                    <div class="col-lg-3">
+                        <span class="kt-switch">
+                            <label>
+                                <input type="checkbox" {{$offer->active?'checked="checked"':''}} name="active" />
+                                <span></span>
+                            </label>
+                        </span>
                     </div>
                 </div>
                 <div class="form-group row form-group-marginless kt-margin-t-20">
