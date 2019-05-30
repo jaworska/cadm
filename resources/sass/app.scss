@@ -3808,8 +3808,8 @@ body {
 
             .custom-control-input:checked ~ .custom-control-label::before {
                 color: $white;
-                border-color: #e9e9e9;
-                background-color: #e9e9e9;
+                border-color: $primary;
+                background-color: $primary;
                 border-radius: 0;
                 width: 16px;
                 height: 16px;

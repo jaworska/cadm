@@ -15,7 +15,7 @@ class OfferController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except('career','careerShow');
+        $this->middleware('auth')->except('career','careerShow','filter');
     }
     /**
      * Display a listing of the resource.
@@ -148,11 +148,5 @@ class OfferController extends Controller
         $offer -> save();
         return response('ok');
     }
-    public function career(){
-        $offers = Offer::where('active',1) ->orderBy('priority') -> get();
-        return view('career.index',compact('offers'));
-    }
-    public function careerShow(Offer $offer){
-        return view('career.show',compact('offer'));
-    }
+
 }

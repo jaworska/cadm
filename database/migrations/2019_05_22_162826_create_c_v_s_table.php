@@ -18,6 +18,7 @@ class CreateCVSTable extends Migration
             $table->unsignedBigInteger('offer_id');
             $table->string('file');
             $table->string('name');
+            $table->string('surname');
             $table->string('phone');
             $table->string('email');
             $table->boolean('term_1');
