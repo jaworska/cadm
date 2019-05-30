@@ -1,7 +1,7 @@
 <div class="container-fluid footer d-none d-md-block">
     <div class="row">
         <div class="col-2">
-            <a href="#"><img src="img/logo-cadm-white.png" srcset="img/logo-cadm-white@2x.png 2x, img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
+            <a href="#"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
         </div>
         <div class="col-2 nav-footer">
             <p><a href="{{ route("group") }}">@lang("pages.navigation.the-group")</a></p>
@@ -115,9 +115,9 @@
         </div>
         <div class="col-2 nav-footer">
             <div class="socials d-flex">
-                <a href="#"><img src="img/fb.png" class="fb"></a>
-                <a href="#"><img src="img/in.png" class="in"></a>
-                <a href="#"><img src="img/insta.png" class="insta"></a>
+                <a href="#"><img src="/img/fb.png" class="fb"></a>
+                <a href="#"><img src="/img/in.png" class="in"></a>
+                <a href="#"><img src="/img/insta.png" class="insta"></a>
             </div>
         </div>
     </div>

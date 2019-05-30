@@ -2,9 +2,9 @@
     <div class="nav_container">
         <div class="row">
             <div class="col-2 logo">
-                <a href="{{ route("home") }}"><img src="img/logo-cadm@3x.png"
-                                 srcset="img/logo-cadm@2x.png 2x,
-             img/logo-cadm@3x.png 3x"></a>
+                <a href="{{ route("home") }}"><img src="/img/logo-cadm@3x.png"
+                                 srcset="/img/logo-cadm@2x.png 2x,
+             /img/logo-cadm@3x.png 3x"></a>
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
@@ -17,13 +17,13 @@
             </div>
             <div class="col-4 text-right">
                 <div class="socials d-inline">
-                    <a href="#"><img src="img/facebook.svg" class="facebook"></a>
-                    <a href="#"><img src="img/linkedin.svg" class="linkedin"></a>
-                    <a href="#"><img src="img/instagram.svg" class="instagram"></a>
+                    <a href="#"><img src="/img/facebook.svg" class="facebook"></a>
+                    <a href="#"><img src="/img/linkedin.svg" class="linkedin"></a>
+                    <a href="#"><img src="/img/instagram.svg" class="instagram"></a>
                 </div>
                 <button type="button" class="btn btn-login">@lang("pages.navigation.login")</button>
                 <span class="lang d-none">@lang("pages.navigation.eng")</span>
-                <span class="lang-arrow position-relative d-none"><img src="img/orange.svg" class="orange"></span>
+                <span class="lang-arrow position-relative d-none"><img src="/img/orange.svg" class="orange"></span>
             </div>
         </div>
     </div>
@@ -191,10 +191,10 @@
         <div class="row">
             <div class="col-2 text-left careers-menu">
                 <ul class="position-fixed">
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.meet")/a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.friendly")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.application")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.current-job")</a></li>
+                    <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.friendly")</a></li>
+                    <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.current-job")</a></li>
                 </ul>
             </div>
         </div>
@@ -203,9 +203,9 @@
 <div id="nav-mobile" class="container-fluid sticky-top d-sm-block d-md-none position-fixed">
     <div class="nav_container d-flex justify-content-between">
         <div class="logo-mobile">
-            <a href="#"><img src="img/logo-cadm@3x.png"
-                             srcset="img/logo-cadm@2x.png 2x,
-             img/logo-cadm@3x.png 3x"></a>
+            <a href="#"><img src="/img/logo-cadm@3x.png"
+                             srcset="/img/logo-cadm@2x.png 2x,
+             /img/logo-cadm@3x.png 3x"></a>
         </div>
         <div class="menu-mobile">
             <div class="pos-f-t">
