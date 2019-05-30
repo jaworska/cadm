@@ -336,6 +336,17 @@ The ideal CV (depending on work experience) should be not be longer than 3 pages
         'join' => 'Join Us',
         'waiting' => 'We’re waiting for you!',
         'counting' => '+181</br><span>and counting</span>',
+        'cadm-offer' => 'CADM Automotive świadczy usługi projektowe dla przemysłu motoryzacyjnego. Naszym bezpośrednim klientem jest nie tylko VW AG, ale również wielu system dostawców zlokalizowanych w takich krajach jak: Niemcy, Francja, Wielka Brytania, Rosja, Czechy, Polska. Ze względu na ciągły i prężny rozwój firmy, z ciekawymi perspektywami i z dnia na dzień coraz mocniejszą pozycją na rynku motoryzacyjnym, firma CADM Automotive poszukuje:',
+        'interested' => 'Interested in this position? Fill in the form',
+        'email' => 'E-mail address',
+        'name' => 'First name',
+        'surname' => 'Surname',
+        'phone' => 'Phone number',
+        'attach' => 'Attach CV in English language',
+        'attach2' => 'Up to 2MB, .doc or .pdf',
+        'checkbox1' => '<span class="orange">*</span> Zapoznałem się z treścią <span class="orange">Szczegółowej informacji o przetwarzaniu danych osobowych<span></span>',
+        'checkbox2' => '<span class="orange">*</span> Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumentach aplikacyjnych dla potrzeb rekrutacji na stanowisko Modelarz Powierzchni klasy A - Project leader, prowadzonej przez CADM Automotive spółka z ograniczoną odpowiedzialnością z siedzibą w Krakowie, ul. Lindego 1C, 31-148 Kraków, KRS: 0000420015.',
+        'checkbox3' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumentach aplikacyjnych dla potrzeb przyszłych rekrutacji prowadzonych przez CADM Automotive bspółka z ograniczoną odpowiedzialnością z siedzibą w Krakowie, ul. Lindego 1C, 31-148 Kraków, KRS: 0000420015 oraz przez inne podmioty wchodzące w skład grupy kapitałowej.'
 
     ],
 

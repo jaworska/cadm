@@ -17,13 +17,13 @@
             </div>
             <div class="col-4 text-right">
                 <div class="socials d-inline">
-                    <a href="#"><img src="img/facebook.svg" class="facebook"></a>
-                    <a href="#"><img src="img/linkedin.svg" class="linkedin"></a>
-                    <a href="#"><img src="img/instagram.svg" class="instagram"></a>
+                    <a href="#"><img src="/img/facebook.svg" class="facebook"></a>
+                    <a href="#"><img src="/img/linkedin.svg" class="linkedin"></a>
+                    <a href="#"><img src="/img/instagram.svg" class="instagram"></a>
                 </div>
                 <button type="button" class="btn btn-login">@lang("pages.navigation.login")</button>
                 <span class="lang d-none">@lang("pages.navigation.eng")</span>
-                <span class="lang-arrow position-relative d-none"><img src="img/orange.svg" class="orange"></span>
+                <span class="lang-arrow position-relative d-none"><img src="/img/orange.svg" class="orange"></span>
             </div>
         </div>
     </div>
@@ -203,9 +203,9 @@
 <div id="nav-mobile" class="container-fluid sticky-top d-sm-block d-md-none position-fixed">
     <div class="nav_container d-flex justify-content-between">
         <div class="logo-mobile">
-            <a href="#"><img src="img/logo-cadm@3x.png"
-                             srcset="img/logo-cadm@2x.png 2x,
-             img/logo-cadm@3x.png 3x"></a>
+            <a href="#"><img src="/img/logo-cadm@3x.png"
+                             srcset="/img/logo-cadm@2x.png 2x,
+             /img/logo-cadm@3x.png 3x"></a>
         </div>
         <div class="menu-mobile">
             <div class="pos-f-t">

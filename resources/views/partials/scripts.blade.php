@@ -191,6 +191,11 @@
             jQuery(this).find('ul').slideToggle("slow");
         });
 
+        jQuery('.more-offer').click(function(){
+            jQuery(this).toggleClass("rotate");
+            jQuery(this).parent().parent().find('.close-offer').toggleClass('open-offer');
+        });
+
         jQuery('.choose-button').click(function(){
             jQuery(this).siblings().removeClass('active');
             jQuery(this).addClass('active');
