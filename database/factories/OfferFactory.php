@@ -13,6 +13,7 @@ $factory->define(Offer::class, function (Faker $faker) {
         'offer' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'requirements' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'start_date' => $faker->date($format = 'Y-m-d', $max = 'now'),
-        'priority' =>  Offer::all() -> max('priority')+1??1
+        'priority' =>  Offer::all() -> max('priority')+1??1,
+        'active' => 1
     ];
 });
