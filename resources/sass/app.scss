@@ -2895,9 +2895,47 @@ body {
             max-height: 400px;
         }
 
+        &.application {
+            background: url('/img/careers-tlo-gradient.jpg');
+            background-size: cover;
+            max-height: 500px;
+
+            @media screen and (max-width: $screen-768) {
+                background-position: center;
+            }
+        }
+    }
+
     .positions-container {
         @media screen and (min-width: $screen-1440) {
             max-width: 1440px;
+        }
+    }
+
+    &.application-block {
+
+        .practical-img {
+            background: url('/img/application-img1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
+        }
+
+        .prepare-img {
+            background: url('/img/application-img3.jpg');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
+        }
+
+        .trying-img {
+            background: url('/img/application-img2.jpg');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
         }
     }
 

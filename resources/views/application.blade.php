@@ -1,10 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="jumbotron video_main services career">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="img/movie.webm" type="video/webm">
-        </video>
+    <div class="jumbotron video_main services career application">
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
@@ -223,9 +220,9 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career img-text">
+    <div class="container-fluid sectors career application-block img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 practical-img">
             </div>
             <div class="col-md-7 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-big">
@@ -257,7 +254,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career text-img">
+    <div class="container-fluid sectors career application-block text-img">
         <div class="row">
             <div class="col-md-6 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-2">
@@ -276,15 +273,15 @@
                 </div>
                 <p class="more-text">{!! trans('pages.career.prepare6') !!}</p>
             </div>
-            <div class="col-md-6 col-12 order-sm-1 order-md-2 pr-0 rolling-img">
+            <div class="col-md-6 col-12 order-sm-1 order-md-2 pr-0 prepare-img">
                 {{--<img src="img/join.jpeg" class=""/>--}}
             </div>
         </div>
     </div>
 
-    <div class="container-fluid sectors career img-text">
+    <div class="container-fluid sectors career application-block img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 trying-img">
             </div>
             <div class="col-md-7 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-2">
