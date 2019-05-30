@@ -189,12 +189,72 @@
         jQuery('.services-toggle').click(function(){
             jQuery(this).find('.why-content').toggleClass('active');
             jQuery(this).find('ul').slideToggle("slow");
+        });
 
-            // if (jQuery(this).find('.why-content').hasClass('active')) {
-            //     jQuery(this).find('ul').removeClass('d-none');
-            // } else {
-            //     jQuery(this).find('ul').addClass('d-none');
-            // }
+        jQuery('.choose-button').click(function(){
+            jQuery(this).siblings().removeClass('active');
+            jQuery(this).addClass('active');
+
+            var filterValue =   jQuery(this).data("location");
+
+
+                if (filterValue === 'all') {
+                    var i = 0;
+
+                    jQuery(".positions .col-hover").each(function(){
+                        jQuery(this).removeClass("d-none");
+                        jQuery(this).addClass("d-flex");
+                        i++;
+
+                        if (i % 4 === 0) {
+                            jQuery(this).css('margin-right','0');
+                        } else {
+                            jQuery(this).css('margin-right','16px');
+                        }
+                    });
+                }
+
+                if (filterValue === 'other') {
+                    var j = 0;
+
+                    jQuery(".positions .col-hover").each(function() {
+                        if (jQuery(this).data("location") != '1' && jQuery(this).data("location") != '2') {
+                            jQuery(this).removeClass("d-none");
+                            jQuery(this).addClass("d-flex");
+                            j++;
+
+                            if (j % 4 === 0) {
+                                jQuery(this).css('margin-right','0');
+                            } else {
+                                jQuery(this).css('margin-right','16px');
+                            }
+
+                        }  else {
+                            jQuery(this).removeClass("d-flex");
+                            jQuery(this).addClass("d-none");
+                        }
+                    });
+                }
+
+                if (filterValue == '1' || filterValue == '2') {
+                    var k = 0;
+                    jQuery(".positions .col-hover").each(function(){
+
+                        if(jQuery(this).data("location") === filterValue) {
+                            jQuery(this).removeClass("d-none").addClass("d-flex");
+                            k++;
+                            if (k % 4 === 0) {
+                                jQuery(this).css('margin-right','0');
+                            } else {
+                                jQuery(this).css('margin-right','16px');
+                            }
+                        } else {
+                            jQuery(this).removeClass("d-flex");
+                            jQuery(this).addClass("d-none");
+                        }
+
+                    });
+                }
 
         });
 

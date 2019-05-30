@@ -32,6 +32,16 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+Route::get('/team', function () {
+    $offers = \App\Offer::all();
+    return view('team',compact('offers'));
+})->name('team');
+
+Route::get('/application', function () {
+    $offers = \App\Offer::all();
+    return view('application',compact('offers'));
+})->name('application');
+
 Route::get('/admin', 'HomeController@index')->name('admin');
 Route::get('/admin/login','Auth\LoginController@showLoginForm') ->name('login');
 Route::post('/admin/login','Auth\LoginController@login');

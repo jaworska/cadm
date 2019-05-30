@@ -58,8 +58,8 @@
             <div class="col-md-3 col-8 why-column pl-0 pr-0">
                 <div class="col-12 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
-                        <span>{!! trans('pages.home.individually') !!})</span>
-                        <p>@lang("pages.home.individually-span")</p>
+                        <span>{!! trans('pages.home.approach') !!}</span>
+                        <p>@lang("pages.home.approach-span")</p>
                     </div>
                 </div>
                 <div class="col-12 why-content d-flex align-items-center justify-content-center col-hover">

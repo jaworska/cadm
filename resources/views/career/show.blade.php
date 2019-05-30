@@ -3,7 +3,7 @@
 @section('content')
     <div class="row mx-auto">
         <div class="col-12">
-            <a href="{{ route('career') }}">@lang('career.back')</a>
+            <a href="{{ route('career') }}">@lang('pages.career.back')</a>
         </div>
 
     </div>

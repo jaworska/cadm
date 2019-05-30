@@ -2,9 +2,9 @@
     <div class="nav_container">
         <div class="row">
             <div class="col-2 logo">
-                <a href="{{ route("home") }}"><img src="img/logo-cadm@3x.png"
-                                 srcset="img/logo-cadm@2x.png 2x,
-             img/logo-cadm@3x.png 3x"></a>
+                <a href="{{ route("home") }}"><img src="/img/logo-cadm@3x.png"
+                                 srcset="/img/logo-cadm@2x.png 2x,
+             /img/logo-cadm@3x.png 3x"></a>
             </div>
             <div class="col-6 text-left">
                 <ul class="pl-0">
@@ -191,10 +191,10 @@
         <div class="row">
             <div class="col-2 text-left careers-menu">
                 <ul class="position-fixed">
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.meet")/a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.friendly")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.application")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.current-job")</a></li>
+                    <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.friendly")</a></li>
+                    <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.current-job")</a></li>
                 </ul>
             </div>
         </div>
