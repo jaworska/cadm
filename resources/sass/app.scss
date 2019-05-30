@@ -569,9 +569,11 @@ body {
 /*******why*******/
 
 .why {
-    background: $light-gray url("../img/why2.png") no-repeat;
-    background-blend-mode: multiply;
+    background: #f6f6f6 url(/images/atomy.png?8f57416…);
+    background-blend-mode: color-burn;
     padding-bottom: 70px;
+    background-size: cover;
+    background-repeat: repeat;
 
     .why-content {
         height: 150px;
@@ -1059,8 +1061,7 @@ body {
 }
 
 .team {
-    background: $white;
-    padding-bottom: 50px;
+   background: $white;
 
     .image-col2 {
         @include padding-x(120px,70px);
@@ -1494,6 +1495,15 @@ body {
 
 .group {
     &.jumbotron {
+        background: url('/img/group-2.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 566px;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
+
         .video-text {
             .text-center {
                 p {
@@ -1602,9 +1612,12 @@ body {
 
         .img-col {
             min-height: 400px;
+            margin-left: 22.666667%;
 
             @media screen and (max-width: $screen-768) {
                 min-height: 300px;
+                margin-left: 10%;
+
             }
 
             .transparent {
@@ -1613,10 +1626,10 @@ body {
         }
 
         img {
-            width: auto;
+            width: 80%;
 
             @media screen and (max-width: $screen-768) {
-                width: 100%;
+                width: 80%;
             }
         }
 
@@ -1741,6 +1754,10 @@ body {
             width: 101px;
         }
 
+        .mielec {
+            width: 118px;
+        }
+
 
     }
 
@@ -1797,6 +1814,12 @@ body {
     }
 
     &.team {
+        background: #f6f6f6 url(/images/atomy.png?8f57416…);
+        background-blend-mode: color-burn;
+        background-size: cover;
+        background-repeat: repeat;
+        padding-bottom: 50px;
+
         .image-col {
             @media screen and (max-width: $screen-768) {
                 @include padding-x(0, 0);
@@ -1883,7 +1906,7 @@ body {
     }
 
     &.values {
-        background: linear-gradient(to bottom, rgba(5, 5, 5, 0.46), rgba(0, 0, 0, 0)),url(/images/join.jpeg?0154737…);
+        background: url('/img/group-31.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         @include padding-y(100px,160px);
@@ -2203,7 +2226,7 @@ body {
 
 
     &.grants {
-        background: linear-gradient(to bottom, rgba(5, 5, 5, 0.46), rgba(0, 0, 0, 0)),url(/images/join.jpeg?0154737…);
+        background: url('/img/group-11.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         @include padding-y(43px,43px);
@@ -2274,7 +2297,11 @@ body {
         }
 
         &.partners {
-            background: $light-gray;
+            background: #f6f6f6 url(/images/atomy.png?8f57416…);
+            background-blend-mode: color-burn;
+            padding-bottom: 70px;
+            background-size: cover;
+            background-repeat: repeat;
 
             .logos-partners {
                 @include padding-y(60px,80px);
@@ -2288,11 +2315,40 @@ body {
                         margin-bottom: 50px;
                     }
                 }
+
+                .bw {
+                    mix-blend-mode: multiply;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+
+                .agh {
+                    width: 58px;
+                }
+
+                .fundacja {
+                    width: 243px;
+                }
+
+                .klaster {
+                    width: 156px;
+                }
+
+                .politechnika {
+                    width: 156px;
+                }
             }
         }
     }
 
     &.carousel-group {
+        padding-bottom: 50px;
+
         .carousel-inner {
             overflow: visible;
             left: -240px;
@@ -2306,6 +2362,11 @@ body {
             width: 80%;
             transition: none;
             transform: translate3d(0, 0, 0);
+
+            figure {
+                overflow: hidden;
+                max-height: 230px;
+            }
         }
 
         .carousel-control-prev, .carousel-control-next {
@@ -2367,7 +2428,16 @@ body {
     }
 
     &.jumbotron {
-        max-height: 50vh;
+        background: url('/img/services-tlo-gradient.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 408px;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
 
         .video-text {
             .text-center {
@@ -2584,32 +2654,32 @@ body {
     }
 
     .automotive-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img3.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
     }
 
     .rolling-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img1.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
     }
 
     .maritime-img {
-         background: url("/img/join.jpeg");
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         min-height: 250px;
+        background: url("/img/sectors-img2.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 250px;
      }
 
     .aerospace-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img2.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
@@ -2813,6 +2883,18 @@ body {
 }
 
 .career {
+    &.jumbotron {
+        background: url('/img/services-tlo-gradient.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 408px;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
+
     .positions-container {
         @media screen and (min-width: $screen-1440) {
             max-width: 1440px;

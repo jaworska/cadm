@@ -2,9 +2,6 @@
 
 @section('content')
     <div class="jumbotron video_main services">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="img/movie.webm" type="video/webm">
-        </video>
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
