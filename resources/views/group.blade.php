@@ -2,9 +2,6 @@
 
 @section('content')
     <div class="jumbotron video_main group">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="img/movie.webm" type="video/webm">
-        </video>
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
@@ -87,9 +84,9 @@
                 <div class="col-6 text-md-left text-center grow-click proj">
                     <span>@lang('pages.group.num-projects')</span>
                 </div>
-                <div class="col-md-8 offset-md-2 col-12 d-flex img-col">
-                    <img src="img/group_wykres.JPG" class="img-project position-absolute transparent"/>
-                    <img src="img/group_wykres.JPG" class="img-employee position-absolute"/>
+                <div class="col-md-8 col-12 d-flex img-col">
+                    <img src="img/projects.png" class="img-project position-absolute transparent"/>
+                    <img src="img/employees.png" class="img-employee position-absolute"/>
                 </div>
             </div>
         </div>
@@ -99,28 +96,28 @@
         <div class="row text-center">
             <div class="col-md-6 col-12 logos-col">
                 <div class="col-12 mb-4">
-                    <img src="img/volkswagen.png" class="bw volkswagen">
-                    <img src="img/varroc.png" class="bw varroc">
-                    <img src="img/magna.png" class="bw magna">
-                    <img src="img/alstom-logo.png" class="bw alstom-logo">
+                    <img src="img/volkswagen2.png" class="bw volkswagen">
+                    <img src="img/varroc2.png" class="bw varroc">
+                    <img src="img/magna2.png" class="bw magna">
+                    <img src="img/alstom-logo2.png" class="bw alstom-logo">
                 </div>
                 <div class="col-12 mb-4">
-                    <img src="img/aptiv-logo@2x.png" class="bw aptiv-logo">
-                    <img src="img/csi@2x.png" class="bw csi">
-                    <img src="img/semcon.png" class="bw semcon">
-                    <img src="img/saargummi.png" class="bw saargummi">
+                    <img src="img/aptiv2.png" class="bw aptiv-logo">
+                    <img src="img/csi2.png" class="bw csi">
+                    <img src="img/semcon2.png" class="bw semcon">
+                    <img src="img/saargummi2.png" class="bw saargummi">
                 </div>
                 <div class="col-12 mb-4">
-                    <img src="img/valmet.png" class="bw valmet">
-                    <img src="img/ktp.png" class="bw ktp">
-                    <img src="img/antolin.png" class="bw antolin">
-                    <img src="img/yanfeng.png" class="bw yanfeng">
+                    <img src="img/valmet2.png" class="bw valmet">
+                    <img src="img/ktp2.png" class="bw ktp">
+                    <img src="img/antolin2.png" class="bw antolin">
+                    <img src="img/yanfeng2.png" class="bw yanfeng">
                 </div>
                 <div class="col-12">
-                    <img src="img/bos.png" class="bw bos">
-                    <img src="img/phiaro.png" class="bw phiaro">
-                    <img src="img/stogda.png" class="bw stogda">
-                    <img src="img/stogda.png" class="bw stogda">
+                    <img src="img/bos2.png" class="bw bos">
+                    <img src="img/phiaro2.png" class="bw phiaro">
+                    <img src="img/stogda2.png" class="bw stogda">
+                    <img src="img/mielec2.png" class="bw mielec">
                 </div>
             </div>
             <div class="col-md-6 col-12 text-logos">
@@ -306,7 +303,7 @@
     <div class="container-fluid group ethics">
         <div class="row">
             <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1">
-                <img src="img/join.jpeg" class=""/>
+                <img src="img/group-4.jpg" class=""/>
             </div>
             <div class="col-md-7 col-12 order-sm-1 order-md-2">
                 <div class="text-left title-big">
@@ -332,7 +329,7 @@
     </div>
 
     <div class="container-fluid group grants">
-        <div class="container">
+        <div class="container faded">
             <div class="row">
                 <div class="col-12">
                     <div class="title-big">
@@ -366,27 +363,27 @@
 
                 <div class="carousel-item active">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(77).jpg" class="img-fluid">
+                        <img src="/img/img-group1.jpg" class="img-fluid position-relative img-top">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg" class="img-fluid">
+                        <img src="/img/img-group2.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" class="img-fluid">
+                        <img src="/img/img-group3.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid">
+                        <img src="/img/img-group4.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" class="img-fluid">
+                        <img src="/img/img-group5.jpg" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -408,13 +405,16 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group5.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group3.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/img-group2.jpg" alt="">
                 </div>
             </div>
 
@@ -440,16 +440,16 @@
             </div>
             <div class="row logos-partners">
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="img/agh2.png" class="bw agh">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="img/fundacja2.png" class="bw fundacja">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="img/klaster2.png" class="bw klaster">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="img/politechnika2.png" class="bw politechnika">
                 </div>
             </div>
         </div>

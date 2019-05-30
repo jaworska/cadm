@@ -1,10 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="jumbotron video_main services career">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="img/movie.webm" type="video/webm">
-        </video>
+    <div class="jumbotron video_main services career application">
         <div class="container-fluid video-text position-absolute">
             <div class="row">
                 <div class="col-md-10 col-sm-12 offset-md-1 text-center">
@@ -64,8 +61,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 position-absolute overflow-hidden">
-                    <div class="col-12 d-flex active">
+                <div class="col-12 position-absolute overflow-hidden active">
+                    <div class="col-12 d-flex">
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
                             <div class="text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
                                 <span>@lang('pages.career.apply-for')</span>
@@ -164,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 position-absolute overflow-hidden active-mobile pr-0 pl-0 after-border">
+                <div class="col-12 position-absolute overflow-hidden active-mobile pr-0 pl-0">
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
                         <div class="text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                             <span>@lang('pages.career.find')</span>
@@ -209,7 +206,7 @@
                 </div>
 
                 </div>
-                <div class="col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center welcome-timeline">
                     <div class="welcome">
                         <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center">
                             <p class="bold">@lang('pages.career.welcome')</p>
@@ -223,9 +220,9 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career img-text">
+    <div class="container-fluid sectors career application-block img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 practical-img">
             </div>
             <div class="col-md-7 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-big">
@@ -257,7 +254,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career text-img">
+    <div class="container-fluid sectors career application-block text-img">
         <div class="row">
             <div class="col-md-6 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-2">
@@ -276,15 +273,15 @@
                 </div>
                 <p class="more-text">{!! trans('pages.career.prepare6') !!}</p>
             </div>
-            <div class="col-md-6 col-12 order-sm-1 order-md-2 pr-0 rolling-img">
+            <div class="col-md-6 col-12 order-sm-1 order-md-2 pr-0 prepare-img">
                 {{--<img src="img/join.jpeg" class=""/>--}}
             </div>
         </div>
     </div>
 
-    <div class="container-fluid sectors career img-text">
+    <div class="container-fluid sectors career application-block img-text">
         <div class="row">
-            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
+            <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 trying-img">
             </div>
             <div class="col-md-7 col-12 order-sm-2 order-md-2 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-2">
