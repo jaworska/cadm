@@ -52,7 +52,7 @@
             <div class="offset-2 col-10 services-menu">
                 <div>
                     <ul>
-                        <li class="bold">@lang("pages.navigation.concept")</li>
+                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.concept")</a></li>
                         <li><a href="#">@lang("pages.navigation.benchmarking")</a></li>
                         <li><a href="#">@lang("pages.navigation.product")</a></li>
                         <li><a href="#">@lang("pages.navigation.sales")</a></li>
@@ -65,7 +65,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">@lang("pages.navigation.development")</li>
+                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.development")</a></li>
                         <li><a href="#">@lang("pages.navigation.cas")</a></li>
                         <li><a href="#">@lang("pages.navigation.cad")</a></li>
                         <li><a href="#">@lang("pages.navigation.apqp")</a></li>
@@ -78,7 +78,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">@lang("pages.navigation.production")</li>
+                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.production")</a></li>
                         <li><a href="#">@lang("pages.navigation.mold")</a></li>
                         <li><a href="#">@lang("pages.navigation.tooling")</a></li>
                         <li><a href="#">@lang("pages.navigation.gauges")</a></li>
@@ -91,7 +91,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold">@lang("pages.navigation.management")</li>
+                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.management")</a></li>
                         <li><a href="#">@lang("pages.navigation.project-management")</a></li>
                         <li><a href="#">@lang("pages.navigation.interim-management")</a></li>
                         <li><a href="#">@lang("pages.navigation.supplier")</a></li>

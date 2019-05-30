@@ -74,10 +74,17 @@ body {
     }
 }
 
+.btn {
+    &:hover {
+        box-shadow: 1px 3px 12px 3px rgba(233, 92, 27, 0.1) !important;
+    }
+}
+
 #nav {
     background: $white;
     height: 64px;
     z-index: 600;
+    box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.02);
 
     .nav_container {
         height: 64px;
@@ -138,6 +145,11 @@ body {
                 font-size: 14px;
                 font-weight: normal;
                 letter-spacing: 0.4px;
+
+                &:hover {
+                    color: $main-orange;
+                    border-bottom: 0px solid transparent;
+                }
             }
         }
     }
@@ -166,6 +178,11 @@ body {
                         line-height: 2;
                         letter-spacing: 0.4px;
                         color: $gray-drop;
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+                        }
 
                         span {
                             padding-top: 15px;
@@ -218,6 +235,11 @@ body {
                         letter-spacing: 0.4px;
                         color: $gray-drop;
 
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+                        }
+
                         span {
                             padding-top: 15px;
                         }
@@ -237,7 +259,25 @@ body {
         margin-top: -1px;
         border-top: 1px solid $light-gray;
 
+
         .sectors-menu {
+            .rolling, .maritime {
+                a {
+                    &:hover {
+                        path {
+                            stroke: $main-orange;
+                            fill: $main-orange;
+
+                        }
+
+                        polygon {
+                            fill: $main-orange;
+                            stroke: $main-orange;
+                        }
+                    }
+                }
+            }
+
             ul {
                 li {
                     a {
@@ -250,6 +290,21 @@ body {
                         justify-items: center;
                         display: inline-grid;
 
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            path {
+                                fill: $main-orange;
+                            }
+
+                            polygon {
+                                fill: $main-orange;
+                            }
+
+                        }
+
                         span {
                             padding-top: 15px;
                         }
@@ -260,11 +315,13 @@ body {
 
 
         path {
-            fill: #212529;
+            fill: $polygon-fill;
+
         }
 
         polygon {
-            fill: #212529;
+            fill: $polygon-fill;
+
         }
 
         .automotive {
@@ -403,7 +460,7 @@ body {
         }
 
         .video-text {
-            top: 46%;
+            top: 42%;
 
             .text-center {
                 text-transform: uppercase;
@@ -535,6 +592,17 @@ body {
 
     .h {
         @include svg-img(36px, 36px)
+    }
+
+    .bw {
+        mix-blend-mode: multiply;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: none;
+            filter: none;
+        }
     }
 
 
@@ -745,8 +813,7 @@ body {
 
 .companies {
     background: $white;
-    padding-top: 50px;
-    padding-bottom: 1px;
+    @include padding-y(70px,1px);
     @include padding-x(120px,120px);
 
     @media screen and (max-width: $screen-768) {
@@ -1627,6 +1694,7 @@ body {
 
         img {
             width: 80%;
+            background: $white;
 
             @media screen and (max-width: $screen-768) {
                 width: 80%;
@@ -2233,7 +2301,7 @@ body {
 
         .container {
             background: $white;
-            opacity: 0.95;
+            opacity: 0;
             @include padding-y(33px,33px);
         }
 
@@ -2366,6 +2434,14 @@ body {
             figure {
                 overflow: hidden;
                 max-height: 230px;
+
+                img {
+                    max-width: 120%;
+                }
+
+                .img-top {
+                    top: -200px;
+                }
             }
         }
 
@@ -2396,6 +2472,10 @@ body {
                 width: 100%;
                 height: 100%;
             }
+        }
+
+        .carousel-item {
+            height: 220px;
         }
 
         .carousel-control-prev, .carousel-control-next {
@@ -2789,10 +2869,20 @@ body {
 
 .contact {
     &.why {
-        background: $light-gray;
+        background: #f6f6f6 url('/img/atomy.png');
+        background-blend-mode: color-burn;
+        padding-bottom: 70px;
+        background-size: cover;
+        background-repeat: repeat;
 
         @media screen and (max-width: $screen-768) {
             @include padding-x(15px,15px);
+        }
+
+        #map {
+            width: 100%;
+            height: 210px;
+            left: unset;
         }
 
         .why_span {
@@ -2884,10 +2974,10 @@ body {
 
 .career {
     &.jumbotron {
-        background: url('/img/services-tlo-gradient.jpg');
+        background: url('/img/career-bg.jpg');
         background-repeat: no-repeat;
         height: -webkit-fill-available;
-        max-height: 408px;
+        max-height: 550px;
         background-size: cover;
         background-position: center;
 
@@ -3451,13 +3541,11 @@ body {
             padding-top: 80px;
             top: -80px;
 
-            .after-border {
-                &::after {
-                    @include after-before(3px,110%);
-                    margin-top: -20px;
-                    background: $main-orange;
-                    z-index: 0;
-                }
+            &::after {
+                @include after-before(3px,110%);
+                margin-top: -20px;
+                background: $main-orange;
+                z-index: 0;
             }
 
             .why-content {
@@ -3477,6 +3565,8 @@ body {
 
         .active {
             height: 0;
+            max-height: 1200px;
+
             .col-left {
                 padding-right: 30px;
                 border-right: 3px solid $main-orange;
@@ -4111,6 +4201,14 @@ body {
 }
 
 .team {
+    &.career {
+        &.jumbotron {
+            height: unset;
+            background: none;
+        }
+
+    }
+
     &.breadcrumbs {
         background: $white;
         @include padding-y(24px,5px);
@@ -4124,9 +4222,7 @@ body {
             text-decoration: none;
 
             &:last-of-type {
-                @media screen and (max-width: $screen-768) {
-                    font-weight: 500;
-                }
+                font-weight: 500;
             }
 
             &::after {
@@ -4243,6 +4339,10 @@ body {
         .team-img {
             max-height: 285px;
             overflow: hidden;
+
+            img {
+                width: 100%;
+            }
         }
 
         &:hover {
@@ -4273,6 +4373,8 @@ body {
     }
 
     .carousel-control-prev, .carousel-control-next {
+        opacity: 1;
+
         img {
             @include area(36px,36px);
         }

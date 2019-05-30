@@ -20,13 +20,13 @@
         <div class="col-12 d-flex align-items-md-center flex-sm-column flex-xs-column flex-md-row justify-content-between padding-container">
             <div class="text-left d-flex float-left align-items-center justify-content-between">
                 <span>@lang("pages.home.trusted")</span>
-                <img src="img/volkswagen-logo@2x.png" class="volkswagen-logo">
-                <img src="img/varroc-logo@2x.png" class="varroc-logo">
-                <img src="img/magna-logo@2x.png" class="magna-logo">
-                <img src="img/alstom-logo@2x.png" class="alstom-logo">
-                <img src="img/aptiv-logo@2x.png" class="aptiv-logo">
-                <img src="img/csi@2x.png" class="csi">
-                <img src="img/h@2x.png" class="h">
+                <img src="img/volkswagen2.png" class="bw volkswagen-logo">
+                <img src="img/varroc2.png" class="bw varroc-logo">
+                <img src="img/magna2.png" class="bw magna-logo">
+                <img src="img/alstom-logo2.png" class="bw alstom-logo">
+                <img src="img/aptiv2.png" class="bw aptiv-logo">
+                <img src="img/csi2.png" class="bw csi">
+                <img src="img/h2.png" class="bw h">
 
             </div>
             <div class="text-right float-right">

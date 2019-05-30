@@ -127,6 +127,57 @@
 
         });
 
+        //fade grants group
+
+        /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
+
+            /* Check the location of each desired element */
+            $('.faded').each( function(i){
+
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+
+                    $(this).animate({'opacity':'0.95'},1000);
+
+                }
+
+            });
+
+        });
+
+
+        //show porgress
+
+        $(function(){
+            $(window).scroll(function() {
+                var $myDiv = $('.career.application .active');
+                var st = $(this).scrollTop();
+                $myDiv.height( st );
+                if( st == 0 ) {
+                    $myDiv.hide();
+                } else {
+                    $myDiv.show();
+                }
+            }).scroll();
+        });
+
+        $(function(){
+            $(window).scroll(function() {
+                var $myDiv = $('.career.application .active-mobile');
+                var st = $(this).scrollTop();
+                $myDiv.height( st );
+                if( st == 0 ) {
+                    $myDiv.hide();
+                } else {
+                    $myDiv.show();
+                }
+            }).scroll();
+        });
+
         //value circle
 
         jQuery(".values-circle svg, .values-circle .value-title").click(function(){
@@ -185,6 +236,8 @@
                 next.children(':first-child').clone().appendTo($(this));
             }
         });
+
+        // filter
 
         jQuery('.services-toggle').click(function(){
             jQuery(this).find('.why-content').toggleClass('active');

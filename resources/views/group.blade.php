@@ -329,7 +329,7 @@
     </div>
 
     <div class="container-fluid group grants">
-        <div class="container">
+        <div class="container faded">
             <div class="row">
                 <div class="col-12">
                     <div class="title-big">
@@ -363,27 +363,27 @@
 
                 <div class="carousel-item active">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="/img/img-group1.jpg" class="img-fluid">
+                        <img src="/img/img-group1.jpg" class="img-fluid position-relative img-top">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg" class="img-fluid">
+                        <img src="/img/img-group2.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" class="img-fluid">
+                        <img src="/img/img-group3.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid">
+                        <img src="/img/img-group4.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" class="img-fluid">
+                        <img src="/img/img-group5.jpg" class="img-fluid">
                     </figure>
                 </div>
             </div>
@@ -405,13 +405,16 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group5.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group3.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/img-group2.jpg" alt="">
                 </div>
             </div>
 

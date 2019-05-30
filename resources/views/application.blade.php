@@ -61,8 +61,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 position-absolute overflow-hidden">
-                    <div class="col-12 d-flex active">
+                <div class="col-12 position-absolute overflow-hidden active">
+                    <div class="col-12 d-flex">
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
                             <div class="text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
                                 <span>@lang('pages.career.apply-for')</span>
@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 position-absolute overflow-hidden active-mobile pr-0 pl-0 after-border">
+                <div class="col-12 position-absolute overflow-hidden active-mobile pr-0 pl-0">
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
                         <div class="text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                             <span>@lang('pages.career.find')</span>
