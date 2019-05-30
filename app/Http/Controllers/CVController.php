@@ -52,9 +52,10 @@ class CVController extends Controller
         $cv = new CV;
 
         if($cv -> validator($request) -> fails())
-            return back() -> withErrors($cv -> validator($request) -> errors());
+            return back() -> withErrors($cv -> validator($request) -> errors())->withInput($request->all());
 
         $cv -> name = $request -> name;
+        $cv -> surname = $request -> surname;
         $cv -> phone = $request -> phone;
         $cv -> email = $request -> email;
         $cv -> term_1 = $request -> term_1??0;

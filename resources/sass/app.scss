@@ -1566,6 +1566,8 @@ body {
         background-repeat: no-repeat;
         height: -webkit-fill-available;
         max-height: 566px;
+        background-position: center;
+        background-size: cover;
 
         @media screen and (max-width: $screen-768) {
             max-height: 400px;
@@ -3536,6 +3538,10 @@ body {
             height: 36px;
         }
 
+        .welcome-timeline {
+            z-index: 20;
+        }
+
         .active-mobile {
             height: 0;
             padding-top: 80px;
@@ -3545,7 +3551,10 @@ body {
                 @include after-before(3px,110%);
                 margin-top: -20px;
                 background: $main-orange;
-                z-index: 0;
+                z-index: 1;
+                top: 84px;
+                right: 262px;
+                max-height: 1200px;
             }
 
             .why-content {
@@ -4018,8 +4027,8 @@ body {
 
             .custom-control-input:checked ~ .custom-control-label::before {
                 color: $white;
-                border-color: #e9e9e9;
-                background-color: #e9e9e9;
+                border-color: $primary;
+                background-color: $primary;
                 border-radius: 0;
                 width: 16px;
                 height: 16px;
