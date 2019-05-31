@@ -254,11 +254,9 @@
             jQuery(this).addClass('active');
 
             var filterValue =   jQuery(this).data("location");
-            var number = jQuery('#offers_list').children().length;
             $.post('{{ route('career') }}',{
                 _token:'{{ csrf_token() }}',
-                filter: filterValue,
-                number: number
+                filter: filterValue
             }).done(function(e){
                 $('#offers_list').html(e);
             }).fail(function(e){
