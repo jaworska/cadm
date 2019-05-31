@@ -17,11 +17,11 @@
             </div>
             <div class="col-4 text-right">
                 <div class="socials d-inline">
-                    <a href="#"><img src="/img/facebook.svg" class="facebook"></a>
-                    <a href="#"><img src="/img/linkedin.svg" class="linkedin"></a>
-                    <a href="#"><img src="/img/instagram.svg" class="instagram"></a>
+                    <a href="https://www.facebook.com/CADM.Automotive"><img src="/img/facebook-color.svg" class="facebook bw"></a>
+                    <a href="https://www.linkedin.com/company/cadm-automotive"><img src="/img/linkedin-color.svg" class="linkedin bw"></a>
+                    <a href="#"><img src="/img/instagram-color.svg" class="instagram bw"></a>
                 </div>
-                <button type="button" class="btn btn-login">@lang("pages.navigation.login")</button>
+                <a href="{{ route("login") }}" target="_blank" class="btn btn-login">@lang("pages.navigation.login")</a>
                 <span class="lang d-none">@lang("pages.navigation.eng")</span>
                 <span class="lang-arrow position-relative d-none"><img src="/img/orange.svg" class="orange"></span>
             </div>
@@ -31,13 +31,12 @@
         <div class="row">
             <div class="offset-2 col-10 text-left group-menu">
                 <ul class="position-relative">
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.the-group")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.clients")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.values")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.ethics")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.grants")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.help")</a></li>
-                    <li class="position-relative"><a href="#">@lang("pages.navigation.partners")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#customers">@lang("pages.navigation.clients")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#our-values">@lang("pages.navigation.values")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#code-of-ethics">@lang("pages.navigation.ethics")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#eu-grants">@lang("pages.navigation.grants")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#we-love-to-help">@lang("pages.navigation.help")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#partners"">@lang("pages.navigation.partners")</a></li>
                 </ul>
             </div>
         </div>
@@ -52,50 +51,64 @@
             <div class="offset-2 col-10 services-menu">
                 <div>
                     <ul>
-                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.concept")</a></li>
-                        <li><a href="#">@lang("pages.navigation.benchmarking")</a></li>
-                        <li><a href="#">@lang("pages.navigation.product")</a></li>
-                        <li><a href="#">@lang("pages.navigation.sales")</a></li>
-                        <li><a href="#">@lang("pages.navigation.definition")</a></li>
-                        <li><a href="#">@lang("pages.navigation.capacity")</a></li>
-                        <li><a href="#">@lang("pages.navigation.costing")</a></li>
-                        <li><a href="#">@lang("pages.navigation.model")</a></li>
-                        <li><a href="#">@lang("pages.navigation.styling")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.concept")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.benchmarking")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.product")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.sales")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.definition")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.capacity")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.costing")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.model")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.styling")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.development")</a></li>
-                        <li><a href="#">@lang("pages.navigation.cas")</a></li>
-                        <li><a href="#">@lang("pages.navigation.cad")</a></li>
-                        <li><a href="#">@lang("pages.navigation.apqp")</a></li>
-                        <li><a href="#">@lang("pages.navigation.documentation")</a></li>
-                        <li><a href="#">@lang("pages.navigation.prototyping")</a></li>
-                        <li><a href="#">@lang("pages.navigation.test")</a></li>
-                        <li><a href="#">@lang("pages.navigation.electronic-hardware")</a></li>
-                        <li><a href="#">@lang("pages.navigation.electronic-software")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.development")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cas")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cad")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.apqp")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.documentation")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.prototyping")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.test")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.electronic-hardware")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.electronic-software")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.production")</a></li>
-                        <li><a href="#">@lang("pages.navigation.mold")</a></li>
-                        <li><a href="#">@lang("pages.navigation.tooling")</a></li>
-                        <li><a href="#">@lang("pages.navigation.gauges")</a></li>
-                        <li><a href="#">@lang("pages.navigation.launch")</a></li>
-                        <li><a href="#">@lang("pages.navigation.trouble")</a></li>
-                        <li><a href="#">@lang("pages.navigation.transfer")</a></li>
-                        <li><a href="#">@lang("pages.navigation.improvements")</a></li>
-                        <li><a href="#">@lang("pages.navigation.optimization")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.simulation")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.implict")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.explict")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cfd")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.mbd")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.em")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.stackup")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.optical")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.gap")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.thickness")</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="#" class="bold">@lang("pages.navigation.management")</a></li>
-                        <li><a href="#">@lang("pages.navigation.project-management")</a></li>
-                        <li><a href="#">@lang("pages.navigation.interim-management")</a></li>
-                        <li><a href="#">@lang("pages.navigation.supplier")</a></li>
-                        <li><a href="#">@lang("pages.navigation.quality")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.production")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.mold")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.tooling")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.gauges")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.launch")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.trouble")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.transfer")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.improvements")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.optimization")</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.management")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.project-management")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.interim-management")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.supplier")</a></li>
+                        <li><a href="{{ route("services") }}">@lang("pages.navigation.quality")</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,7 +118,7 @@
         <div class="row">
             <div class="col-12 text-center sectors-menu">
                 <ul>
-                    <li class="automotive d-inline position-relative"><a href="#">
+                    <li class="automotive d-inline position-relative"><a href="{{ route("sectors") }}/#automotive">
                             <svg width="80px" height="29px" viewBox="0 0 80 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_homepage_UI" transform="translate(-216.000000, -1446.000000)" fill="#E95C1B" fill-rule="nonzero">
@@ -121,7 +134,7 @@
                             </svg>
                             <span>@lang("pages.navigation.automotive")</span>
                         </a></li>
-                    <li class="rolling d-inline position-relative"><a href="#">
+                    <li class="rolling d-inline position-relative"><a href="{{ route("sectors") }}/#rolling">
                             <svg width="71px" height="33px" viewBox="0 0 71 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_homepage_UI" transform="translate(-539.000000, -1440.000000)" fill="#2C2E34">
@@ -147,7 +160,7 @@
                             </svg>
                             <span>@lang("pages.navigation.rolling")</span>
                         </a></li>
-                    <li class="maritime d-inline position-relative"><a href="#">
+                    <li class="maritime d-inline position-relative"><a href="{{ route("sectors") }}/#maritime">
                             <svg width="64px" height="34px" viewBox="0 0 64 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
                                     <g id="CADM_homepage_UI" transform="translate(-844.000000, -1442.000000)" fill="#2C2E34" fill-rule="nonzero" stroke="#2C2E34" stroke-width="0.5">
@@ -162,7 +175,7 @@
                                 </g>
                             </svg>
                             <span>@lang("pages.navigation.maritime")</span></a></li>
-                    <li class="aerospace d-inline position-relative"><a href="#">
+                    <li class="aerospace d-inline position-relative"><a href="{{ route("sectors") }}/#aerospace">
                             <svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="aerospace/dark" fill="#2C2E34" fill-rule="nonzero">
@@ -172,7 +185,7 @@
                             </svg>
                             <span>@lang("pages.navigation.aerospace")</span>
                         </a></li>
-                    <li class="others d-inline position-relative"><a href="#">
+                    <li class="others d-inline position-relative"><a href="{{ route("sectors") }}/#others">
                             <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                                 <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
                                 <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

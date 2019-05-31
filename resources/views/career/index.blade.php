@@ -4,7 +4,7 @@
     <div class="jumbotron video_main services career">
         <div class="container-fluid video-text position-absolute">
             <div class="row">
-                <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+                <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center">
                     <p class="position-relative">@lang('pages.career.jumbotron')</p>
                 </div>
             </div>
@@ -23,17 +23,17 @@
         </div>
         <div class="container margin-top">
             <div class="row services-row align-items-baseline justify-content-sm-between">
-                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center">
+                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center click-meet">
                     <div class="text-center why-content d-flex align-items-center justify-content-center col-hover">
                         <span>@lang('pages.career.meet')</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center">
+                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center click-application">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.career.application')</span>
                     </div>
                 </div>
-                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center">
+                <div class="col-md-4 col-11 pl-0 pr-0 d-flex justify-content-center click-positions">
                     <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.career.positions')</span>
                     </div>

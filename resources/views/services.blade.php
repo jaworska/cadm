@@ -4,7 +4,7 @@
     <div class="jumbotron video_main services">
         <div class="container-fluid video-text position-absolute">
             <div class="row">
-                <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+                <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center">
                     <p class="position-relative">{!! trans('pages.group.jumbotron') !!}</p>
                 </div>
             </div>

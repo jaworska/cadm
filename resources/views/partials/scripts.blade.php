@@ -116,16 +116,30 @@
             jQuery(this).find("span").addClass("active");
 
             if (jQuery(this).hasClass("empl")) {
-                jQuery(".img-project").hide( "slide", {direction: "right" }, 500 );
-                jQuery(".img-employee").show( "slide", {direction: "left" }, 500 );
+                jQuery(".img-project").animate({'opacity':'0'},800);
+                jQuery(".img-employee").animate({'opacity':'1'},800);
             }
 
             if (jQuery(this).hasClass("proj")) {
-                jQuery(".img-employee").hide( "slide", {direction: "left" }, 500 );
-                jQuery(".img-project").removeClass("transparent").show( "slide", {direction: "right" }, 500 );
+                jQuery(".img-employee").animate({'opacity':'0'},800);
+                jQuery(".img-project").animate({'opacity':'1'},800);
             }
 
         });
+
+        //click boxes career
+        jQuery(".click-meet").click(function() {
+            document.location.href = '/team';
+        });
+
+        jQuery(".click-application").click(function() {
+            document.location.href = '/application';
+        });
+
+        jQuery(".click-positions").click(function() {
+            document.location.href = '/career';
+        });
+
 
         //fade grants group
 
@@ -179,29 +193,29 @@
                 jQuery(".values-box.active").removeClass("disactive");
             }
 
-            if(jQuery(this).hasClass("lock")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("lock")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("puzzle")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("puzzle")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("quality")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("quality")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("arrow-up")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("arrow-up")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("chats")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("chats")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("bulb")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("bulb")) {--}}
+                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');--}}
+            {{--}--}}
 
         });
 
@@ -263,6 +277,14 @@
             }).fail(function(e){
                 console.log(e);
             });
+        });
+
+        //get started button home page
+
+        jQuery(".scroll-down").click(function() {
+            jQuery('html, body').animate({
+                scrollTop: $("#why-cadm").offset().top
+            }, 800);
         });
 
     });
@@ -550,14 +572,15 @@
 
             var infoWindow = new google.maps.InfoWindow();
 
-            google.maps.event.addListener( map,'click', (function(marker){
-                return function() {
-                    // infoWindow.close();
-                    //Change the marker icon
-                    marker.setIcon("img/dot.png");
-                    marker.setZIndex(21);
-                };
-            })(marker));
+            // google.maps.event.addListener( map,'click', (function(marker){
+            //     return function() {
+            //         // infoWindow.close();
+            //         //Change the marker icon
+            //         marker.setIcon("img/dot.png");
+            //         console.log(jQuery(this));
+            //         marker.setZIndex(21);
+            //     };
+            // })(marker));
 
 
             google.maps.event.addListener(marker,'click', (function(marker,content,infoWindow){
@@ -570,7 +593,11 @@
                     document.getElementById('map-container').innerHTML = content;
                     infoWindow.setContent(content);
                     // infoWindow.open(map,marker);
-                    marker.setIcon("img/dot-4.png");
+                    // console.log(jQuery(this));
+                    console.log(marker);
+                    if (marker.icon == 'img/dot-5.png') marker.setIcon("img/dot-2.png");
+                    else marker.setIcon("img/dot-4.png");
+
                     marker.setZIndex(-20);
                 };
             })(marker,content,infoWindow));
@@ -579,7 +606,16 @@
     }
 
     function markAsDot(element, index, array) {
-        element.setIcon("img/dot.png");
+
+            //console.log(locations[i]);
+
+            if (index === 0) {
+                element.setIcon("img/dot-5.png");
+            }
+            else {
+                element.setIcon("img/dot.png");
+            }
+
         element.setZIndex(21);
     }
 
