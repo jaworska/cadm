@@ -74,10 +74,17 @@ body {
     }
 }
 
+.btn {
+    &:hover {
+        box-shadow: 1px 3px 12px 3px rgba(233, 92, 27, 0.1) !important;
+    }
+}
+
 #nav {
     background: $white;
     height: 64px;
     z-index: 600;
+    box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
     .nav_container {
         height: 64px;
@@ -138,12 +145,18 @@ body {
                 font-size: 14px;
                 font-weight: normal;
                 letter-spacing: 0.4px;
+
+                &:hover {
+                    color: $main-orange;
+                    border-bottom: 0px solid transparent;
+                }
             }
         }
     }
 
     .nav-drop-careers {
         height: 150px;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
     }
 
     .nav-drop-group, .nav-drop-careers {
@@ -153,6 +166,7 @@ body {
         padding-left: 40px;
         margin-top: -1px;
         border-top: 1px solid $light-gray;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
         .group-menu, .careers-menu {
             ul {
@@ -166,6 +180,11 @@ body {
                         line-height: 2;
                         letter-spacing: 0.4px;
                         color: $gray-drop;
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+                        }
 
                         span {
                             padding-top: 15px;
@@ -184,6 +203,7 @@ body {
         @include margin-x(-15px, -15px);
         margin-top: -1px;
         border-top: 1px solid $light-gray;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
         .range {
             border-bottom: 1px solid #f6f6f6;
@@ -200,7 +220,7 @@ body {
             }
 
             div {
-                max-width: 190px;
+                max-width: 230px;
                 width: 100%;
             }
 
@@ -217,6 +237,11 @@ body {
                         line-height: 2;
                         letter-spacing: 0.4px;
                         color: $gray-drop;
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+                        }
 
                         span {
                             padding-top: 15px;
@@ -237,7 +262,25 @@ body {
         margin-top: -1px;
         border-top: 1px solid $light-gray;
 
+
         .sectors-menu {
+            .rolling, .maritime {
+                a {
+                    &:hover {
+                        path {
+                            stroke: $main-orange;
+                            fill: $main-orange;
+
+                        }
+
+                        polygon {
+                            fill: $main-orange;
+                            stroke: $main-orange;
+                        }
+                    }
+                }
+            }
+
             ul {
                 li {
                     a {
@@ -250,6 +293,21 @@ body {
                         justify-items: center;
                         display: inline-grid;
 
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            path {
+                                fill: $main-orange;
+                            }
+
+                            polygon {
+                                fill: $main-orange;
+                            }
+
+                        }
+
                         span {
                             padding-top: 15px;
                         }
@@ -260,11 +318,13 @@ body {
 
 
         path {
-            fill: #212529;
+            fill: $polygon-fill;
+
         }
 
         polygon {
-            fill: #212529;
+            fill: $polygon-fill;
+
         }
 
         .automotive {
@@ -340,7 +400,12 @@ body {
 
         a {
             color: $gray-nav;
-            padding-left: 20px;
+            margin-left: 20px;
+            filter: brightness(10%);
+
+            &:hover {
+                filter: brightness(100%);
+            }
         }
     }
 
@@ -362,13 +427,27 @@ body {
         @include area(8px,16px);
     }
 
+    .bw {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+
 }
 
 /*******video*******/
 
 .jumbotron {
+    p {
+        @include padding-x(70px,70px);
+    }
+
     &.video_main {
-        max-height: 100vh;
+        max-height: 86vh;
         height: auto;
         background: $light-gray;
         margin-bottom: 0;
@@ -403,7 +482,7 @@ body {
         }
 
         .video-text {
-            top: 46%;
+            top: 42%;
 
             .text-center {
                 text-transform: uppercase;
@@ -466,7 +545,6 @@ body {
 .brands {
     @include padding-y(10px,20px);
     background-color: $light-gray;
-    bottom: 0;
     border-bottom: 2px solid #e3e3e3;
 
     @media screen and (max-width: $screen-768) {
@@ -537,6 +615,17 @@ body {
         @include svg-img(36px, 36px)
     }
 
+    .bw {
+        mix-blend-mode: multiply;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+
 
         .text-right {
         img {
@@ -569,9 +658,11 @@ body {
 /*******why*******/
 
 .why {
-    background: $light-gray url("../img/why2.png") no-repeat;
-    background-blend-mode: multiply;
+    background: #f6f6f6 url(/images/atomy.png?8f57416…);
+    background-blend-mode: color-burn;
     padding-bottom: 70px;
+    background-size: cover;
+    background-repeat: repeat;
 
     .why-content {
         height: 150px;
@@ -743,8 +834,7 @@ body {
 
 .companies {
     background: $white;
-    padding-top: 50px;
-    padding-bottom: 1px;
+    @include padding-y(70px,1px);
     @include padding-x(120px,120px);
 
     @media screen and (max-width: $screen-768) {
@@ -1059,8 +1149,7 @@ body {
 }
 
 .team {
-    background: $white;
-    padding-bottom: 50px;
+   background: $white;
 
     .image-col2 {
         @include padding-x(120px,70px);
@@ -1494,6 +1583,17 @@ body {
 
 .group {
     &.jumbotron {
+        background: url('/img/group-2.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 566px;
+        background-position: center;
+        background-size: cover;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
+
         .video-text {
             .text-center {
                 p {
@@ -1505,6 +1605,15 @@ body {
 
     .bold {
         font-weight: 500;
+    }
+
+    .forbes {
+        color: $main-orange;
+
+        &:hover {
+            color: $main-orange;
+            text-decoration: none;
+        }
     }
 
     .title-big {
@@ -1602,9 +1711,12 @@ body {
 
         .img-col {
             min-height: 400px;
+            margin-left: 22.666667%;
 
             @media screen and (max-width: $screen-768) {
                 min-height: 300px;
+                margin-left: 10%;
+
             }
 
             .transparent {
@@ -1613,10 +1725,10 @@ body {
         }
 
         img {
-            width: auto;
+            width: 80%;
 
             @media screen and (max-width: $screen-768) {
-                width: 100%;
+                width: 80%;
             }
         }
 
@@ -1741,6 +1853,10 @@ body {
             width: 101px;
         }
 
+        .mielec {
+            width: 118px;
+        }
+
 
     }
 
@@ -1797,6 +1913,12 @@ body {
     }
 
     &.team {
+        background: #f6f6f6 url(/images/atomy.png?8f57416…);
+        background-blend-mode: color-burn;
+        background-size: cover;
+        background-repeat: repeat;
+        padding-bottom: 50px;
+
         .image-col {
             @media screen and (max-width: $screen-768) {
                 @include padding-x(0, 0);
@@ -1883,7 +2005,7 @@ body {
     }
 
     &.values {
-        background: linear-gradient(to bottom, rgba(5, 5, 5, 0.46), rgba(0, 0, 0, 0)),url(/images/join.jpeg?0154737…);
+        background: url('/img/group-31.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         @include padding-y(100px,160px);
@@ -2203,14 +2325,14 @@ body {
 
 
     &.grants {
-        background: linear-gradient(to bottom, rgba(5, 5, 5, 0.46), rgba(0, 0, 0, 0)),url(/images/join.jpeg?0154737…);
+        background: url('/img/group-11.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         @include padding-y(43px,43px);
 
         .container {
             background: $white;
-            opacity: 0.95;
+            opacity: 0;
             @include padding-y(33px,33px);
         }
 
@@ -2274,7 +2396,11 @@ body {
         }
 
         &.partners {
-            background: $light-gray;
+            background: #f6f6f6 url(/images/atomy.png?8f57416…);
+            background-blend-mode: color-burn;
+            padding-bottom: 70px;
+            background-size: cover;
+            background-repeat: repeat;
 
             .logos-partners {
                 @include padding-y(60px,80px);
@@ -2288,11 +2414,40 @@ body {
                         margin-bottom: 50px;
                     }
                 }
+
+                .bw {
+                    mix-blend-mode: multiply;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+
+                    &:hover {
+                        -webkit-filter: none;
+                        filter: none;
+                    }
+                }
+
+                .agh {
+                    width: 58px;
+                }
+
+                .fundacja {
+                    width: 243px;
+                }
+
+                .klaster {
+                    width: 156px;
+                }
+
+                .politechnika {
+                    width: 156px;
+                }
             }
         }
     }
 
     &.carousel-group {
+        padding-bottom: 50px;
+
         .carousel-inner {
             overflow: visible;
             left: -240px;
@@ -2306,6 +2461,19 @@ body {
             width: 80%;
             transition: none;
             transform: translate3d(0, 0, 0);
+
+            figure {
+                overflow: hidden;
+                max-height: 230px;
+
+                img {
+                    max-width: 120%;
+                }
+
+                .img-top {
+                    top: -200px;
+                }
+            }
         }
 
         .carousel-control-prev, .carousel-control-next {
@@ -2335,6 +2503,10 @@ body {
                 width: 100%;
                 height: 100%;
             }
+        }
+
+        .carousel-item {
+            height: 220px;
         }
 
         .carousel-control-prev, .carousel-control-next {
@@ -2367,7 +2539,16 @@ body {
     }
 
     &.jumbotron {
-        max-height: 50vh;
+        background: url('/img/services-tlo-gradient.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 408px;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
 
         .video-text {
             .text-center {
@@ -2584,32 +2765,32 @@ body {
     }
 
     .automotive-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img3.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
     }
 
     .rolling-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img1.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
     }
 
     .maritime-img {
-         background: url("/img/join.jpeg");
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-         min-height: 250px;
+        background: url("/img/sectors-img2.jpg");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 250px;
      }
 
     .aerospace-img {
-        background: url("/img/join.jpeg");
-        background-position: center;
+        background: url("/img/sectors-img2.jpg");
+        background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 250px;
@@ -2719,10 +2900,20 @@ body {
 
 .contact {
     &.why {
-        background: $light-gray;
+        background: #f6f6f6 url('/img/atomy.png');
+        background-blend-mode: color-burn;
+        padding-bottom: 70px;
+        background-size: cover;
+        background-repeat: repeat;
 
         @media screen and (max-width: $screen-768) {
             @include padding-x(15px,15px);
+        }
+
+        #map {
+            width: 100%;
+            height: 210px;
+            left: unset;
         }
 
         .why_span {
@@ -2813,9 +3004,59 @@ body {
 }
 
 .career {
+    &.jumbotron {
+        background: url('/img/career-bg.jpg');
+        background-repeat: no-repeat;
+        height: -webkit-fill-available;
+        max-height: 550px;
+        background-size: cover;
+        background-position: center;
+
+        @media screen and (max-width: $screen-768) {
+            max-height: 400px;
+        }
+
+        &.application {
+            background: url('/img/careers-tlo-gradient.jpg');
+            background-size: cover;
+            max-height: 500px;
+
+            @media screen and (max-width: $screen-768) {
+                background-position: center;
+            }
+        }
+    }
+
     .positions-container {
         @media screen and (min-width: $screen-1440) {
             max-width: 1440px;
+        }
+    }
+
+    &.application-block {
+
+        .practical-img {
+            background: url('/img/application-img1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
+        }
+
+        .prepare-img {
+            background: url('/img/application-img3.jpg');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
+        }
+
+        .trying-img {
+            background: url('/img/application-img2.jpg');
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 250px;
         }
     }
 
@@ -3326,18 +3567,23 @@ body {
             height: 36px;
         }
 
+        .welcome-timeline {
+            z-index: 20;
+        }
+
         .active-mobile {
             height: 0;
             padding-top: 80px;
             top: -80px;
 
-            .after-border {
-                &::after {
-                    @include after-before(3px,110%);
-                    margin-top: -20px;
-                    background: $main-orange;
-                    z-index: 0;
-                }
+            &::after {
+                @include after-before(3px,110%);
+                margin-top: -20px;
+                background: $main-orange;
+                z-index: 1;
+                top: 84px;
+                right: 262px;
+                max-height: 1200px;
             }
 
             .why-content {
@@ -3357,6 +3603,8 @@ body {
 
         .active {
             height: 0;
+            max-height: 1200px;
+
             .col-left {
                 padding-right: 30px;
                 border-right: 3px solid $main-orange;
@@ -3991,6 +4239,14 @@ body {
 }
 
 .team {
+    &.career {
+        &.jumbotron {
+            height: unset;
+            background: none;
+        }
+
+    }
+
     &.breadcrumbs {
         background: $white;
         @include padding-y(24px,5px);
@@ -4004,9 +4260,7 @@ body {
             text-decoration: none;
 
             &:last-of-type {
-                @media screen and (max-width: $screen-768) {
-                    font-weight: 500;
-                }
+                font-weight: 500;
             }
 
             &::after {
@@ -4123,6 +4377,10 @@ body {
         .team-img {
             max-height: 285px;
             overflow: hidden;
+
+            img {
+                width: 100%;
+            }
         }
 
         &:hover {
@@ -4153,6 +4411,8 @@ body {
     }
 
     .carousel-control-prev, .carousel-control-next {
+        opacity: 1;
+
         img {
             @include area(36px,36px);
         }

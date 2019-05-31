@@ -45,13 +45,11 @@
             <button type="button" class="btn btn-see">@lang("pages.navigation.locations")</button>
         </div>
         <div class="col-2 nav-footer">
-            <ul>
-                <li class="bold"><p>@lang("pages.navigation.management")</p></li>
-                <li><a href="#">@lang("pages.navigation.project-management")</a></li>
-                <li><a href="#">@lang("pages.navigation.interim-management")</a></li>
-                <li><a href="#">@lang("pages.navigation.supplier")</a></li>
-                <li><a href="#">@lang("pages.navigation.quality")</a></li>
-            </ul>
+            <div class="socials d-flex">
+                <a href="#"><img src="/img/fb.png" class="fb"></a>
+                <a href="#"><img src="/img/in.png" class="in"></a>
+                <a href="#"><img src="/img/insta.png" class="insta"></a>
+            </div>
         </div>
     </div>
     <div class="row range">
@@ -62,7 +60,7 @@
     <div class="row">
         <div class="col-2 nav-footer offset-md-2">
             <ul>
-                <li class="bold">@lang("pages.navigation.concept")</li>
+                <li class="bold"><a href="#" class="bold">@lang("pages.navigation.concept")</a></li>
                 <li><a href="#">@lang("pages.navigation.benchmarking")</a></li>
                 <li><a href="#">@lang("pages.navigation.product")</a></li>
                 <li><a href="#">@lang("pages.navigation.sales")</a></li>
@@ -75,7 +73,7 @@
         </div>
         <div class="col-2 nav-footer">
             <ul>
-                <li class="bold">@lang("pages.navigation.development")</li>
+                <li class="bold"><a href="#" class="bold">@lang("pages.navigation.development")</a></li>
                 <li><a href="#">@lang("pages.navigation.cas")</a></li>
                 <li><a href="#">@lang("pages.navigation.cad")</a></li>
                 <li><a href="#">@lang("pages.navigation.apqp")</a></li>
@@ -88,7 +86,7 @@
         </div>
         <div class="col-2 nav-footer">
             <ul>
-                <li class="bold">@lang("pages.navigation.simulation")</li>
+                <li class="bold"><a href="#" class="bold">@lang("pages.navigation.simulation")</a></li>
                 <li><a href="#">@lang("pages.navigation.implict")</a></li>
                 <li><a href="#">@lang("pages.navigation.explict")</a></li>
                 <li><a href="#">@lang("pages.navigation.cfd")</a></li>
@@ -102,7 +100,7 @@
         </div>
         <div class="col-2 nav-footer">
             <ul>
-                <li class="bold">@lang("pages.navigation.production")</li>
+                <li class="bold"><a href="#" class="bold">@lang("pages.navigation.production")</a></li>
                 <li><a href="#">@lang("pages.navigation.mold")</a></li>
                 <li><a href="#">@lang("pages.navigation.tooling")</a></li>
                 <li><a href="#">@lang("pages.navigation.gauges")</a></li>
@@ -114,11 +112,13 @@
             </ul>
         </div>
         <div class="col-2 nav-footer">
-            <div class="socials d-flex">
-                <a href="#"><img src="/img/fb.png" class="fb"></a>
-                <a href="#"><img src="/img/in.png" class="in"></a>
-                <a href="#"><img src="/img/insta.png" class="insta"></a>
-            </div>
+            <ul>
+                <li class="bold"><a href="#" class="bold">@lang("pages.navigation.management")</a></li>
+                <li><a href="#">@lang("pages.navigation.project-management")</a></li>
+                <li><a href="#">@lang("pages.navigation.interim-management")</a></li>
+                <li><a href="#">@lang("pages.navigation.supplier")</a></li>
+                <li><a href="#">@lang("pages.navigation.quality")</a></li>
+            </ul>
         </div>
     </div>
 </div>
