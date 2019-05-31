@@ -68,7 +68,7 @@ return [
         'we-offer' => 'We offer individually fitted business models, based on the nature of the project and customers’ needs.',
         'we-conduct' => 'We conduct both external and in-house projects. We support our customers by placing resident engineers at their sites or in one of our 6 offices (<span class="locations">5 locations in Poland, 1 in Germany</span>), ensuring smooth cooperation and flow of information, effective communication and timely exchange of project data at all times.',
         'forbes' => '“Choć tworzą jedynie elementy wnętrz i karoserii aut, to bez nich najatrakcyjniejsza wizja auta najlepszego nawet stylisty nie zaistnieje na rynku. Firma CADM Automotive to wyróżniający się team projektantów samochodowych. W pięć lat zdobyli kilkudziesięciu klientów z całego świata.”',
-        'forbes-span' => '<span class="orange-company">Samochodowi designerzy z Krakowa podbijają świat </span> in <span class="bold"> Forbes</span>',
+        'forbes-span' => '<span class="orange-company"><a href="https://www.forbes.pl/life/styl/cadm-automotive-globalni-designerzy-z-krakowa/f4p0kqc" target="_blank" class="forbes">Samochodowi designerzy z Krakowa podbijają świat</a> </span> in <span class="bold">Forbes</span>',
         'value' => 'Our values',
         'values' => 'We believe in development resulting from the creation of a culture of innovation and creativity as well as openness to challenges. We want to be the ambassadors of Polish engineering in the world, that’s why we set the highest quality standards and inspire our counterparts.',
         'values2' => 'Our success is measured by our customers’ satisfaction. Whilst realizing our mission, we are guided by our core values.',

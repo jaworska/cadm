@@ -7,9 +7,9 @@
     </video>
     <div class="container-fluid video-text position-absolute">
         <div class="row">
-            <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+            <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center flex-column align-items-center">
                 <p class="position-relative">@lang("pages.home.jumbotron")</p>
-                <button type="button" class="btn btn-started">@lang("pages.home.started")</button>
+                <button type="button" class="btn btn-started scroll-down">@lang("pages.home.started")</button>
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
     </div>
 </div>
 
-<div class="container-fluid why">
+<div id="why-cadm" class="container-fluid why">
     <div class="row">
         <div class="col-12 padding-container">
             <div class="text-center why_span">
@@ -249,7 +249,7 @@
             <div class="col-6 d-flex flex-column justify-content-center text-left image-col2">
                 <p class="title-join">@lang('pages.home.team')</p>
                 <p class="text-join">@lang('pages.home.team-p2')</p>
-                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
+                <a href="{{ route("career") }}" class="btn btn-login">@lang('pages.home.join')</a>
             </div>
         </div>
         <div class="row d-sm-block d-md-none">
@@ -260,7 +260,7 @@
             </div>
             <div class="col-12 image-col-responsive">
                 <p class="text-join">@lang('pages.home.team-p2')</p>
-                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
+                <a href="{{ route("career") }}" class="btn btn-login">@lang('pages.home.join')</a>
             </div>
         </div>
     </div>

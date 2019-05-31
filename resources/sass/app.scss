@@ -84,7 +84,7 @@ body {
     background: $white;
     height: 64px;
     z-index: 600;
-    box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.02);
+    box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
     .nav_container {
         height: 64px;
@@ -156,6 +156,7 @@ body {
 
     .nav-drop-careers {
         height: 150px;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
     }
 
     .nav-drop-group, .nav-drop-careers {
@@ -165,6 +166,7 @@ body {
         padding-left: 40px;
         margin-top: -1px;
         border-top: 1px solid $light-gray;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
         .group-menu, .careers-menu {
             ul {
@@ -201,6 +203,7 @@ body {
         @include margin-x(-15px, -15px);
         margin-top: -1px;
         border-top: 1px solid $light-gray;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
         .range {
             border-bottom: 1px solid #f6f6f6;
@@ -217,7 +220,7 @@ body {
             }
 
             div {
-                max-width: 190px;
+                max-width: 230px;
                 width: 100%;
             }
 
@@ -397,7 +400,12 @@ body {
 
         a {
             color: $gray-nav;
-            padding-left: 20px;
+            margin-left: 20px;
+            filter: brightness(10%);
+
+            &:hover {
+                filter: brightness(100%);
+            }
         }
     }
 
@@ -419,13 +427,27 @@ body {
         @include area(8px,16px);
     }
 
+    .bw {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+
 }
 
 /*******video*******/
 
 .jumbotron {
+    p {
+        @include padding-x(70px,70px);
+    }
+
     &.video_main {
-        max-height: 100vh;
+        max-height: 86vh;
         height: auto;
         background: $light-gray;
         margin-bottom: 0;
@@ -523,7 +545,6 @@ body {
 .brands {
     @include padding-y(10px,20px);
     background-color: $light-gray;
-    bottom: 0;
     border-bottom: 2px solid #e3e3e3;
 
     @media screen and (max-width: $screen-768) {
@@ -1586,6 +1607,15 @@ body {
         font-weight: 500;
     }
 
+    .forbes {
+        color: $main-orange;
+
+        &:hover {
+            color: $main-orange;
+            text-decoration: none;
+        }
+    }
+
     .title-big {
         font-size: 36px;
         font-weight: bold;
@@ -1696,7 +1726,6 @@ body {
 
         img {
             width: 80%;
-            background: $white;
 
             @media screen and (max-width: $screen-768) {
                 width: 80%;
