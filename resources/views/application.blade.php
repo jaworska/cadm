@@ -32,30 +32,30 @@
             <div class="row services-row timeline position-relative align-items-baseline justify-content-sm-between">
                 <div class="col-12 d-flex timeline-unactive">
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
-                        <div class="text-center why-content apply d-flex align-items-center justify-content-center col-hover2 timeline2">
+                        <div class="text-center why-content apply d-flex align-items-center justify-content-center position-relative timeline2">
                             <span>@lang('pages.career.apply-for')</span>
                         </div>
-                        <div class="text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2 timeline4">
+                        <div class="text-right why-content f2 d-flex flex-column align-items-end justify-content-center position-relative timeline4">
                             <span class="text-uppercase">@lang('pages.career.f2')</span>
                             <p class="text-p2">@lang('pages.career.f2-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.f2-text2')</p>
                         </div>
-                        <div class="text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2 timeline6">
+                        <div class="text-center why-content technical d-flex flex-column align-items-center justify-content-center position-relative timeline6">
                             <span>@lang('pages.career.technical')</span>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
-                        <div class="text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center timeline1">
+                        <div class="text-left why-content mt-0 position-relative find d-flex flex-column align-items-start justify-content-center timeline1">
                             <span>@lang('pages.career.find')</span>
                             <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                         </div>
-                        <div class="text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center timeline3">
+                        <div class="text-left why-content position-relative initial d-flex flex-column align-items-start justify-content-center timeline3">
                             <span class="">@lang('pages.career.initial')</span>
                             <p class="text-p2">@lang('pages.career.initial-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.initial-text2')</p>
                         </div>
-                        <div class="text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center timeline5">
+                        <div class="text-left why-content position-relative receive d-flex flex-column align-items-start justify-content-center timeline5">
                             <span>@lang('pages.career.receive')</span>
                             <p class="text-p2">@lang('pages.career.receive-text')</p>
                         </div>
@@ -76,7 +76,8 @@
 
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
                             <div class="bg-transparent text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
-
+                                <span>@lang('pages.career.find')</span>
+                                <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                             </div>
                             <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center">
 
