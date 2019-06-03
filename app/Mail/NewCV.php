@@ -21,7 +21,7 @@ class NewCV extends Mailable
     public function __construct(CV $cv)
     {
         $this -> cv = $cv;
-        $this -> subject('Nowe CV');
+        $this -> subject('Zgłoszenie w aplikacji - '. $cv -> offer -> title .' ('. trans('pages.career.location.'.$cv -> offer-> location).')');
         $this -> from('system@cadm.pl');
     }
 
