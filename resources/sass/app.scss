@@ -276,6 +276,7 @@ body {
         @include margin-x(-15px, -15px);
         margin-top: -1px;
         border-top: 1px solid $light-gray;
+        box-shadow: 1px 3px 16px 3px rgba(35, 32, 32, 0.03);
 
 
         .sectors-menu {
