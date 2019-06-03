@@ -31,6 +31,7 @@
         <div class="row">
             <div class="offset-2 col-10 text-left group-menu">
                 <ul class="position-relative">
+                    <li class="position-relative"><a href="{{ route("group") }}/#about-us">@lang("pages.navigation.about")</a></li>
                     <li class="position-relative"><a href="{{ route("group") }}/#customers">@lang("pages.navigation.clients")</a></li>
                     <li class="position-relative"><a href="{{ route("group") }}/#our-values">@lang("pages.navigation.values")</a></li>
                     <li class="position-relative"><a href="{{ route("group") }}/#code-of-ethics">@lang("pages.navigation.ethics")</a></li>

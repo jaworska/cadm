@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="container list-friendly">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-4 col-12">
                     <span class="bold">@lang('pages.career.culture')</span>
                     <ul>
@@ -68,7 +68,7 @@
                         <li>@lang('pages.career.culture7')</li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-3 col-12 pl-4">
                     <span class="bold">@lang('pages.career.financial')</span>
                     <ul>
                         <li>@lang('pages.career.financial1')</li>

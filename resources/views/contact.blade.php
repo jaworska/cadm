@@ -14,7 +14,7 @@
             <div class="row margin-bottom">
                 <div class="col-md-7 col-12">
                     <div class="position-relative h-100">
-                        <div id="map"></div>
+                        <div id="map" class="map2"></div>
                     </div>
                 </div>
                 <div class="col-md-5 col-12">
@@ -45,8 +45,8 @@
                 <div class="col-md-4 col-12">
                     <div class="upper-box"></div>
                     <div class="position-relative location-box">
-                        <p class="company-name text-left d-flex align-baseline">DES ART Sp. z o.o.<p>
-                        <p class="address">Czechosłowacka 3<br/>81-969 Gdynia</p>
+                        <p class="company-name text-left d-flex align-baseline">Biuro w Sanoku<p>
+                        <p class="address">Lipińskiego 113<br/>38-500 Sanok</p>
                     </div>
                 </div>
             </div>
@@ -54,15 +54,15 @@
                 <div class="col-md-4 col-12">
                     <div class="upper-box"></div>
                     <div class="position-relative location-box">
-                        <p class="company-name text-left d-flex align-baseline">Biuro w Sanoku<p>
-                        <p class="address">Lipińskiego 113<br/>38-500 Sanok</p>
+                        <p class="company-name text-left d-flex align-baseline">Biuro w Lublinie<p>
+                        <p class="address">Mariana Rapackiego 25<br/>20-150 Lublin</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="upper-box"></div>
                     <div class="position-relative location-box">
-                        <p class="company-name text-left d-flex align-baseline">Biuro w Lublinie<p>
-                        <p class="address">Mariana Rapackiego 25<br/>20-150 Lublin</p>
+                        <p class="company-name text-left d-flex align-baseline">DES ART Sp. z o.o.<p>
+                        <p class="address">Czechosłowacka 3<br/>81-969 Gdynia</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-12">
