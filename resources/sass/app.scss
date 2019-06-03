@@ -1802,6 +1802,11 @@ body {
                 text-align: center;
                 cursor: pointer;
 
+                @media screen and (max-width: $screen-768) {
+                    width: 16px;
+                    @include padding-x(0,0);
+                }
+
                 &.active {
                     opacity: 1;
                     font-weight: bold;
@@ -2325,6 +2330,10 @@ body {
 
         img {
             width: 90%;
+
+            @media screen and (max-width: $screen-768) {
+                width: 100%;
+            }
         }
 
         .ethics-text {
@@ -2476,18 +2485,31 @@ body {
 
                 .agh {
                     width: 58px;
+
                 }
 
                 .fundacja {
                     width: 243px;
+
+                    @media screen and (max-width: $screen-768) {
+                        width: 120px;
+                    }
                 }
 
                 .klaster {
                     width: 156px;
+
+                    @media screen and (max-width: $screen-768) {
+                        width: 100px;
+                    }
                 }
 
                 .politechnika {
                     width: 156px;
+
+                    @media screen and (max-width: $screen-768) {
+                        width: 100px;
+                    }
                 }
             }
         }
