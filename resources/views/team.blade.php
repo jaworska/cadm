@@ -14,16 +14,16 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/meet-slider.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/meet-slider2.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/meet-slider3.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/meet-slider4.jpg" alt="">
                 </div>
             </div>
 
@@ -37,7 +37,7 @@
         </div>
         <div class="container-fluid video-text position-absolute">
             <div class="row">
-                <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+                <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center">
                     <p class="position-relative">@lang('pages.career.meet')</p>
                 </div>
             </div>
@@ -57,72 +57,35 @@
         <div class="row">
             <div class="col-12 mb-4 d-flex justify-content-between padding-container">
                <div class="d-flex flex-column hover-team">
-                   <div class="team-img"><img src="/img/join.jpeg"></div>
+                   <div class="team-img"><img src="/img/team1.jpg"></div>
                    <div class="d-flex flex-column text-center bottom-team">
                        <span class="bold">Jan Kowalski</span>
                        <span class="text-p2">@lang('pages.career.job')</span>
                    </div>
                </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
-                    <div class="d-flex flex-column text-center bottom-team">
-                        <span class="bold">Jan Kowalski</span>
-                        <span class="text-p2">@lang('pages.career.job')</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-4 d-flex justify-content-between padding-container">
-                <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
-                    <div class="d-flex flex-column text-center bottom-team">
-                        <span class="bold">Jan Kowalski</span>
-                        <span class="text-p2">@lang('pages.career.job')</span>
-                    </div>
-                </div>
-                <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
-                    <div class="d-flex flex-column text-center bottom-team">
-                        <span class="bold">Jan Kowalski</span>
-                        <span class="text-p2">@lang('pages.career.job')</span>
-                    </div>
-                </div>
-                <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
-                    <div class="d-flex flex-column text-center bottom-team">
-                        <span class="bold">Jan Kowalski</span>
-                        <span class="text-p2">@lang('pages.career.job')</span>
-                    </div>
-                </div>
-                <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
-                    <div class="d-flex flex-column text-center bottom-team">
-                        <span class="bold">Jan Kowalski</span>
-                        <span class="text-p2">@lang('pages.career.job')</span>
-                    </div>
-                </div>
-                <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
@@ -131,28 +94,65 @@
             </div>
             <div class="col-12 mb-4 d-flex justify-content-between padding-container">
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>
                     </div>
                 </div>
                 <div class="d-flex flex-column hover-team">
-                    <div class="team-img"><img src="/img/join.jpeg"></div>
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
+                    <div class="d-flex flex-column text-center bottom-team">
+                        <span class="bold">Jan Kowalski</span>
+                        <span class="text-p2">@lang('pages.career.job')</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column hover-team">
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
+                    <div class="d-flex flex-column text-center bottom-team">
+                        <span class="bold">Jan Kowalski</span>
+                        <span class="text-p2">@lang('pages.career.job')</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-4 d-flex justify-content-between padding-container">
+                <div class="d-flex flex-column hover-team">
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
+                    <div class="d-flex flex-column text-center bottom-team">
+                        <span class="bold">Jan Kowalski</span>
+                        <span class="text-p2">@lang('pages.career.job')</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column hover-team">
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
+                    <div class="d-flex flex-column text-center bottom-team">
+                        <span class="bold">Jan Kowalski</span>
+                        <span class="text-p2">@lang('pages.career.job')</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column hover-team">
+                    <div class="team-img"><img src="/img/team1.jpg"></div>
+                    <div class="d-flex flex-column text-center bottom-team">
+                        <span class="bold">Jan Kowalski</span>
+                        <span class="text-p2">@lang('pages.career.job')</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column hover-team">
+                    <div class="team-img"><img src="/img/team2.jpg"></div>
                     <div class="d-flex flex-column text-center bottom-team">
                         <span class="bold">Jan Kowalski</span>
                         <span class="text-p2">@lang('pages.career.job')</span>

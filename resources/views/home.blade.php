@@ -7,9 +7,9 @@
     </video>
     <div class="container-fluid video-text position-absolute">
         <div class="row">
-            <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+            <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center flex-column align-items-center">
                 <p class="position-relative">@lang("pages.home.jumbotron")</p>
-                <button type="button" class="btn btn-started">@lang("pages.home.started")</button>
+                <button type="button" class="btn btn-started scroll-down">@lang("pages.home.started")</button>
             </div>
         </div>
     </div>
@@ -20,13 +20,13 @@
         <div class="col-12 d-flex align-items-md-center flex-sm-column flex-xs-column flex-md-row justify-content-between padding-container">
             <div class="text-left d-flex float-left align-items-center justify-content-between">
                 <span>@lang("pages.home.trusted")</span>
-                <img src="img/volkswagen-logo@2x.png" class="volkswagen-logo">
-                <img src="img/varroc-logo@2x.png" class="varroc-logo">
-                <img src="img/magna-logo@2x.png" class="magna-logo">
-                <img src="img/alstom-logo@2x.png" class="alstom-logo">
-                <img src="img/aptiv-logo@2x.png" class="aptiv-logo">
-                <img src="img/csi@2x.png" class="csi">
-                <img src="img/h@2x.png" class="h">
+                <img src="img/volkswagen2.png" class="bw volkswagen-logo">
+                <img src="img/varroc2.png" class="bw varroc-logo">
+                <img src="img/magna2.png" class="bw magna-logo">
+                <img src="img/alstom-logo2.png" class="bw alstom-logo">
+                <img src="img/aptiv2.png" class="bw aptiv-logo">
+                <img src="img/csi2.png" class="bw csi">
+                <img src="img/h2.png" class="bw h">
 
             </div>
             <div class="text-right float-right">
@@ -36,7 +36,7 @@
     </div>
 </div>
 
-<div class="container-fluid why">
+<div id="why-cadm" class="container-fluid why">
     <div class="row">
         <div class="col-12 padding-container">
             <div class="text-center why_span">
@@ -156,7 +156,7 @@
                 <span>@lang('pages.home.maritime-span')</span>
             </div>
         </div>
-        <div class="col-md-3 col-11 companies-hover d-flex">
+        <div class="col-md-3 col-11 text-center flex-column align-items-center companies-hover d-flex">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="52px" height="51px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -171,7 +171,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-md-3 col-11 companies-hover  d-flex">
+        <div class="col-md-3 col-11 companies-hover text-center flex-column align-items-center d-flex">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                     <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
@@ -249,7 +249,7 @@
             <div class="col-6 d-flex flex-column justify-content-center text-left image-col2">
                 <p class="title-join">@lang('pages.home.team')</p>
                 <p class="text-join">@lang('pages.home.team-p2')</p>
-                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
+                <a href="{{ route("career") }}" class="btn btn-login">@lang('pages.home.join')</a>
             </div>
         </div>
         <div class="row d-sm-block d-md-none">
@@ -260,7 +260,7 @@
             </div>
             <div class="col-12 image-col-responsive">
                 <p class="text-join">@lang('pages.home.team-p2')</p>
-                <button type="button" class="btn btn-login">@lang('pages.home.join')</button>
+                <a href="{{ route("career") }}" class="btn btn-login">@lang('pages.home.join')</a>
             </div>
         </div>
     </div>

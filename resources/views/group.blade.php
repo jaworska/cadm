@@ -2,12 +2,9 @@
 
 @section('content')
     <div class="jumbotron video_main group">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="img/movie.webm" type="video/webm">
-        </video>
         <div class="container-fluid video-text position-absolute">
             <div class="row">
-                <div class="col-md-10 col-sm-12 offset-md-1 text-center">
+                <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center">
                     <p class="position-relative">{!! trans('pages.group.jumbotron') !!}</p>
                 </div>
             </div>
@@ -87,40 +84,41 @@
                 <div class="col-6 text-md-left text-center grow-click proj">
                     <span>@lang('pages.group.num-projects')</span>
                 </div>
-                <div class="col-md-8 offset-md-2 col-12 d-flex img-col">
-                    <img src="img/group_wykres.JPG" class="img-project position-absolute transparent"/>
-                    <img src="img/group_wykres.JPG" class="img-employee position-absolute"/>
+                <div class="col-md-8 col-12 d-flex img-col">
+                    <img src="/img/projects.png" class="img-project position-absolute transparent"/>
+                    <img src="/img/employees.png" class="img-employee position-absolute"/>
+                    <img src="/img/osie.png" class="img-background-chart position-absolute"/>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid logos group d-sm-flex flex-column">
+    <div id="customers" class="container-fluid logos group d-sm-flex flex-column">
         <div class="row text-center">
             <div class="col-md-6 col-12 logos-col">
                 <div class="col-12 mb-4">
-                    <img src="img/volkswagen.png" class="bw volkswagen">
-                    <img src="img/varroc.png" class="bw varroc">
-                    <img src="img/magna.png" class="bw magna">
-                    <img src="img/alstom-logo.png" class="bw alstom-logo">
+                    <img src="/img/volkswagen2.png" class="bw volkswagen">
+                    <img src="/img/varroc2.png" class="bw varroc">
+                    <img src="/img/magna2.png" class="bw magna">
+                    <img src="/img/alstom-logo2.png" class="bw alstom-logo">
                 </div>
                 <div class="col-12 mb-4">
-                    <img src="img/aptiv-logo@2x.png" class="bw aptiv-logo">
-                    <img src="img/csi@2x.png" class="bw csi">
-                    <img src="img/semcon.png" class="bw semcon">
-                    <img src="img/saargummi.png" class="bw saargummi">
+                    <img src="/img/aptiv2.png" class="bw aptiv-logo">
+                    <img src="/img/csi2.png" class="bw csi">
+                    <img src="/img/semcon2.png" class="bw semcon">
+                    <img src="/img/saargummi2.png" class="bw saargummi">
                 </div>
                 <div class="col-12 mb-4">
-                    <img src="img/valmet.png" class="bw valmet">
-                    <img src="img/ktp.png" class="bw ktp">
-                    <img src="img/antolin.png" class="bw antolin">
-                    <img src="img/yanfeng.png" class="bw yanfeng">
+                    <img src="/img/valmet2.png" class="bw valmet">
+                    <img src="/img/ktp2.png" class="bw ktp">
+                    <img src="/img/antolin2.png" class="bw antolin">
+                    <img src="/img/yanfeng2.png" class="bw yanfeng">
                 </div>
                 <div class="col-12">
-                    <img src="img/bos.png" class="bw bos">
-                    <img src="img/phiaro.png" class="bw phiaro">
-                    <img src="img/stogda.png" class="bw stogda">
-                    <img src="img/stogda.png" class="bw stogda">
+                    <img src="/img/bos2.png" class="bw bos">
+                    <img src="/img/phiaro2.png" class="bw phiaro">
+                    <img src="/img/stogda2.png" class="bw stogda">
+                    <img src="/img/mielec2.png" class="bw mielec">
                 </div>
             </div>
             <div class="col-md-6 col-12 text-logos">
@@ -140,7 +138,7 @@
             <div class="row">
                 <div class="col-12 image-col">
                     <video id="video-group" preload autoplay controls loop>
-                        <source src="img/movie.webm" type="video/webm">
+                        <source src="/img/movie.webm" type="video/webm">
                     </video>
                 </div>
                 <div class="col-md-10 offset-md-1 col-12 d-flex flex-column justify-content-center team-box position-relative">
@@ -151,7 +149,7 @@
         </div>
     </div>
 
-    <div class="container-fluid values group">
+    <div id="our-values" class="container-fluid values group">
         <div class="row">
             <div class="col-md-4 offset-md-1 col-12 value-change">
                 <div class="text-left title-big">
@@ -303,10 +301,10 @@
         </div>
     </div>
 
-    <div class="container-fluid group ethics">
+    <div id="code-of-ethics" class="container-fluid group ethics">
         <div class="row">
             <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1">
-                <img src="img/join.jpeg" class=""/>
+                <img src="/img/group-4.jpg" class=""/>
             </div>
             <div class="col-md-7 col-12 order-sm-1 order-md-2">
                 <div class="text-left title-big">
@@ -331,13 +329,13 @@
         </div>
     </div>
 
-    <div class="container-fluid group grants">
-        <div class="container">
+    <div id="eu-grants" class="container-fluid group grants">
+        <div class="container faded">
             <div class="row">
                 <div class="col-12">
                     <div class="title-big">
                         <span class="text-center eu-title">@lang('pages.group.grants')</span>
-                        <span class="text-right float-right"> <img src="img/fe-ir-rgb-2.png" srcset="img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2"></span>
+                        <span class="text-right float-right"> <img src="/img/fe-ir-rgb-2.png" srcset="/img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2"></span>
                     </div>
                     <p class="bold text-center">@lang('pages.group.grants-p')</p>
                     <p class="text-center">{!! trans('pages.group.grants-p2') !!}</p>
@@ -346,7 +344,7 @@
         </div>
     </div>
 
-    <div class="container-fluid help group">
+    <div id="we-love-to-help" class="container-fluid help group">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
@@ -359,44 +357,44 @@
         </div>
     </div>
 
-    <div class="container-fluid group carousel-group d-none d-md-block">
+    <div id="partners" class="container-fluid group carousel-group d-none d-md-block">
         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
             <div class="carousel-inner v-2" role="listbox">
 
                 <div class="carousel-item active">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(77).jpg" class="img-fluid">
+                        <img src="/img/img-group1.jpg" class="img-fluid position-relative img-top">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(56).jpg" class="img-fluid">
+                        <img src="/img/img-group2.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" class="img-fluid">
+                        <img src="/img/img-group3.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg" class="img-fluid">
+                        <img src="/img/img-group4.jpg" class="img-fluid">
                     </figure>
                 </div>
                 <div class="carousel-item">
                     <figure class="col-md-4 d-md-inline-block">
-                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg" class="img-fluid">
+                        <img src="/img/img-group5.jpg" class="img-fluid">
                     </figure>
                 </div>
             </div>
 
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#carousel-example-multi" data-slide="prev">
-                <img src="img/arrow-left.png">
+                <img src="/img/arrow-left.png">
             </a>
             <a class="carousel-control-next" href="#carousel-example-multi" data-slide="next">
-                <img src="img/arrow-right.png">
+                <img src="/img/arrow-right.png">
             </a>
 
         </div>
@@ -408,22 +406,25 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group5.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group3.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="img/join.jpeg" alt="">
+                    <img src="/img/img-group4.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/img-group2.jpg" alt="">
                 </div>
             </div>
 
             <!-- Left and right controls -->
             <a class="carousel-control-prev" href="#slides" data-slide="prev">
-                <img src="img/arrow-left.png">
+                <img src="/img/arrow-left.png">
             </a>
             <a class="carousel-control-next" href="#slides" data-slide="next">
-                <img src="img/arrow-right.png">
+                <img src="/img/arrow-right.png">
             </a>
         </div>
     </div>
@@ -440,16 +441,16 @@
             </div>
             <div class="row logos-partners">
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="/img/agh2.png" class="bw agh">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="/img/fundacja2.png" class="bw fundacja">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="/img/klaster2.png" class="bw klaster">
                 </div>
                 <div class="col-md-3 col-6 text-center">
-                    <img src="img/bw_7.png" srcset="img/bw_7@2x.png 2x, img/bw_7@3x.png 3x" class="bw">
+                    <img src="/img/politechnika2.png" class="bw politechnika">
                 </div>
             </div>
         </div>
