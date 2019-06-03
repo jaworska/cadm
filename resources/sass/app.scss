@@ -3789,6 +3789,16 @@ body {
             padding-right: 30px;
             border-right: 3px solid $light-border;
 
+            .col-hover3 {
+                &::after {
+                    @include after-before(25px,25px);
+                    background: $white;
+                    border: solid 4px $light-border;
+                    border-radius: 50%;
+                    right: -44px;
+                }
+            }
+
             .apply {
                 @include area(220px,66px);
                 margin-top: 140px;
@@ -3821,6 +3831,16 @@ body {
 
         .col-right{
             padding-left: 30px;
+
+            .col-hover3 {
+                &::before {
+                    @include after-before(25px,25px);
+                    background: $white;
+                    border: solid 4px $light-border;
+                    border-radius: 50%;
+                    left: -44px;
+                }
+            }
 
             .text-p2 {
                 text-align: left;
