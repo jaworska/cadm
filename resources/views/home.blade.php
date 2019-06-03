@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="jumbotron video_main">
+<div class="jumbotron video_main flex-row">
     <video id="video-background" preload muted autoplay loop>
         <source src="img/movie.webm" type="video/webm">
     </video>
