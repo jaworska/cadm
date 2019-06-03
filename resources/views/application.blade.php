@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="container-fluid career breadcrumbs">
+    <div class="container-fluid career breadcrumbs applications">
         <div class="row">
             <div class="col-md-11 offset-md-1 col-12">
                 <a class="position-relative" href="{{ route("career") }}">@lang('pages.career.careers')</a>
@@ -30,66 +30,60 @@
         </div>
         <div class="container margin-top">
             <div class="row services-row timeline position-relative align-items-baseline justify-content-sm-between">
-                <div class="col-12 d-flex">
+                <div class="col-12 d-flex timeline-unactive">
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
-                        <div class="text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
+                        <div class="text-center why-content apply d-flex align-items-center justify-content-center position-relative timeline2">
                             <span>@lang('pages.career.apply-for')</span>
                         </div>
-                        <div class="text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2">
+                        <div class="text-right why-content f2 d-flex flex-column align-items-end justify-content-center position-relative timeline4">
                             <span class="text-uppercase">@lang('pages.career.f2')</span>
                             <p class="text-p2">@lang('pages.career.f2-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.f2-text2')</p>
                         </div>
-                        <div class="text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2">
+                        <div class="text-center why-content technical d-flex flex-column align-items-center justify-content-center position-relative timeline6">
                             <span>@lang('pages.career.technical')</span>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
-                        <div class="text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
+                        <div class="text-left why-content mt-0 position-relative find d-flex flex-column align-items-start justify-content-center timeline1">
                             <span>@lang('pages.career.find')</span>
                             <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                         </div>
-                        <div class="text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center triangle">
+                        <div class="text-left why-content position-relative initial d-flex flex-column align-items-start justify-content-center timeline3">
                             <span class="">@lang('pages.career.initial')</span>
                             <p class="text-p2">@lang('pages.career.initial-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.initial-text2')</p>
                         </div>
-                        <div class="text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center">
+                        <div class="text-left why-content position-relative receive d-flex flex-column align-items-start justify-content-center timeline5">
                             <span>@lang('pages.career.receive')</span>
                             <p class="text-p2">@lang('pages.career.receive-text')</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 position-absolute overflow-hidden active">
+                <div class="col-12 position-absolute overflow-hidden timeline active">
                     <div class="col-12 d-flex">
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
-                            <div class="text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
-                                <span>@lang('pages.career.apply-for')</span>
+                            <div class="bg-transparent text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
+
                             </div>
-                            <div class="text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2">
-                                <span class="text-uppercase">@lang('pages.career.f2')</span>
-                                <p class="text-p2">@lang('pages.career.f2-text')</p>
-                                <p class="text-p2 bold">@lang('pages.career.f2-text2')</p>
+                            <div class="bg-transparent text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2">
+
                             </div>
-                            <div class="text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2">
-                                <span>@lang('pages.career.technical')</span>
+                            <div class="bg-transparent text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2">
                             </div>
                         </div>
 
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
-                            <div class="text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
+                            <div class="bg-transparent text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
                                 <span>@lang('pages.career.find')</span>
                                 <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                             </div>
-                            <div class="text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center triangle">
-                                <span class="">@lang('pages.career.initial')</span>
-                                <p class="text-p2">@lang('pages.career.initial-text')</p>
-                                <p class="text-p2 bold">@lang('pages.career.initial-text2')</p>
+                            <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center">
+
                             </div>
-                            <div class="text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center">
-                                <span>@lang('pages.career.receive')</span>
-                                <p class="text-p2">@lang('pages.career.receive-text')</p>
+                            <div class="bg-transparent text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center">
+
                             </div>
                         </div>
                     </div>
@@ -120,20 +114,20 @@
         <div class="container margin-top">
             <div class="row after-border services-row align-items-baseline justify-content-sm-between position-relative">
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
+                    <div class="mtimeline1 text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                         <span>@lang('pages.career.find')</span>
                         <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                     </div>
                 </div>
 
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-center why-content mt-0 col-hover2 apply d-flex flex-column align-items-center justify-content-center">
+                    <div class="mtimeline2 text-center why-content mt-0 col-hover2 apply d-flex flex-column align-items-center justify-content-center">
                         <span>@lang('pages.career.apply-for')</span>
                     </div>
                 </div>
 
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-left why-content col-hover2 initial d-flex flex-column align-items-center justify-content-center triangle">
+                    <div class="mtimeline3 text-left why-content col-hover2 initial d-flex flex-column align-items-center justify-content-center">
                         <span class="">@lang('pages.career.initial')</span>
                         <p class="text-p2">@lang('pages.career.initial-text')</p>
                         <p class="text-p2 bold">@lang('pages.career.initial-text2')</p>
@@ -141,7 +135,7 @@
                 </div>
 
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-left why-content col-hover2 f2f d-flex flex-column align-items-center justify-content-center ">
+                    <div class="mtimeline4 text-left why-content col-hover2 f2f d-flex flex-column align-items-center justify-content-center ">
                         <span class="text-uppercase">@lang('pages.career.f2')</span>
                         <p class="text-p2">@lang('pages.career.f2-text')</p>
                         <p class="text-p2 bold">@lang('pages.career.f2-text2')</p>
@@ -149,34 +143,34 @@
                 </div>
 
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-left why-content col-hover2 receive d-flex flex-column align-items-center justify-content-center ">
+                    <div class="mtimeline5 text-left why-content col-hover2 receive d-flex flex-column align-items-center justify-content-center ">
                         <span>@lang('pages.career.receive')</span>
                         <p class="text-p2">@lang('pages.career.receive-text')</p>
                     </div>
                 </div>
 
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                    <div class="text-left why-content col-hover2 technical d-flex flex-column align-items-center justify-content-center ">
+                    <div class="mtimeline6 text-left why-content col-hover2 technical d-flex flex-column align-items-center justify-content-center ">
                         <span>@lang('pages.career.technical')</span>
                     </div>
                 </div>
 
                 <div class="col-12 position-absolute overflow-hidden active-mobile pr-0 pl-0">
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
+                        <div class="bg-transparent text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                             <span>@lang('pages.career.find')</span>
                             <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
                         </div>
                     </div>
 
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-center why-content mt-0 col-hover2 apply d-flex flex-column align-items-center justify-content-center">
+                        <div class="bg-transparent text-center why-content mt-0 col-hover2 apply d-flex flex-column align-items-center justify-content-center">
                             <span>@lang('pages.career.apply-for')</span>
                         </div>
                     </div>
 
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-left why-content col-hover2 initial d-flex flex-column align-items-center justify-content-center triangle">
+                        <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-center justify-content-center triangle">
                             <span class="">@lang('pages.career.initial')</span>
                             <p class="text-p2">@lang('pages.career.initial-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.initial-text2')</p>
@@ -184,7 +178,7 @@
                     </div>
 
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-left why-content col-hover2 f2f d-flex flex-column align-items-center justify-content-center ">
+                        <div class="bg-transparent text-left why-content col-hover2 f2f d-flex flex-column align-items-center justify-content-center ">
                             <span class="text-uppercase">@lang('pages.career.f2')</span>
                             <p class="text-p2">@lang('pages.career.f2-text')</p>
                             <p class="text-p2 bold">@lang('pages.career.f2-text2')</p>
@@ -192,22 +186,24 @@
                     </div>
 
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-left why-content col-hover2 receive d-flex flex-column align-items-center justify-content-center ">
+                        <div class="bg-transparent text-left why-content col-hover2 receive d-flex flex-column align-items-center justify-content-center ">
                             <span>@lang('pages.career.receive')</span>
                             <p class="text-p2">@lang('pages.career.receive-text')</p>
                         </div>
                     </div>
 
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
-                        <div class="text-left why-content col-hover2 technical d-flex flex-column align-items-center justify-content-center ">
+                        <div class="bg-transparent text-left why-content col-hover2 technical d-flex flex-column align-items-center justify-content-center ">
                             <span>@lang('pages.career.technical')</span>
                         </div>
                     </div>
                 </div>
 
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-12 d-flex justify-content-center welcome-timeline">
-                    <div class="welcome">
+                    <div class="welcome w-100">
                         <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center">
                             <p class="bold">@lang('pages.career.welcome')</p>
                             <p class="text-p2">@lang('pages.career.welcome-text')</p>
