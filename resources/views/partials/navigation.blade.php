@@ -17,11 +17,11 @@
             </div>
             <div class="col-4 text-right">
                 <div class="socials d-inline">
-                    <a href="https://www.facebook.com/CADM.Automotive"><img src="/img/facebook-color.svg" class="facebook bw"></a>
-                    <a href="https://www.linkedin.com/company/cadm-automotive"><img src="/img/linkedin-color.svg" class="linkedin bw"></a>
-                    <a href="#"><img src="/img/instagram-color.svg" class="instagram bw"></a>
+                    <a href="https://www.facebook.com/CADM.Automotive"><img src="/img/fb.svg" class="facebook bw"></a>
+                    <a href="https://www.linkedin.com/company/cadm-automotive"><img src="/img/link.svg" class="linkedin bw"></a>
+                    <a href="#"><img src="/img/insta.svg" class="instagram bw"></a>
                 </div>
-                <a href="{{ route("login") }}" target="_blank" class="btn btn-login">@lang("pages.navigation.login")</a>
+                <a href="{{ route("admin") }}" target="_blank" class="btn btn-login">@lang("pages.navigation.login")</a>
                 <span class="lang d-none">@lang("pages.navigation.eng")</span>
                 <span class="lang-arrow position-relative d-none"><img src="/img/orange.svg" class="orange"></span>
             </div>
@@ -37,7 +37,7 @@
                     <li class="position-relative"><a href="{{ route("group") }}/#code-of-ethics">@lang("pages.navigation.ethics")</a></li>
                     <li class="position-relative"><a href="{{ route("group") }}/#eu-grants">@lang("pages.navigation.grants")</a></li>
                     <li class="position-relative"><a href="{{ route("group") }}/#we-love-to-help">@lang("pages.navigation.help")</a></li>
-                    <li class="position-relative"><a href="{{ route("group") }}/#partners"">@lang("pages.navigation.partners")</a></li>
+                    <li class="position-relative"><a href="{{ route("group") }}/#partners">@lang("pages.navigation.partners")</a></li>
                 </ul>
             </div>
         </div>
