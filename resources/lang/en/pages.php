@@ -207,6 +207,7 @@ return [
         'thickness' => 'Thickness analysis',
         'privacy' => 'Privacy policy',
         'terms' => 'Terms and conditions',
+        'about' => 'About us'
     ],
 
     'sectors' => [

@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid why group">
+    <div id="#about-us" class="container-fluid why group">
         <div class="container">
             <div class="row">
                 <div class="offset-md-1 col-md-10 col-12">
@@ -94,31 +94,65 @@
     </div>
 
     <div id="customers" class="container-fluid logos group d-sm-flex flex-column">
-        <div class="row text-center">
+        <div class="row text-center align-items-center">
             <div class="col-md-6 col-12 logos-col">
-                <div class="col-12 mb-4">
-                    <img src="/img/volkswagen2.png" class="bw volkswagen">
-                    <img src="/img/varroc2.png" class="bw varroc">
-                    <img src="/img/magna2.png" class="bw magna">
-                    <img src="/img/alstom-logo2.png" class="bw alstom-logo">
-                </div>
-                <div class="col-12 mb-4">
-                    <img src="/img/aptiv2.png" class="bw aptiv-logo">
-                    <img src="/img/csi2.png" class="bw csi">
-                    <img src="/img/semcon2.png" class="bw semcon">
-                    <img src="/img/saargummi2.png" class="bw saargummi">
-                </div>
-                <div class="col-12 mb-4">
-                    <img src="/img/valmet2.png" class="bw valmet">
-                    <img src="/img/ktp2.png" class="bw ktp">
-                    <img src="/img/antolin2.png" class="bw antolin">
-                    <img src="/img/yanfeng2.png" class="bw yanfeng">
-                </div>
-                <div class="col-12">
-                    <img src="/img/bos2.png" class="bw bos">
-                    <img src="/img/phiaro2.png" class="bw phiaro">
-                    <img src="/img/stogda2.png" class="bw stogda">
-                    <img src="/img/mielec2.png" class="bw mielec">
+                <div class="row">
+                    <div class="row mb-4 align-items-center justify-content-between w-100">
+                        <div class="col-3">
+                            <img src="/img/volkswagen2.png" class="bw volkswagen">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/varroc2.png" class="bw varroc">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/magna2.png" class="bw magna">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/alstom-logo2.png" class="bw alstom-logo">
+                        </div>
+                    </div>
+                    <div class="row mb-4 align-items-center justify-content-between w-100">
+                        <div class="col-3">
+                            <img src="/img/aptiv2.png" class="bw aptiv-logo">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/csi2.png" class="bw csi">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/semcon2.png" class="bw semcon">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/saargummi2.png" class="bw saargummi">
+                        </div>
+                    </div>
+                    <div class="row mb-4 align-items-center justify-content-between w-100">
+                        <div class="col-3">
+                            <img src="/img/valmet2.png" class="bw valmet">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/ktp2.png" class="bw ktp">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/antolin2.png" class="bw antolin">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/yanfeng2.png" class="bw yanfeng">
+                        </div>
+                    </div>
+                    <div class="row mb-4 align-items-center justify-content-between w-100">
+                        <div class="col-3">
+                            <img src="/img/bos2.png" class="bw bos">
+                        </div>
+                         <div class="col-3">
+                            <img src="/img/phiaro2.png" class="bw phiaro">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/stogda2.png" class="bw stogda">
+                        </div>
+                        <div class="col-3">
+                            <img src="/img/mielec2.png" class="bw mielec">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 col-12 text-logos">
@@ -311,7 +345,7 @@
                     <span>@lang('pages.group.ethics')</span>
                 </div>
                 <div class="text-left">
-                    <p>@lang('pages.group.ethics-text')</p>
+                    <p class="ethics-text">@lang('pages.group.ethics-text')</p>
                 </div>
 
                 <div class="row">

@@ -99,6 +99,21 @@ body {
             padding-top: 6px;
         }
 
+        .sectors-trigger {
+            color: $main-orange;
+            font-weight: 500;
+            border-bottom: 0px solid transparent;
+
+            &::after {
+                @include area(20px,1px);
+                top: 37px;
+                background: $main-orange;
+                content: '';
+                left: 33%;
+                position: absolute;
+            }
+        }
+
         ul {
             li {
                 a {
@@ -444,6 +459,10 @@ body {
 .jumbotron {
     p {
         @include padding-x(70px,70px);
+
+        @media screen and (max-width: $screen-768) {
+            @include padding-x(50px,50px);
+        }
     }
 
     &.video_main {
@@ -457,6 +476,9 @@ body {
         padding: 0;
         position: relative;
         overflow: hidden;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
 
         @media screen and (max-width: $screen-768) {
             max-height: 60vh;
@@ -482,7 +504,7 @@ body {
         }
 
         .video-text {
-            top: 42%;
+            //top: 42%;
 
             .text-center {
                 text-transform: uppercase;
@@ -532,7 +554,7 @@ body {
 
             @media screen and (max-width: $screen-768) {
                 position: absolute;
-                top: 28%;
+                //top: 28%;
             }
         }
     }
@@ -1348,6 +1370,23 @@ body {
     overflow: visible !important;
 }
 
+//map2 kontakt
+
+.map2 > div > div > div:nth-child(5) {
+    display: none;
+}
+
+.map2 > div > div > div.gmnoprint.gm-style-cc {
+    display: none;
+}
+
+.map2 > div > div > div.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > div:nth-child(1) {
+    display: none;
+}
+
+.map2 > div > div > div:nth-child(11) {
+    display: none;
+}
 
 /*******footer*******/
 
@@ -2285,7 +2324,13 @@ body {
         }
 
         img {
-            width: 100%;
+            width: 90%;
+        }
+
+        .ethics-text {
+            font-size: 18px;
+            line-height: 1.67;
+            @include padding-y(10px,10px);
         }
 
         .order-sm-1 {
@@ -2314,7 +2359,10 @@ body {
                 font-size: 13px;
             }
 
-            .bold {
+            &.bold {
+                line-height: 1.71;
+                font-size: 14px;
+
                 @media screen and (max-width: $screen-768) {
                     font-weight: bold;
                 }
@@ -2702,6 +2750,14 @@ body {
 
     .bold {
         font-weight: 500;
+    }
+
+    &#automotive {
+        margin-top: 128px;
+
+        @media screen and (max-width: $screen-768) {
+            margin-top: 0;
+        }
     }
 
     &.img-text {
@@ -3212,7 +3268,10 @@ body {
     }
 
     &.positions {
-        background: $light-gray;
+        background: #f6f6f6 url(/images/atomy.png?8f57416…);
+        background-blend-mode: color-burn;
+        background-size: cover;
+        background-repeat: repeat;
         @include padding-y(60px,60px);
         @include padding-x(120px,120px);
 
@@ -3439,13 +3498,68 @@ body {
         }
     }
 
+    &.applications {
+            background: transparent;
+    }
+
     &.application {
+        margin-top: -60px;
+        padding-top: 60px;
 
         @media screen and (max-width: $screen-768) {
             margin-top: -60px;
             padding-top: 60px;
             padding-bottom: 0;
         }
+
+        .past {
+            background: transparent;
+
+            @media screen and (max-width: $screen-768) {
+                background: $light-gray;
+            }
+        }
+
+        .now {
+            box-shadow: 1px 3px 18px 5px rgba(35, 32, 32, 0.08);
+            background: white;
+        }
+
+        .future {
+            background: $white;
+        }
+
+        .triangle2 {
+
+            &::after {
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent #e95c1b transparent;
+                border-style: solid;
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+
+        .triangle1 {
+
+            &::before {
+                border-width: 0 0 20px 20px;
+                border-color: transparent transparent #e95c1b transparent;
+                border-style: solid;
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 10px;
+                bottom: 10px;
+                transform: rotate(90deg);
+            }
+        }
+
 
         .find {
             @media screen and (max-width: $screen-768) {
@@ -3569,6 +3683,10 @@ body {
 
         .welcome-timeline {
             z-index: 20;
+
+            @media screen and (max-width: $screen-768) {
+                @include padding-x(0,0);
+            }
         }
 
         .active-mobile {
@@ -3582,7 +3700,7 @@ body {
                 background: $main-orange;
                 z-index: 1;
                 top: 84px;
-                right: 262px;
+                right: calc(50% - 1.5px);
                 max-height: 1200px;
             }
 
@@ -3732,6 +3850,10 @@ body {
         .welcome-cadm {
             background: $white;
             @include area(538px,201px);
+
+            @media screen and (max-width: $screen-768) {
+                @include area(100%,201px);
+            }
 
             .bold {
                 font-size: 26px;
@@ -4247,6 +4369,12 @@ body {
 
     }
 
+    .team-row {
+        @media screen and (min-width: $screen-1440) {
+            max-width: 1440px;
+        }
+    }
+
     &.breadcrumbs {
         background: $white;
         @include padding-y(24px,5px);
@@ -4367,6 +4495,10 @@ body {
                 z-index: 20;
             }
         }
+
+        .bottom-team {
+            @include padding-x(10px,10px)
+        }
     }
 
     .hover-team {
@@ -4451,3 +4583,5 @@ body {
         }
     }
 }
+
+

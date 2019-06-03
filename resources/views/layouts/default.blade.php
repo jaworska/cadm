@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 @include('partials.head')
-<body class="m-auto" >
+<body class="m-auto overflow-y-hidden" >
 <div class="d-flex mx-auto flex-column">
     <header class="mb-auto">
         @include('partials.navigation')
