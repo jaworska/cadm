@@ -35,7 +35,10 @@ class CVExport implements FromCollection ,WithHeadings,ShouldAutoSize
                 'phone' => $cv -> phone,
                 'email' => $cv -> email,
                 'offer' => $cv -> offer -> title,
-                'cv' => env('APP_URL').Storage::url($cv -> file)
+                'cv' => env('APP_URL').Storage::url($cv -> file),
+                'term_1' => $cv -> term_1,
+                'term_2' => $cv -> term_2,
+                'term_3' => $cv -> term_3,
 
             ];
         }
@@ -49,7 +52,10 @@ class CVExport implements FromCollection ,WithHeadings,ShouldAutoSize
             'Telefon',
             'Email',
             'Oferta',
-            'CV'
+            'CV',
+            'Zgoda 1',
+            'Zgoda 2',
+            'Zgoda 3',
         ];
     }
 }
