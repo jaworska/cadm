@@ -224,7 +224,7 @@
 
                     if (timelineHeight >=160 && timelineHeight < 380) {
                         jQuery('.timeline1').removeClass('now').removeClass('triangle2').addClass('past');
-                        jQuery('.timeline3').removeClass('now').removeClass('triangle1');
+                        jQuery('.timeline3').removeClass('now').removeClass('triangle2');
                         jQuery('.timeline2').addClass('now').addClass('triangle1');
                     }
 
