@@ -190,19 +190,89 @@
 
         });
 
-        function setTimelineElements($currentScroll = $(document).scrollTop()){
-            $("timeline-element").each(function(){
+
+        function markTimelineElementAsCurrent($element) {
+            $element.addClass("now");
+            if ($element.hasClass("timeline-left")) $element.addClass("triangle1");
+            else $element.addClass("triangle2");
+        }
+
+        function markTimelineElementAsPast($element) {
+            $element.addClass("past");
+        }
+
+        function unmarkTimelineElementAsCurrent($element){
+            $element.removeClass("now triangle1 triangle2");
+        }
+
+        function unmarkTimelineElementAsPast($element) {
+            $element.removeClass("past");
+        }
+
+        function setTimelineElements($currentScroll, $scrollDirection){
+            $(".timeline-element").each(function(){
                 var timelineElementOffset = $(this).offset();
+                var timelineElementHeight = $(this).height()*0.5;
+                var latestCurrentElementOffset = 0;
 
-                if (timelineElementOffset )
+                // On scroll down
+                if ($scrollDirection == 'down'){
 
-                if (timelineElementOffset.top < $currentScroll) $(this).removeClass("past");
-                if (timelineElementOffset.top > $currentScroll) $(this).addClass("past");
+                    // Mark as current
+                    if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
+                        markTimelineElementAsCurrent($(this));
+                    }
+
+                    // Unmark as current and mark as past
+
+                    $(".timeline-element.now").each(function(){
+                        var thisElementOffset = $(this).offset().top;
+                        if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
+                    });
+
+                    if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
+                        markTimelineElementAsPast($(this));
+                        unmarkTimelineElementAsCurrent($(this));
+                    }
+                }
+
+                // On scroll up
+                if($scrollDirection == 'up') {
+                    // Unark as current
+                    if (timelineElementOffset.top > ($currentScroll-timelineElementHeight)) {
+                        unmarkTimelineElementAsCurrent($(this));
+                    }
+
+                    if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
+                        markTimelineElementAsCurrent($(this));
+                        unmarkTimelineElementAsPast($(this));
+                    }
+
+                    // Unmark as current and unmark as past
+
+                    $(".timeline-element.now").each(function(){
+                        var thisElementOffset = $(this).offset().top;
+                        if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
+                    });
+
+                    if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
+                        markTimelineElementAsPast($(this));
+                        unmarkTimelineElementAsCurrent($(this));
+                    }
+                }
 
             });
         }
 
-            $(document).scroll(function() {
+            var lastScrollTop = 0;
+            var scrollDirection = '';
+            $(window).scroll(function() {
+
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop) scrollDirection = 'down';
+                else scrollDirection = 'up';
+                lastScrollTop = st;
+
                 var $myDiv = $('.career.application .active, .career.application .active-mobile');
 
                 if ($("#timeline-start").is(":visible")) var timelineStart = $("#timeline-start").offset();
@@ -211,7 +281,7 @@
                 var scrollAfterStart = $(this).scrollTop()-timelineStart.top;
                 var scrollAdjustment = $(window).height()*(-0.5);
                 $myDiv.height( scrollAfterStart - scrollAdjustment );
-                setTimelineElements();
+                setTimelineElements($(document).scrollTop()-scrollAdjustment, scrollDirection);
             });
 
 
