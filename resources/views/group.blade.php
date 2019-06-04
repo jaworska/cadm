@@ -10,7 +10,8 @@
             </div>
         </div>
     </div>
-    <div id="#about-us" class="container-fluid why group">
+    <div class="container-fluid why group">
+        <div id="about-us" class="group-scroll-fix"></div>
         <div class="container">
             <div class="row">
                 <div class="offset-md-1 col-md-10 col-12">
@@ -93,7 +94,8 @@
         </div>
     </div>
 
-    <div id="customers" class="container-fluid logos group d-sm-flex flex-column">
+    <div class="container-fluid logos group d-sm-flex flex-column position-relative">
+        <div id="customers" class="group-scroll-fix"></div>
         <div class="row text-center align-items-center">
             <div class="col-md-6 col-12 logos-col">
                 <div class="row">
@@ -183,7 +185,8 @@
         </div>
     </div>
 
-    <div id="our-values" class="container-fluid values group">
+    <div class="container-fluid values group">
+        <div id="our-values" class="group-scroll-fix"></div>
         <div class="row">
             <div class="col-md-4 offset-md-1 col-12 value-change">
                 <div class="text-left title-big">
@@ -339,7 +342,8 @@
         </div>
     </div>
 
-    <div id="code-of-ethics" class="container-fluid group ethics">
+    <div class="container-fluid group ethics">
+        <div id="code-of-ethics" class="group-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1">
                 <img src="/img/group-4.jpg" class=""/>
@@ -367,7 +371,8 @@
         </div>
     </div>
 
-    <div id="eu-grants" class="container-fluid group grants">
+    <div class="container-fluid group grants">
+        <div id="eu-grants" class="group-scroll-fix"></div>
         <div class="container faded">
             <div class="row">
                 <div class="col-12">
@@ -382,7 +387,8 @@
         </div>
     </div>
 
-    <div id="we-love-to-help" class="container-fluid help group">
+    <div class="container-fluid help group">
+        <div id="we-love-to-help" class="group-scroll-fix"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
@@ -395,7 +401,8 @@
         </div>
     </div>
 
-    <div id="partners" class="container-fluid group carousel-group d-none d-md-block">
+    <div class="container-fluid group carousel-group d-none d-md-block">
+        <div id="partners" class="group-scroll-fix"></div>
         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
             <div class="carousel-inner v-2" role="listbox">

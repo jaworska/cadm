@@ -2,7 +2,8 @@
 
 @section('content')
 
-    <div id="automotive" class="container-fluid sectors img-text">
+    <div class="container-fluid sectors img-text">
+        <div id="automotive" class="sectors-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
             </div>
@@ -20,7 +21,8 @@
         </div>
     </div>
 
-    <div id="rolling" class="container-fluid sectors text-img">
+    <div class="container-fluid sectors text-img">
+        <div id="rolling-stock" class="sectors-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
@@ -39,7 +41,8 @@
         </div>
     </div>
 
-    <div id="maritime" class="container-fluid sectors img-text">
+    <div class="container-fluid sectors img-text">
+        <div id="maritime" class="sectors-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 maritime-img">
             </div>
@@ -57,7 +60,8 @@
         </div>
     </div>
 
-    <div id="aerospace" class="container-fluid sectors text-img">
+    <div class="container-fluid sectors text-img">
+        <div id="aerospace" class="sectors-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
@@ -75,7 +79,8 @@
         </div>
     </div>
 
-    <div id="others" class="container-fluid help others sectors">
+    <div class="container-fluid help others sectors">
+        <div id="others" class="sectors-scroll-fix"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2 text-center">

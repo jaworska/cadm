@@ -52,7 +52,7 @@
             <div class="offset-2 col-10 services-menu">
                 <div>
                     <ul>
-                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.concept")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}/#concept" class="bold">@lang("pages.navigation.concept")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.benchmarking")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.product")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.sales")</a></li>
@@ -65,7 +65,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.development")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}/#development" class="bold">@lang("pages.navigation.development")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.cas")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.cad")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.apqp")</a></li>
@@ -78,7 +78,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.simulation")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}/#simulation" class="bold">@lang("pages.navigation.simulation")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.implict")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.explict")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.cfd")</a></li>
@@ -92,7 +92,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.production")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}/#production" class="bold">@lang("pages.navigation.production")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.mold")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.tooling")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.gauges")</a></li>
@@ -105,7 +105,7 @@
                 </div>
                 <div>
                     <ul>
-                        <li class="bold"><a href="{{ route("services") }}" class="bold">@lang("pages.navigation.management")</a></li>
+                        <li class="bold"><a href="{{ route("services") }}/#managment" class="bold">@lang("pages.navigation.management")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.project-management")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.interim-management")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.supplier")</a></li>
@@ -135,7 +135,7 @@
                             </svg>
                             <span>@lang("pages.navigation.automotive")</span>
                         </a></li>
-                    <li class="rolling d-inline position-relative"><a href="{{ route("sectors") }}/#rolling">
+                    <li class="rolling d-inline position-relative"><a href="{{ route("sectors") }}/#rolling-stock">
                             <svg width="71px" height="33px" viewBox="0 0 71 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_homepage_UI" transform="translate(-539.000000, -1440.000000)" fill="#2C2E34">
@@ -206,9 +206,9 @@
             <div class="col-2 text-left careers-menu">
                 <ul class="position-fixed">
                     <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
-                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.friendly")</a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}/#friendly-company">@lang("pages.navigation.friendly")</a></li>
                     <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
-                    <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.current-job")</a></li>
+                    <li class="position-relative"><a href="{{ route("career") }}/#current-job-offers">@lang("pages.navigation.current-job")</a></li>
                 </ul>
             </div>
         </div>
