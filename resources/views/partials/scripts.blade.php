@@ -183,11 +183,8 @@
                 if( bottom_of_window > bottom_of_object ){
 
                     $(this).animate({'opacity':'0.95'},1000);
-
                 }
-
             });
-
         });
 
 
@@ -260,7 +257,6 @@
                         unmarkTimelineElementAsCurrent($(this));
                     }
                 }
-
             });
         }
 
@@ -283,98 +279,6 @@
                 $myDiv.height( scrollAfterStart - scrollAdjustment );
                 setTimelineElements($(document).scrollTop()-scrollAdjustment, scrollDirection);
             });
-
-
-        // $(function(){
-        //     $(window).scroll(function() {
-        //         // var $myDiv = $('.career.application .active');
-        //         // var st = $(this).scrollTop();
-        //         // $myDiv.height( st );
-        //
-        //             var timelineHeight = $myDiv[0].clientHeight;
-        //
-        //             if (timelineHeight >=0 && timelineHeight < 160) {
-        //                 jQuery('.timeline1').addClass('now').addClass('triangle2');
-        //                 jQuery('.timeline2').removeClass('now').removeClass('triangle1').removeClass('past');
-        //             }
-        //
-        //             if (timelineHeight >=160 && timelineHeight < 380) {
-        //                 jQuery('.timeline1').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.timeline3').removeClass('now').removeClass('triangle2').removeClass('past');
-        //                 jQuery('.timeline2').addClass('now').addClass('triangle1');
-        //             }
-        //
-        //             if (timelineHeight >=380 && timelineHeight < 520) {
-        //                 jQuery('.timeline2').removeClass('now').removeClass('triangle1').addClass('past');
-        //                 jQuery('.timeline4').removeClass('now').removeClass('triangle1').removeClass('past');
-        //                 jQuery('.timeline3').addClass('now').addClass('triangle2');
-        //             }
-        //
-        //             if (timelineHeight >=520 && timelineHeight < 740) {
-        //                 jQuery('.timeline3').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.timeline5').removeClass('now').removeClass('triangle2').removeClass('past');
-        //                 jQuery('.timeline4').addClass('now').addClass('triangle1');
-        //             }
-        //
-        //             if (timelineHeight >=740 && timelineHeight < 870) {
-        //                 jQuery('.timeline4').removeClass('now').removeClass('triangle1').addClass('past');
-        //                 jQuery('.timeline6').removeClass('now').removeClass('triangle1').removeClass('past');
-        //                 jQuery('.timeline5').addClass('now').addClass('triangle2');
-        //             }
-        //
-        //             if (timelineHeight >=870 && timelineHeight < 1040) {
-        //                 jQuery('.timeline5').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.timeline6').addClass('now').addClass('triangle1');
-        //             }
-        //     }).scroll();
-
-        // });
-        //
-        // $(function(){
-        //     $(window).scroll(function() {
-        //         var $myDiv = $('.career.application .active-mobile');
-        //         var st = $(this).scrollTop();
-        //         $myDiv.height( st );
-        //
-        //             var timelineHeight = $myDiv[0].clientHeight;
-        //
-        //             if (timelineHeight >=0 && timelineHeight < 255) {
-        //                 jQuery('.mtimeline1').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline2').removeClass('now').removeClass('triangle2').removeClass('past');
-        //             }
-        //
-        //             if (timelineHeight >=255 && timelineHeight < 400) {
-        //                 jQuery('.mtimeline2').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline1').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.mtimeline3').removeClass('now').removeClass('triangle2').removeClass('past');
-        //
-        //             }
-        //
-        //             if (timelineHeight >=400 && timelineHeight < 620) {
-        //                 jQuery('.mtimeline3').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline2').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.mtimeline4').removeClass('now').removeClass('triangle2').removeClass('past');
-        //             }
-        //
-        //             if (timelineHeight >=620 && timelineHeight < 830) {
-        //                 jQuery('.mtimeline4').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline3, .mtimeline1').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.mtimeline5').removeClass('now').removeClass('triangle2').removeClass('past');
-        //             }
-        //
-        //             if (timelineHeight >=835 && timelineHeight < 1035) {
-        //                 jQuery('.mtimeline5').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline4, .timeline1').removeClass('now').removeClass('triangle2').addClass('past');
-        //                 jQuery('.mtimeline6').removeClass('now').removeClass('triangle2').removeClass('past');
-        //             }
-        //
-        //             if (timelineHeight >=1035 && timelineHeight < 1220) {
-        //                 jQuery('.mtimeline6').addClass('now').addClass('triangle2');
-        //                 jQuery('.mtimeline5, .mtimeline1').removeClass('now').removeClass('triangle2').addClass('past');
-        //             }
-        //     }).scroll();
-        //
-        // });
 
 
         //value circle
@@ -480,7 +384,7 @@
 
         jQuery(".scroll-down").click(function() {
             jQuery('html, body').animate({
-                scrollTop: $("#why-cadm").offset().top
+                scrollTop: $("#why-cadm").offset().top-$("#nav").height()
             }, 800);
         });
 

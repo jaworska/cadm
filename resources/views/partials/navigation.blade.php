@@ -17,9 +17,9 @@
             </div>
             <div class="col-4 text-right">
                 <div class="socials d-inline">
-                    <a href="https://www.facebook.com/CADM.Automotive"><img src="/img/fb.svg" class="facebook bw"></a>
-                    <a href="https://www.linkedin.com/company/cadm-automotive"><img src="/img/link.svg" class="linkedin bw"></a>
-                    <a href="#"><img src="/img/insta.svg" class="instagram bw"></a>
+                    <a href="https://www.facebook.com/CADM.Automotive" target="_blank"><img src="/img/fb.svg" class="facebook bw"></a>
+                    <a href="https://www.linkedin.com/company/cadm-automotive" target="_blank"><img src="/img/link.svg" class="linkedin bw"></a>
+                    <a href="https://www.instagram.com/cadmautomotive/" target="_blank"><img src="/img/insta.svg" class="instagram bw"></a>
                 </div>
                 <a href="{{ route("admin") }}" target="_blank" class="btn btn-login">@lang("pages.navigation.login")</a>
                 <span class="lang d-none">@lang("pages.navigation.eng")</span>
