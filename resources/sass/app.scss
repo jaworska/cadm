@@ -2191,7 +2191,18 @@ body {
                     g {
                         fill: $gray-nav;
                     }
+
+                    &.middle-circle{
+                        box-shadow: none;
+                        /*width: 140.8px;
+                        height: 140.8px;
+                        */
+                        border: solid 2px #979797;
+                        background-color: #f6f6f6;
+                    }
                 }
+
+
 
                 &:hover {
                     g {
@@ -2219,18 +2230,39 @@ body {
             }
 
             &.chose {
+                z-index:200;
+                filter: drop-shadow(5px 0 20px rgba(35, 32, 32, 0.2));
+
                 &::before {
-                    background: $white !important;;
+                    background: $white !important;
+                    transition:all 0.4s;
+                    width: 311px!important;
+                    height: 214px!important;
                 }
 
                 g {
                     fill: $main-orange;
                 }
+
+                svg{
+                    visibility:hidden
+                }
+
+                span{
+                    display:block!important;
+                    position:absolute;
+
+                    &.orange{
+                        color: $main-orange;
+                        font-size:21px;
+                        z-index: 20;
+                        font-weight: bold;
+                    }
+                }
             }
 
             &.unactive-top {
                 margin-bottom: 24px;
-                z-index: 20;
 
                 svg {
                     z-index: 20;
@@ -2250,10 +2282,16 @@ body {
                     }
 
                 }
+
+                &.chose {
+                    &::before {
+                        bottom: -130px;
+                    }
+                }
             }
 
+
             &.unactive-left {
-                z-index: 20;
 
                 svg {
                     z-index: 20;
@@ -2277,10 +2315,21 @@ body {
                         top: -88px;
                     }
                 }
+
+                span{
+                    transform: rotate(-72deg);
+                    top:-25px;
+                }
+
+                &.chose {
+                    &::before {
+                        right: -180px;
+                        top: -105px;
+                    }
+                }
             }
 
             &.unactive-right {
-                z-index: 20;
 
                 svg {
                     z-index: 20;
@@ -2304,10 +2353,21 @@ body {
                         top: -88px;
                     }
                 }
+
+                span{
+                    transform: rotate(72deg);
+                    top:-30px
+                }
+
+                &.chose {
+                    &::before {
+                        left: -177px;
+                        top: -111px;
+                    }
+                }
             }
 
             &.unactive-bottom-left {
-                z-index: 20;
 
                 svg {
                     z-index: 20;
@@ -2330,10 +2390,22 @@ body {
                         right: -95px;
                     }
                 }
+
+                span{
+                    transform: rotate(-144deg);
+                    bottom: -11px;
+                    right: -54px;
+                }
+
+                &.chose {
+                    &::before {
+                        top: -109px;
+                        right: -140px;
+                    }
+                }
             }
 
             &.unactive-bottom-right {
-                z-index: 20;
 
                 svg {
                     z-index: 20;
@@ -2356,11 +2428,25 @@ body {
                         left: -94px;
                     }
                 }
+
+                span{
+                    transform: rotate(144deg);
+                    bottom: -5px;
+                    right: -49px;
+                }
+
+                &.chose {
+                    &::before {
+                        top: -105px;
+                        left: -142px;
+                    }
+                }
             }
 
             g {
                 fill: $gray-nav;
             }
+
         }
     }
 
