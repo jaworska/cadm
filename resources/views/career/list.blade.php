@@ -8,7 +8,7 @@
             <div data-location="all" class="d-flex align-items-center justify-content-around choose-button active"><span class="bold">@lang('pages.career.all')</span></div>
             <div data-location="1" class="d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.cracow')</span></div>
             <div data-location="2" class="d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.resident')</span></div>
-{{--            <div data-location="other" class="d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.other')</span></div>--}}
+            <div data-location="3" class="d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.other')</span></div>
         </div>
         <div class="d-flex d-md-none col-8 offset-2 justify-content-between filters">
             <div><span class="bold choose">@lang('pages.career.choose')</span></div>
@@ -20,7 +20,7 @@
                     <div data-location="all" class="dropdown-item d-flex align-items-center justify-content-around choose-button active"><span class="bold">@lang('pages.career.all')</span></div>
                     <div data-location="1" class="dropdown-item d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.cracow')</span></div>
                     <div data-location="2" class="dropdown-item d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.resident')</span></div>
-{{--                    <div data-location="other" class="dropdown-item d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.other')</span></div>--}}
+                    <div data-location="3" class="dropdown-item d-flex align-items-center justify-content-center choose-button"><span class="bold">@lang('pages.career.other')</span></div>
                 </div>
             </div>
         </div>

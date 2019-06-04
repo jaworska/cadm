@@ -73,7 +73,7 @@
 
         jQuery(".sectors-main-drop").siblings().mouseover(function() {
 
-            if (currentUrl == '/sectors') {
+            if (document.location.pathname.indexOf("/sectors") == 0) {
                if (jQuery(this).hasClass('contact-main-drop')) {
                    jQuery(".nav-drop-sectors").removeClass('d-none');
                } else {
@@ -85,6 +85,23 @@
             }
         });
 
+        //active menu
+
+        // $(function(){
+        //
+        //     var url = window.location.pathname , // in real app this would have to be replaced with window.location.pathname
+        //         urlRegExp = new RegExp(url.replace(/\/$/,'')); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+        //
+        //     // now grab every link from the navigation
+        //     $('#nav a').each(function(){
+        //         // and test its href against the url pathname regexp
+        //         if(urlRegExp.test(this.href)){
+        //             $(this).addClass('active');
+        //         }
+        //     });
+        //
+        // });
+
 
         var positionMenu = jQuery(".careers-main-drop a").offset().left;
         var positionMenuScaled = positionMenu / (scale * 10) * 10;
@@ -93,11 +110,12 @@
 
         var currentUrl = $(location).attr('pathname');
 
-        if (currentUrl == '/sectors') {
-            jQuery('.sectors-main-drop a').addClass('sectors-trigger');
+        if (document.location.pathname.indexOf("/sectors") == 0) {
+            jQuery('.sectors-main-drop a').addClass('menu-trigger');
             jQuery('.nav-drop-sectors').removeClass('d-none');
         }
 
+        //show dropdown menu
 
         jQuery(".careers-main-drop").mouseover(function() {
             jQuery(".nav-drop-careers").removeClass('d-none');
@@ -126,8 +144,8 @@
         });
 
         jQuery("#nav").parent().siblings().mouseover(function() {
-            if (currentUrl == '/sectors') {
-                jQuery('.sectors-main-drop a').addClass('sectors-trigger');
+            if (document.location.pathname.indexOf("/sectors") == 0) {
+                jQuery('.sectors-main-drop a').addClass('menu-trigger');
                 jQuery('.nav-drop-sectors').removeClass('d-none');
                 jQuery(".nav-drop-group,.nav-drop-services,.nav-drop-careers").addClass('d-none');
             } else {
@@ -155,6 +173,7 @@
         });
 
         //click boxes career
+
         jQuery(".click-meet").click(function() {
             document.location.href = '/team';
         });
@@ -164,8 +183,72 @@
         });
 
         jQuery(".click-positions").click(function() {
-            document.location.href = '/career';
+            jQuery('html, body').animate({
+                scrollTop: $(".positions").offset().top-$("#nav").height()
+            }, 800);
         });
+
+        //click boxes sectors
+
+        // jQuery(".click-automotive").click(function() {
+        //     document.location.href = '/sectors/#automotive';
+        // });
+        //
+        // jQuery(".click-maritime").click(function() {
+        //     document.location.href = '/sectors/#maritime';
+        // });
+        //
+        // jQuery(".click-rolling").click(function() {
+        //     document.location.href = '/sectors/#rolling-stock';
+        // });
+        //
+        // // jQuery(".click-aerospace").click(function() {
+        // //     document.location.href = '/sectors/#aerospace';
+        // // });
+        //
+        // jQuery(".click-others").click(function() {
+        //     document.location.href = '/sectors/#others';
+        // });
+
+        //menu services toggle boxes
+
+        if(window.location.href.indexOf("concept") > -1 || window.location.href.indexOf("development") > -1 || window.location.href.indexOf("simulation") > -1 || window.location.href.indexOf("production") > -1 || window.location.href.indexOf("managment") > -1) {
+            var servicesUrl =  document.location.href;
+            var servicesUrlCut = servicesUrl.split("#").pop();
+            toggleServices(servicesUrlCut);
+        }
+
+        jQuery(".services-menu li .bold").click(function() {
+            var servicesUrl =  $(this).attr('href');
+            var servicesUrlCut = servicesUrl.split("#").pop();
+            toggleServices(servicesUrlCut);
+        });
+
+        function toggleServices(servicesUrlCut) {
+            jQuery('html, body').animate({
+                scrollTop: $("#toggle-services").offset().top-$("#nav").height()
+            }, 800);
+            jQuery('.services-toggle').each(function() {
+                if(jQuery(this).hasClass(servicesUrlCut)) {
+                    if (!jQuery(this).find('.why-content').hasClass('active')) {
+                        jQuery(this).find('.why-content').toggleClass('active');
+                        jQuery(this).find('ul').slideToggle("slow");
+                    }
+                    jQuery(this).siblings().find('.why-content').removeClass('active');
+                    jQuery(this).siblings().find('ul').hide();
+                }
+            });
+        }
+
+        //menu sectors scroll on page
+
+        // if (document.location.pathname.indexOf("/sectors") == 0) {
+        //     jQuery(".sectors-menu li a").click(function(event) {
+        //
+        //
+        //     });
+        //
+        // }
 
 
         //fade grants group
@@ -186,6 +269,8 @@
                 }
             });
         });
+
+        //timeline
 
 
         function markTimelineElementAsCurrent($element) {
@@ -258,6 +343,8 @@
                     }
                 }
             });
+
+
         }
 
             var lastScrollTop = 0;
@@ -392,7 +479,7 @@
 
         jQuery(".join-us").click(function() {
             jQuery('html, body').animate({
-                scrollTop: $(".positions").offset().top
+                scrollTop: $(".positions").offset().top-$("#nav").height()
             }, 800);
         });
 
@@ -620,7 +707,7 @@
         ['DES ART. Sp. z o.o.', 54.533146, 18.517756,'Czechosłowacka 3','81-969 Gdynia','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
         ['CADM Automotive Sp. z o.o.', 49.546515, 22.219024,'Lipińskiego 113','38-500 Sanok','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
         ['CADM Automotive Sp. z o.o.', 51.273985, 22.564424,'Mariana Rapackiego 25','20-150 Lublin','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
-        ['CADM Automotive Sp. z o.o. - GmbH', 48.134737, 11.663307,'Schatzbogen 38','D – 81829 München','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10]
+        ['CADM Automotive GmbH', 48.134737, 11.663307,'Schatzbogen 38','D – 81829 München','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10]
     ];
 
     var allMarkers = [];
