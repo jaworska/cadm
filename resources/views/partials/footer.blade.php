@@ -46,9 +46,9 @@
         </div>
         <div class="col-2 nav-footer">
             <div class="socials d-flex">
-                <a href="#"><img src="/img/fb.png" class="fb"></a>
-                <a href="#"><img src="/img/in.png" class="in"></a>
-                <a href="#"><img src="/img/insta.png" class="insta"></a>
+                <a href="https://www.facebook.com/CADM.Automotive" target="_blank"><img src="/img/fb.png" class="fb"></a>
+                <a href="https://www.linkedin.com/company/cadm-automotive" target="_blank"><img src="/img/in.png" class="in"></a>
+                <a href="https://www.instagram.com/cadmautomotive/" target="_blank"><img src="/img/insta.png" class="insta"></a>
             </div>
         </div>
     </div>
