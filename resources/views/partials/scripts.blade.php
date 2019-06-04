@@ -289,8 +289,15 @@
                 jQuery(".values-box").removeClass("chose");
             }
 
+      /*      if(jQuery(this).closest("svg").hasClass("d-none")) {
+                jQuery(this).closest("svg").removeClass("d-none");
+            }
+            jQuery(this).closest("svg").addClass("d-none");
+
+    */
             jQuery(this).closest(".values-box").addClass("chose");
             jQuery(".values-box.active").addClass("disactive");
+
 
             if(jQuery(this).parent().hasClass("disactive")) {
                 jQuery(".values-box.active").removeClass("disactive");

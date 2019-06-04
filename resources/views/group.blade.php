@@ -215,7 +215,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none"></span>
+                            <span class="d-none orange">Trust</span>
                         </div>
                     </div>
                 </div>
@@ -239,10 +239,11 @@
                                     </g>
                                 </g>
                             </svg>
+                            <span class="d-none orange">Responsibility</span>
                         </div>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="values-box position-relative  active position-relative d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center middle-circle-div">
+                        <div class="values-box position-relative  active position-relative d-flex flex-column justify-content-center align-items-center middle-circle">
                             <svg width="29px" height="37px" viewBox="0 0 29 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="quality">
                             <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="CADM_group_do-UI-" transform="translate(-927.000000, -3824.000000)" fill="#E95C1B" fill-rule="nonzero">
@@ -284,6 +285,7 @@
                                     </g>
                                 </g>
                             </svg>
+                            <span class="d-none orange">Consequence</span>
                         </div>
                     </div>
                 </div>
@@ -307,6 +309,7 @@
                                     </g>
                                 </g>
                             </svg>
+                            <span class="d-none orange">Communication</span>
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -328,6 +331,7 @@
                                     </g>
                                 </g>
                             </svg>
+                            <span class="d-none orange">Creativity</span>
                         </div>
                     </div>
                 </div>
