@@ -43,6 +43,7 @@
     </div>
 
     <div class="container-fluid friendly services career">
+        <div id="friendly-company" class="career-scroll-fix"></div>
         <div class="row">
             <div class="col-md-6 offset-md-3 col-12 padding-container">
                 <div class="text-center why_span">
@@ -55,7 +56,7 @@
         </div>
         <div class="container list-friendly">
             <div class="row justify-content-center">
-                <div class="col-md-3 offset-md-1 col-12">
+                <div class="col-md-4 col-12">
                     <span class="bold">@lang('pages.career.culture')</span>
                     <ul>
                         <span class="">@lang('pages.career.we')</span>
@@ -68,7 +69,7 @@
                         <li>@lang('pages.career.culture7')</li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12 pl-4">
+                <div class="col-md-4 col-12 pl-4">
                     <span class="bold">@lang('pages.career.financial')</span>
                     <ul>
                         <li>@lang('pages.career.financial1')</li>
@@ -78,7 +79,7 @@
                         <li>@lang('pages.career.financial5')</li>
                     </ul>
                 </div>
-                <div class="col-md-3 col-12">
+                <div class="col-md-4 col-12">
                     <span class="bold">@lang('pages.career.non-financial')</span>
                     <ul>
                         <li>@lang('pages.career.non-financial1')</li>
@@ -94,6 +95,7 @@
     </div>
 
     <div class="container-fluid positions career d-flex justify-content-center">
+        <div id="current-job-offers" class="career-scroll-fix"></div>
         @include('career.list')
     </div>
 

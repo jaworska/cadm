@@ -238,6 +238,7 @@ of production. We believe that it is necessary to search for innovative construc
             'text' => 'Location',
             '1' => 'Kraków HQ',
             '2' => 'Resident',
+            '3' => 'Other',
         ],
         'range' => 'Zakres obowiązków',
         'requirements' => 'Wymagania',

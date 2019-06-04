@@ -8,7 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(Offer::class, function (Faker $faker) {
     return [
         'title' => $faker -> sentence($nbWords = 6, $variableNbWords = true),
-        'location' => rand(1,2),
+        'location' => rand(1,3),
         'range' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'offer' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),
         'requirements' => $faker -> paragraph($nbSentences = 6, $variableNbSentences = true),

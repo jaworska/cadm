@@ -1,7 +1,7 @@
 <div class="container-fluid footer d-none d-md-block">
     <div class="row">
         <div class="col-2">
-            <a href="#"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
+            <a href="{{ route("home") }}"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
         </div>
         <div class="col-2 nav-footer">
             <p><a href="{{ route("group") }}">@lang("pages.navigation.the-group")</a></p>
@@ -16,26 +16,26 @@
             </ul>
         </div>
         <div class="col-2 nav-footer">
-            <p><a href="#">@lang("pages.navigation.sectors")</a></p>
+            <p><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></p>
             <ul>
                 <li><a href="{{ route("sectors") }}/#automotive">@lang("pages.navigation.automotive")</a></li>
-                <li><a href="{{ route("sectors") }}/#rolling">@lang("pages.navigation.rolling")</a></li>
+                <li><a href="{{ route("sectors") }}/#rolling-stock">@lang("pages.navigation.rolling")</a></li>
                 <li><a href="{{ route("sectors") }}/#maritime">@lang("pages.navigation.maritime")</a></li>
                 <li><a href="{{ route("sectors") }}/#aerospace">@lang("pages.navigation.aerospace")</a></li>
                 <li><a href="{{ route("sectors") }}/#others">@lang("pages.navigation.others")</a></li>
             </ul>
         </div>
         <div class="col-2 nav-footer">
-            <p><a href="#">@lang("pages.navigation.careers")</a></p>
+            <p><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a></p>
             <ul>
                 <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
-                <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.friendly")</a></li>
+                <li class="position-relative"><a href="{{ route("career") }}/#friendly-company">@lang("pages.navigation.friendly")</a></li>
                 <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
-                <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.current-job")</a></li>
+                <li class="position-relative"><a href="{{ route("career") }}/#current-job-offers">@lang("pages.navigation.current-job")</a></li>
             </ul>
         </div>
         <div class="col-2 nav-footer">
-            <p><a href="#">@lang("pages.navigation.contact")</a></p>
+            <p><a href="{{ route("contact") }}">@lang("pages.navigation.contact")</a></p>
             <ul>
                 <li>info@cadm-a.com</li>
                 <li>+48 12 397 21 82</li>
@@ -138,7 +138,7 @@
 <div class="container-fluid footer d-md-none d-sm-block">
     <div class="row">
         <div class="col-6 nav-footer margin-nav">
-            <a href="#"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
+            <a href="{{ route("home") }}"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
             <p>@lang("pages.navigation.contact")</p>
             <ul>
                 <li>info@cadm-a.com</li>
@@ -150,9 +150,9 @@
         </div>
         <div class="col-6 nav-footer">
             <div class="socials d-flex">
-                <a href="#"><img src="/img/fb.png" class="fb"></a>
-                <a href="#"><img src="/img/in.png" class="in"></a>
-                <a href="#"><img src="/img/insta.png" class="insta"></a>
+                <a href="https://www.facebook.com/CADM.Automotive" target="_blank"><img src="/img/fb.png" class="fb"></a>
+                <a href="https://www.linkedin.com/company/cadm-automotive" target="_blank"><img src="/img/in.png" class="in"></a>
+                <a href="https://www.instagram.com/cadmautomotive/" target="_blank"><img src="/img/insta.png" class="insta"></a>
             </div>
         </div>
 
@@ -169,22 +169,22 @@
             </ul>
         </div>
         <div class="col-6 nav-footer margin-top-nav">
-            <p><a href="#">@lang("pages.navigation.sectors")</a></p>
+            <p><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></p>
             <ul>
                 <li><a href="{{ route("sectors") }}/#automotive">@lang("pages.navigation.automotive")</a></li>
-                <li><a href="{{ route("sectors") }}/#rolling">@lang("pages.navigation.rolling")</a></li>
+                <li><a href="{{ route("sectors") }}/#rolling-stock">@lang("pages.navigation.rolling")</a></li>
                 <li><a href="{{ route("sectors") }}/#maritime">@lang("pages.navigation.maritime")</a></li>
                 <li><a href="{{ route("sectors") }}/#aerospace">@lang("pages.navigation.aerospace")</a></li>
                 <li><a href="{{ route("sectors") }}/#others">@lang("pages.navigation.others")</a></li>
             </ul>
         </div>
         <div class="col-6 nav-footer margin-top-nav">
-            <p><a href="#">@lang("pages.navigation.careers")</a></p>
+            <p><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a></p>
             <ul>
                 <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
-                <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.friendly")</a></li>
+                <li class="position-relative"><a href="{{ route("career") }}/#friendly-company">@lang("pages.navigation.friendly")</a></li>
                 <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
-                <li class="position-relative"><a href="{{ route("career") }}">@lang("pages.navigation.current-job")</a></li>
+                <li class="position-relative"><a href="{{ route("career") }}/#current-job-offers">@lang("pages.navigation.current-job")</a></li>
             </ul>
         </div>
         <div class="col-6 nav-footer margin-top-nav">
