@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid sectors img-text">
+    <div class="container-fluid sectors img-text automotive-container">
         <div id="automotive" class="sectors-scroll-fix"></div>
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
@@ -81,7 +81,7 @@
 
     <div class="container-fluid help others sectors">
         <div id="others" class="sectors-scroll-fix"></div>
-        <div class="container">
+        <div class="container padding-others">
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2 text-center">
                     <div class="title-big text-center">

@@ -11,11 +11,11 @@
         </div>
     </div>
     <div class="container-fluid why group">
-        <div id="about-us" class="group-scroll-fix"></div>
         <div class="container">
             <div class="row">
                 <div class="offset-md-1 col-md-10 col-12">
                     <div class="text-center why_span">
+                        <div id="about-us" class="group-scroll-fix"></div>
                         <span>@lang('pages.group.why')</span>
                     </div>
                     <div class="text-center symbol">

@@ -1669,7 +1669,7 @@ body {
         width: 1px;
         height: 1px;
         position: absolute;
-        margin-top: -154px;
+        margin-top: -64px;
         pointer-events: none;
     }
 
@@ -2822,6 +2822,10 @@ body {
         pointer-events: none;
     }
 
+    &.automotive-container {
+        margin-top: 101px;
+    }
+
     .title-big {
         font-size: 26px;
         font-weight: bold;
@@ -3008,8 +3012,11 @@ body {
     }
 
     &.others {
-        @include padding-y(50px,50px);
         background: #f6f6f6;
+
+        .padding-others {
+            @include padding-y(50px,50px);
+        }
 
         p {
             line-height: 1.67;
@@ -3168,7 +3175,7 @@ body {
         width: 1px;
         height: 1px;
         position: absolute;
-        margin-top: -154px;
+        margin-top: -64px;
         pointer-events: none;
     }
 
