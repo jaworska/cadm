@@ -87,20 +87,34 @@
 
         //active menu
 
-        // $(function(){
-        //
-        //     var url = window.location.pathname , // in real app this would have to be replaced with window.location.pathname
-        //         urlRegExp = new RegExp(url.replace(/\/$/,'')); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
-        //
-        //     // now grab every link from the navigation
-        //     $('#nav a').each(function(){
-        //         // and test its href against the url pathname regexp
-        //         if(urlRegExp.test(this.href)){
-        //             $(this).addClass('active');
-        //         }
-        //     });
-        //
-        // });
+        $(function(){
+
+            var getUrl = window.location;
+            var baseUrl = getUrl .protocol + "//" + getUrl.host + "/";
+
+            var activeUrl =   window.location.pathname;
+            var temp = activeUrl.split("/");
+            var activeUrlCut = temp[1];
+
+            // now grab every link from the navigation
+            $('.nav_container a').each(function(){
+                var navUrl = $(this).attr('href');
+                var temp2 = navUrl.split(baseUrl);
+                var navUrlCut = temp2[1];
+
+                if (navUrlCut === activeUrlCut) {
+                    $(this).addClass('active');
+                    return false;
+                }
+
+                //exceptions
+                if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
+                    $(this).addClass('active');
+                    return false;
+                }
+            });
+
+        });
 
 
         var positionMenu = jQuery(".careers-main-drop a").offset().left;
@@ -210,6 +224,13 @@
         //     document.location.href = '/sectors/#others';
         // });
 
+        // services toggle
+
+        jQuery('.services-toggle-inner').click(function(){
+            jQuery(this).toggleClass('active');
+            jQuery(this).siblings().find('ul').slideToggle("slow");
+        });
+
         //menu services toggle boxes
 
         if(window.location.href.indexOf("concept") > -1 || window.location.href.indexOf("development") > -1 || window.location.href.indexOf("simulation") > -1 || window.location.href.indexOf("production") > -1 || window.location.href.indexOf("managment") > -1) {
@@ -218,7 +239,7 @@
             toggleServices(servicesUrlCut);
         }
 
-        jQuery(".services-menu li .bold").click(function() {
+        jQuery(".services-menu li a, .services-toggle li a").click(function() {
             var servicesUrl =  $(this).attr('href');
             var servicesUrlCut = servicesUrl.split("#").pop();
             toggleServices(servicesUrlCut);
@@ -250,6 +271,52 @@
         //
         // }
 
+        //sectors scroll menu
+
+        if(window.location.href.indexOf("sectors") > -1) {
+            jQuery(".nav-drop-sectors li a").click(function(e) {
+               e.preventDefault();
+
+                var sectorsUrl =  $(this).attr('href');
+                var sectorsUrlCut = sectorsUrl.split("#").pop();
+
+                jQuery('html, body').animate({
+                    scrollTop: $('#'+sectorsUrlCut).offset().top
+                }, 800);
+
+            });
+        }
+
+        //group scroll menu
+
+        if(window.location.href.indexOf("group") > -1) {
+            jQuery(".nav-drop-group li a").click(function(e) {
+                e.preventDefault();
+
+                var groupUrl =  $(this).attr('href');
+                var groupUrlCut = groupUrl.split("#").pop();
+
+                jQuery('html, body').animate({
+                    scrollTop: $('#'+groupUrlCut).offset().top
+                }, 800);
+
+            });
+        }
+
+        //ethics img height group
+        var ethicsColHeight = [];
+
+        jQuery('.ethics .max-height>div').each( function(){
+            ethicsColHeight.push(jQuery(this).height());
+        });
+
+        var totalHeight = 0;
+
+        for (var i = 0; i < ethicsColHeight.length; i++) {
+            totalHeight += ethicsColHeight[i] << 0;
+        }
+
+        jQuery('.set-height').css('max-height',totalHeight + 20);
 
         //fade grants group
 
@@ -272,100 +339,102 @@
 
         //timeline
 
+        if(window.location.href.indexOf("application") > -1) {
+            function markTimelineElementAsCurrent($element) {
+                $element.addClass("now");
+                if ($element.hasClass("timeline-left")) $element.addClass("triangle1");
+                else $element.addClass("triangle2");
+            }
 
-        function markTimelineElementAsCurrent($element) {
-            $element.addClass("now");
-            if ($element.hasClass("timeline-left")) $element.addClass("triangle1");
-            else $element.addClass("triangle2");
-        }
+            function markTimelineElementAsPast($element) {
+                $element.addClass("past");
+            }
 
-        function markTimelineElementAsPast($element) {
-            $element.addClass("past");
-        }
+            function unmarkTimelineElementAsCurrent($element){
+                $element.removeClass("now triangle1 triangle2");
+            }
 
-        function unmarkTimelineElementAsCurrent($element){
-            $element.removeClass("now triangle1 triangle2");
-        }
+            function unmarkTimelineElementAsPast($element) {
+                $element.removeClass("past");
+            }
 
-        function unmarkTimelineElementAsPast($element) {
-            $element.removeClass("past");
-        }
+            function setTimelineElements($currentScroll, $scrollDirection){
+                $(".timeline-element").each(function(){
+                    var timelineElementOffset = $(this).offset();
+                    var timelineElementHeight = $(this).height()*0.5;
+                    var latestCurrentElementOffset = 0;
 
-        function setTimelineElements($currentScroll, $scrollDirection){
-            $(".timeline-element").each(function(){
-                var timelineElementOffset = $(this).offset();
-                var timelineElementHeight = $(this).height()*0.5;
-                var latestCurrentElementOffset = 0;
+                    // On scroll down
+                    if ($scrollDirection == 'down'){
 
-                // On scroll down
-                if ($scrollDirection == 'down'){
+                        // Mark as current
+                        if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
+                            markTimelineElementAsCurrent($(this));
+                        }
 
-                    // Mark as current
-                    if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
-                        markTimelineElementAsCurrent($(this));
+                        // Unmark as current and mark as past
+
+                        $(".timeline-element.now").each(function(){
+                            var thisElementOffset = $(this).offset().top;
+                            if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
+                        });
+
+                        if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
+                            markTimelineElementAsPast($(this));
+                            unmarkTimelineElementAsCurrent($(this));
+                        }
                     }
 
-                    // Unmark as current and mark as past
+                    // On scroll up
+                    if($scrollDirection == 'up') {
+                        // Unark as current
+                        if (timelineElementOffset.top > ($currentScroll-timelineElementHeight)) {
+                            unmarkTimelineElementAsCurrent($(this));
+                        }
 
-                    $(".timeline-element.now").each(function(){
-                        var thisElementOffset = $(this).offset().top;
-                        if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
-                    });
+                        if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
+                            markTimelineElementAsCurrent($(this));
+                            unmarkTimelineElementAsPast($(this));
+                        }
 
-                    if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
-                        markTimelineElementAsPast($(this));
-                        unmarkTimelineElementAsCurrent($(this));
+                        // Unmark as current and unmark as past
+
+                        $(".timeline-element.now").each(function(){
+                            var thisElementOffset = $(this).offset().top;
+                            if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
+                        });
+
+                        if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
+                            markTimelineElementAsPast($(this));
+                            unmarkTimelineElementAsCurrent($(this));
+                        }
                     }
-                }
+                });
 
-                // On scroll up
-                if($scrollDirection == 'up') {
-                    // Unark as current
-                    if (timelineElementOffset.top > ($currentScroll-timelineElementHeight)) {
-                        unmarkTimelineElementAsCurrent($(this));
-                    }
 
-                    if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
-                        markTimelineElementAsCurrent($(this));
-                        unmarkTimelineElementAsPast($(this));
-                    }
+            }
 
-                    // Unmark as current and unmark as past
+                var lastScrollTop = 0;
+                var scrollDirection = '';
+                $(window).scroll(function() {
 
-                    $(".timeline-element.now").each(function(){
-                        var thisElementOffset = $(this).offset().top;
-                        if (thisElementOffset > latestCurrentElementOffset) latestCurrentElementOffset = thisElementOffset;
-                    });
+                    var st = $(this).scrollTop();
+                    if (st > lastScrollTop) scrollDirection = 'down';
+                    else scrollDirection = 'up';
+                    lastScrollTop = st;
 
-                    if($(this).hasClass("now") && latestCurrentElementOffset > $(this).offset().top) {
-                        markTimelineElementAsPast($(this));
-                        unmarkTimelineElementAsCurrent($(this));
-                    }
-                }
-            });
+                    var $myDiv = $('.career.application .active, .career.application .active-mobile');
 
+                    if ($("#timeline-start").is(":visible")) var timelineStart = $("#timeline-start").offset();
+                    else var timelineStart = $("#timeline-start-mobile").offset();
+
+                    var scrollAfterStart = $(this).scrollTop()-timelineStart.top;
+                    var scrollAdjustment = $(window).height()*(-0.5);
+                    $myDiv.height( scrollAfterStart - scrollAdjustment );
+                    setTimelineElements($(document).scrollTop()-scrollAdjustment, scrollDirection);
+                });
 
         }
-
-            var lastScrollTop = 0;
-            var scrollDirection = '';
-            $(window).scroll(function() {
-
-                var st = $(this).scrollTop();
-                if (st > lastScrollTop) scrollDirection = 'down';
-                else scrollDirection = 'up';
-                lastScrollTop = st;
-
-                var $myDiv = $('.career.application .active, .career.application .active-mobile');
-
-                if ($("#timeline-start").is(":visible")) var timelineStart = $("#timeline-start").offset();
-                else var timelineStart = $("#timeline-start-mobile").offset();
-
-                var scrollAfterStart = $(this).scrollTop()-timelineStart.top;
-                var scrollAdjustment = $(window).height()*(-0.5);
-                $myDiv.height( scrollAfterStart - scrollAdjustment );
-                setTimelineElements($(document).scrollTop()-scrollAdjustment, scrollDirection);
-            });
 
 
         //value circle
@@ -434,12 +503,8 @@
             }
         });
 
-        // filter
 
-        jQuery('.services-toggle').click(function(){
-            jQuery(this).find('.why-content').toggleClass('active');
-            jQuery(this).find('ul').slideToggle("slow");
-        });
+        // filter
 
         jQuery('.more-offer').click(function(){
             jQuery(this).toggleClass("rotate");

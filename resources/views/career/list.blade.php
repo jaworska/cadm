@@ -1,4 +1,4 @@
-<div class="positions-container pl-0 pr-0">
+<div class="positions-container pl-0 pr-0 w-100">
     <div class="row why-row align-items-center justify-content-sm-between">
         <div class="col-12 text-center">
             <span class="title-big">@lang('pages.career.positions')</span>

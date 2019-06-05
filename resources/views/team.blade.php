@@ -8,7 +8,7 @@
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
+                {{--<li data-target="#myCarousel" data-slide-to="3"></li>--}}
             </ol>
 
             <!-- The slideshow -->
@@ -22,9 +22,9 @@
                 <div class="carousel-item">
                     <img src="/img/meet-slider3.jpg" alt="">
                 </div>
-                <div class="carousel-item">
-                    <img src="/img/meet-slider4.jpg" alt="">
-                </div>
+                {{--<div class="carousel-item">--}}
+                    {{--<img src="/img/meet-slider4.jpg" alt="">--}}
+                {{--</div>--}}
             </div>
 
             <!-- Left and right controls -->

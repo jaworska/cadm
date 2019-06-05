@@ -68,6 +68,10 @@ body {
     }
 }
 
+#body-wrapper {
+    overflow-x: hidden;
+}
+
 .container {
     @media screen and (max-width: $screen-991) and (min-width: $screen-768){
         max-width: 991px;
@@ -883,6 +887,22 @@ body {
         @include padding-x(40px,40px);
     }
 
+    .click-automotive {
+
+        .text-center {
+            span {
+                &:first-of-type {
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.33;
+                    letter-spacing: 0.6px;
+                    color: $gray-nav;
+                    padding-top: 14px;
+                }
+            }
+        }
+    }
+
     .text-center {
         span {
             &:first-of-type {
@@ -909,6 +929,7 @@ body {
     .row {
         padding-bottom: 60px;
         max-height: 200px;
+        max-width: 1440px;
 
         &:last-of-type {
             @include margin-y(20px,50px);
@@ -1660,6 +1681,7 @@ body {
             .text-center {
                 p {
                     color: $white;
+                    @include padding-x(60px,60px);
                 }
             }
         }
@@ -1789,7 +1811,8 @@ body {
 
             @media screen and (max-width: $screen-768) {
                 min-height: 300px;
-                margin-left: 10%;
+                padding-left: 10%;
+                margin-left: 0;
 
             }
 
@@ -1842,7 +1865,7 @@ body {
                 cursor: pointer;
 
                 @media screen and (max-width: $screen-768) {
-                    width: 16px;
+                    font-weight: 14px;
                     @include padding-x(0,0);
                 }
 
@@ -2261,7 +2284,7 @@ body {
                 }
             }
 
-            &.unactive-top {
+            &.inactive-top {
                 margin-bottom: 24px;
 
                 svg {
@@ -2291,7 +2314,7 @@ body {
             }
 
 
-            &.unactive-left {
+            &.inactive-left {
 
                 svg {
                     z-index: 20;
@@ -2329,7 +2352,7 @@ body {
                 }
             }
 
-            &.unactive-right {
+            &.inactive-right {
 
                 svg {
                     z-index: 20;
@@ -2367,7 +2390,7 @@ body {
                 }
             }
 
-            &.unactive-bottom-left {
+            &.inactive-bottom-left {
 
                 svg {
                     z-index: 20;
@@ -2405,7 +2428,7 @@ body {
                 }
             }
 
-            &.unactive-bottom-right {
+            &.inactive-bottom-right {
 
                 svg {
                     z-index: 20;
@@ -2452,7 +2475,7 @@ body {
 
     &.ethics {
         @include padding-y(77px,77px);
-        padding-right: 112px;
+        padding-right: 130px;
 
         @media screen and (max-width: $screen-768) {
             background: $white;
@@ -2462,10 +2485,6 @@ body {
 
         img {
             width: 90%;
-
-            @media screen and (min-width: $screen-1920) {
-                width: 75%;
-            }
 
             @media screen and (max-width: $screen-768) {
                 width: 100%;
@@ -2622,13 +2641,25 @@ body {
                 .agh {
                     width: 58px;
 
+                    @media screen and (max-width: $screen-768) {
+                        width: 48px;
+                    }
+
+                }
+
+                .fundacja-flex {
+                    @media screen and (max-width: $screen-768) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
                 }
 
                 .fundacja {
                     width: 243px;
 
                     @media screen and (max-width: $screen-768) {
-                        width: 120px;
+                        width: 150px;
                     }
                 }
 
@@ -3393,6 +3424,14 @@ body {
                     color: $gray-nav;
                 }
             }
+
+            .financial-benefits {
+                padding-left: 80px;
+
+                @media screen and (max-width: $screen-768) {
+                    padding-left: 15px;
+                }
+            }
         }
 
         .why_span-bottom {
@@ -3620,7 +3659,8 @@ body {
     }
 
     &.others {
-      background: $white;
+        background: $white;
+        @include padding-y(50px,50px);
 
         .title-big {
             font-size: 26px;
@@ -3692,6 +3732,10 @@ body {
             margin-top: -60px;
             padding-top: 60px;
             padding-bottom: 0;
+        }
+
+        .why-content {
+            @include padding-x(30px,30px);
         }
 
         .past {
@@ -3921,7 +3965,6 @@ body {
 
             .col-right {
                 .find {
-
                     &::before {
                         @include after-before(25px,25px);
                         background: $white;
@@ -3959,17 +4002,17 @@ body {
             }
 
             .apply {
-                @include area(220px,66px);
+                @include area(240px,76px);
                 margin-top: 140px;
             }
 
             .f2 {
-                @include area(370px,127px);
+                @include area(390px,137px);
                 margin-top: 265px;
             }
 
             .technical {
-                @include area(227px,66px);
+                @include area(247px,76px);
                 @include margin-y(257px,113px);
             }
 
@@ -4007,7 +4050,7 @@ body {
             }
 
             .find {
-                @include area(339px,132px);
+                @include area(359px,142px);
 
                 &::before {
                     @include after-before(25px,25px);
@@ -4020,12 +4063,12 @@ body {
             }
 
             .initial {
-                @include area(492px,132px);
+                @include area(512px,142px);
                 margin-top: 193px;
             }
 
             .receive {
-                @include area(469px,126px);
+                @include area(489px,136px);
                 margin-top: 229px;
             }
 
@@ -4766,7 +4809,7 @@ body {
 
                 &.active {
                     background-color: $main-orange;
-                    border: none;
+                    border: 1px solid $main-orange;
                 }
             }
 

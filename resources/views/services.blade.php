@@ -31,77 +31,89 @@
             </div>
             <div class="row services-row align-items-baseline justify-content-sm-between">
                 <div class="col-md-2 col-11 pl-0 pr-0 services-toggle concept">
-                    <div class="text-center why-content d-flex align-items-center justify-content-center col-hover">
+                    <div class="services-toggle-inner text-center why-content d-flex align-items-center justify-content-center col-hover">
                         <span>@lang('pages.services.concept')</span>
                     </div>
                     <div class="text-right">
                         <ul>
-                            <li>@lang('pages.services.cas')</li>
-                            <li>@lang('pages.services.cad')</li>
-                            <li>@lang('pages.services.cae')</li>
-                            <li>@lang('pages.services.electronic-hardware')</li>
-                            <li>@lang('pages.services.electronic-software')</li>
-                            <li>@lang('pages.services.software')</li>
-                            <li>@lang('pages.services.prototyping')</li>
-                            <li>@lang('pages.services.learn-more')</li>
+                            <li>@lang("pages.services.benchmarking")</li>
+                            <li>@lang("pages.services.product")</li>
+                            <li>@lang("pages.services.sales")</li>
+                            <li>@lang("pages.services.definition")</li>
+                            <li>@lang("pages.services.capacity")</li>
+                            <li>@lang("pages.services.costing")</li>
+                            <li>@lang("pages.services.model")</li>
+                            <li>@lang("pages.services.styling")</li>
+                            <li>@lang("pages.services.learn-more")</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2 col-11 pl-0 pr-0 services-toggle development">
-                    <div class="text-center why-content col-hover d-flex align-items-center justify-content-center active">
+                    <div class="services-toggle-inner text-center why-content col-hover d-flex align-items-center justify-content-center active">
                         <span>@lang('pages.services.development')</span>
                     </div>
                     <div class="text-right">
                         <ul class="active">
-                            <li>@lang('pages.services.cas')</li>
-                            <li>@lang('pages.services.cad')</li>
-                            <li>@lang('pages.services.cae')</li>
-                            <li>@lang('pages.services.electronic-hardware')</li>
-                            <li>@lang('pages.services.electronic-software')</li>
-                            <li>@lang('pages.services.software')</li>
-                            <li>@lang('pages.services.prototyping')</li>
-                            <li>@lang('pages.services.learn-more')</li>
+                            <li>@lang("pages.services.cas")</li>
+                            <li>@lang("pages.services.cad")</li>
+                            <li>@lang("pages.services.apqp")</li>
+                            <li>@lang("pages.services.documentation")</li>
+                            <li>@lang("pages.services.prototyping")</li>
+                            <li>@lang("pages.services.test")</li>
+                            <li>@lang("pages.services.electronic-hardware")</li>
+                            <li>@lang("pages.services.electronic-software")</li>
+                            <li>@lang("pages.services.learn-more")</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2 col-11 pl-0 pr-0 services-toggle simulation">
-                    <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
+                    <div class="services-toggle-inner text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.simulation')</span>
                     </div>
                     <div class="text-right">
                         <ul>
-                            <li>@lang('pages.services.cas')</li>
-                            <li>@lang('pages.services.cad')</li>
-                            <li>@lang('pages.services.cae')</li>
-                            <li>@lang('pages.services.electronic-hardware')</li>
-                            <li>@lang('pages.services.learn-more')</li>
+                            <li>@lang("pages.services.implict")</li>
+                            <li>@lang("pages.services.explict")</li>
+                            <li>@lang("pages.services.cfd")</li>
+                            <li>@lang("pages.services.mbd")</li>
+                            <li>@lang("pages.services.em")</li>
+                            <li>@lang("pages.services.stackup")</li>
+                            <li>@lang("pages.services.optical")</li>
+                            <li>@lang("pages.services.gap")</li>
+                            <li>@lang("pages.services.thickness")</li>
+                            <li>@lang("pages.services.learn-more")</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2 col-11 pl-0 pr-0 services-toggle production">
-                    <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
+                    <div class="services-toggle-inner text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.production')</span>
                     </div>
                     <div class="text-right">
                         <ul>
-                            <li>@lang('pages.services.cas')</li>
-                            <li>@lang('pages.services.cad')</li>
-                            <li>@lang('pages.services.learn-more')</li>
+                            <li>@lang("pages.services.mold")</li>
+                            <li>@lang("pages.services.tooling")</li>
+                            <li>@lang("pages.services.gauges")</li>
+                            <li>@lang("pages.services.launch")</li>
+                            <li>@lang("pages.services.trouble")</li>
+                            <li>@lang("pages.services.transfer")</li>
+                            <li>@lang("pages.services.improvements")</li>
+                            <li>@lang("pages.services.optimization")</li>
+                            <li>@lang("pages.services.learn-more")</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2 col-11 pl-0 pr-0 services-toggle managment">
-                    <div class="text-center why-content col-hover d-flex align-items-center justify-content-center">
+                    <div class="services-toggle-inner text-center why-content col-hover d-flex align-items-center justify-content-center">
                         <span>@lang('pages.services.managment')</span>
                     </div>
                     <div class="text-right">
                         <ul>
-                            <li>@lang('pages.services.cas')</li>
-                            <li>@lang('pages.services.electronic-hardware')</li>
-                            <li>@lang('pages.services.electronic-software')</li>
-                            <li>@lang('pages.services.software')</li>
-                            <li>@lang('pages.services.prototyping')</li>
-                            <li>@lang('pages.services.learn-more')</li>
+                            <li>@lang("pages.services.project-management")</li>
+                            <li>@lang("pages.services.interim-management")</li>
+                            <li>@lang("pages.services.supplier")</li>
+                            <li>@lang("pages.services.quality")</li>
+                            <li>@lang("pages.services.learn-more")</li>
                         </ul>
                     </div>
                 </div>
@@ -109,13 +121,13 @@
         </div>
     </div>
 
-    <div class="container-fluid companies services">
-        <div class="row">
+    <div class="container-fluid companies services d-flex flex-column align-items-center">
+        <div class="row w-100">
             <div class="col-12 text-center title-big">
                 <p>@lang('pages.services.sectors')</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row w-100">
             <a href="{{ route("sectors") }}/#automotive"  class="col-md-3 col-11 companies-hover click-automotive">
                 <div class="text-center d-flex flex-column align-items-center">
                     <svg width="80px" height="29px" viewBox="0 0 80 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -197,7 +209,7 @@
                 </div>
             </a>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center w-100">
             <a href="{{ route("sectors") }}/#others"  class="col-md-3 col-11 text-center d-flex flex-column align-items-center companies-hover d-flex click-others">
                 <div class="text-center d-flex flex-column align-items-center">
                     <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">

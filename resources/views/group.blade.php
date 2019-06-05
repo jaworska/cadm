@@ -73,7 +73,7 @@
 
     <div class="container-fluid group grow">
         <div class="container">
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-12">
                     <div class="text-center title-big">
                         <span>@lang('pages.group.growing')</span>
@@ -200,7 +200,7 @@
             <div class="col-md-4 offset-md-1 col-12 values-circle">
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-top">
+                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center inactive-top">
                             <svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="lock">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-928.000000, -3720.000000)" fill="#2C2E34" fill-rule="nonzero">
@@ -224,7 +224,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center ">
-                        <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center unactive-left">
+                        <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center inactive-left">
                             <svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="puzzle">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-799.000000, -3819.000000)" fill="#2C2E34" fill-rule="nonzero">
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center  ">
-                        <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center unactive-right">
+                        <div class="values-box position-relative  d-flex flex-column justify-content-center align-items-center inactive-right">
                             <svg width="39px" height="33px" viewBox="0 0 39 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow-up">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-1037.000000, -3820.000000)" fill="#2C2E34" fill-rule="nonzero">
@@ -294,7 +294,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-bottom-left">
+                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center inactive-bottom-left">
                             <svg width="44px" height="35px" viewBox="0 0 44 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="chats">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-850.000000, -3946.000000)" fill="#2C2E34" fill-rule="nonzero">
@@ -316,7 +316,7 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center unactive-bottom-right">
+                        <div class="values-box position-relative d-flex flex-column justify-content-center align-items-center inactive-bottom-right">
                             <svg width="47px" height="49px" viewBox="0 0 47 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="bulb">
                                 <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <g id="CADM_group_do-UI-" transform="translate(-987.000000, -3936.000000)" fill="#2C2E34" fill-rule="nonzero">
@@ -345,10 +345,10 @@
     <div class="container-fluid group ethics">
         <div id="code-of-ethics" class="group-scroll-fix"></div>
         <div class="row">
-            <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1">
+            <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1 set-height overflow-hidden">
                 <img src="/img/group-4.jpg" class=""/>
             </div>
-            <div class="col-md-7 col-12 order-sm-1 order-md-2">
+            <div class="col-md-7 col-12 order-sm-1 order-md-2 max-height">
                 <div class="text-left title-big">
                     <span>@lang('pages.group.ethics')</span>
                 </div>
@@ -402,7 +402,6 @@
     </div>
 
     <div class="container-fluid group carousel-group d-none d-md-block">
-        <div id="partners" class="group-scroll-fix"></div>
         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
             <div class="carousel-inner v-2" role="listbox">
@@ -476,6 +475,7 @@
 
     <div class="container-fluid help partners group">
         <div class="container">
+            <div id="partners" class="group-scroll-fix"></div>
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2">
                     <div class="title-big text-center">
@@ -488,7 +488,7 @@
                 <div class="col-md-3 col-6 text-center">
                     <img src="/img/agh2.png" class="bw agh">
                 </div>
-                <div class="col-md-3 col-6 text-center">
+                <div class="col-md-3 col-6 text-center fundacja-flex">
                     <img src="/img/fundacja2.png" class="bw fundacja">
                 </div>
                 <div class="col-md-3 col-6 text-center">

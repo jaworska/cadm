@@ -87,8 +87,8 @@
     </div>
 </div>
 
-<div class="container-fluid companies">
-    <div class="row">
+<div class="container-fluid companies d-flex flex-column align-items-center">
+    <div class="row w-100">
         <a href="{{ route("sectors") }}/#automotive" class="col-md-3 col-11 companies-hover click-automotive">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="80px" height="29px" viewBox="0 0 80 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -170,7 +170,7 @@
             </div>
         </a>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center w-100">
         <a href="{{ route("sectors") }}/#others" class="col-md-3 col-11 companies-hover text-center flex-column align-items-center d-flex click-others">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">

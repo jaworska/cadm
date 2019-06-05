@@ -51,65 +51,65 @@
         <div class="row">
             <div class="offset-2 col-10 services-menu">
                 <div>
-                    <ul>
+                    <ul class="concept">
                         <li class="bold"><a href="{{ route("services") }}/#concept" class="bold">@lang("pages.navigation.concept")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.benchmarking")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.product")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.sales")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.definition")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.capacity")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.costing")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.model")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.styling")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.benchmarking")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.product")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.sales")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.definition")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.capacity")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.costing")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.model")</a></li>
+                        <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.styling")</a></li>
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="development">
                         <li class="bold"><a href="{{ route("services") }}/#development" class="bold">@lang("pages.navigation.development")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cas")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cad")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.apqp")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.documentation")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.prototyping")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.test")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.electronic-hardware")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.electronic-software")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.cas")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.cad")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.apqp")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.documentation")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.prototyping")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.test")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.electronic-hardware")</a></li>
+                        <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.electronic-software")</a></li>
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="simulation">
                         <li class="bold"><a href="{{ route("services") }}/#simulation" class="bold">@lang("pages.navigation.simulation")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.implict")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.explict")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.cfd")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.mbd")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.em")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.stackup")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.optical")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.gap")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.thickness")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.implict")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.explict")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.cfd")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.mbd")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.em")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.stackup")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.optical")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.gap")</a></li>
+                        <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.thickness")</a></li>
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="production">
                         <li class="bold"><a href="{{ route("services") }}/#production" class="bold">@lang("pages.navigation.production")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.mold")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.tooling")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.gauges")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.launch")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.trouble")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.transfer")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.improvements")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.optimization")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.mold")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.tooling")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.gauges")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.launch")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.trouble")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.transfer")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.improvements")</a></li>
+                        <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.optimization")</a></li>
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="managment">
                         <li class="bold"><a href="{{ route("services") }}/#managment" class="bold">@lang("pages.navigation.management")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.project-management")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.interim-management")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.supplier")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.quality")</a></li>
+                        <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.project-management")</a></li>
+                        <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.interim-management")</a></li>
+                        <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.supplier")</a></li>
+                        <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.quality")</a></li>
                     </ul>
                 </div>
             </div>

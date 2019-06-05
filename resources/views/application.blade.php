@@ -30,7 +30,7 @@
         </div>
         <div class="container margin-top">
             <div class="row services-row timeline position-relative align-items-baseline justify-content-sm-between">
-                <div class="col-12 d-flex timeline-unactive">
+                <div class="col-12 d-flex timeline-inactive">
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
                         <div class="timeline-element timeline-left text-center why-content apply d-flex align-items-center justify-content-center position-relative timeline2 col-hover3">
                             <span>@lang('pages.career.apply-for')</span>
