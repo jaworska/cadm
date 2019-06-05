@@ -216,7 +216,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career application-block img-text">
+    <div class="container-fluid sectors career overflow-hidden application-block img-text overflow-hidden">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 practical-img">
             </div>
@@ -250,7 +250,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career application-block text-img">
+    <div class="container-fluid sectors career overflow-hidden application-block text-img">
         <div class="row">
             <div class="col-md-6 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left text-sm-center title-2">
@@ -275,7 +275,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors career application-block img-text">
+    <div class="container-fluid sectors career overflow-hidden application-block img-text">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 trying-img">
             </div>

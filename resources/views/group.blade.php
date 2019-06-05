@@ -345,8 +345,8 @@
     <div class="container-fluid group ethics">
         <div id="code-of-ethics" class="group-scroll-fix"></div>
         <div class="row">
-            <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1 set-height overflow-hidden">
-                <img src="/img/group-4.jpg" class=""/>
+            <div class="col-md-5 col-12 pl-0 order-sm-2 order-md-1 set-height overflow-hidden position-relative">
+                <img src="/img/group-4.jpg" class="position-absolute ethics-img"/>
             </div>
             <div class="col-md-7 col-12 order-sm-1 order-md-2 max-height">
                 <div class="text-left title-big">
