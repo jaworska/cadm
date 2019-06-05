@@ -500,8 +500,19 @@ body {
         display: flex;
         flex-direction: column;
 
-        @media screen and (max-width: $screen-768) {
-            max-height: 60vh;
+        &.home {
+
+            @media screen and (max-width: $screen-768) {
+                max-height: 360px;
+                display: block;
+            }
+
+            .video-text {
+                @media screen and (max-width: $screen-768) {
+                    top: 80px;
+                }
+            }
+
         }
 
         #video-background {
@@ -1217,6 +1228,10 @@ body {
 .team {
    background: $white;
 
+    .image-col-responsive {
+        padding-bottom: 40px;
+    }
+
     .image-col2 {
         @include padding-x(120px,70px);
 
@@ -1668,13 +1683,14 @@ body {
     &.jumbotron {
         background: url('/img/group-2.jpg');
         background-repeat: no-repeat;
-        height: -webkit-fill-available;
+        min-height: 566px;
         max-height: 566px;
         background-position: center;
         background-size: cover;
 
         @media screen and (max-width: $screen-768) {
-            max-height: 400px;
+            max-height: 350px;
+            min-height: 300px;
         }
 
         .video-text {
@@ -2783,13 +2799,14 @@ body {
     &.jumbotron {
         background: url('/img/services-tlo-gradient.jpg');
         background-repeat: no-repeat;
-        height: -webkit-fill-available;
+        min-height: 408px;
         max-height: 408px;
         background-size: cover;
         background-position: center;
 
         @media screen and (max-width: $screen-768) {
-            max-height: 400px;
+            max-height: 350px;
+            min-height: 300px;
         }
 
         .video-text {
@@ -3273,22 +3290,26 @@ body {
     &.jumbotron {
         background: url('/img/career-bg.jpg');
         background-repeat: no-repeat;
-        height: -webkit-fill-available;
+        min-height: 550px;
         max-height: 550px;
         background-size: cover;
         background-position: center;
 
         @media screen and (max-width: $screen-768) {
-            max-height: 400px;
+            max-height: 350px;
+            min-height: 300px;
         }
 
         &.application {
             background: url('/img/careers-tlo-gradient.jpg');
             background-size: cover;
             max-height: 500px;
+            min-height: 500px;
 
             @media screen and (max-width: $screen-768) {
                 background-position: center;
+                max-height: 350px;
+                min-height: 300px;
             }
         }
     }
@@ -4612,6 +4633,14 @@ body {
         &.jumbotron {
             height: unset;
             background: none;
+            min-height: 566px;
+            max-height: 566px;
+            overflow: hidden;
+
+            @media screen and (max-width: $screen-768) {
+                min-height: 300px;
+                max-height: 350px;
+            }
         }
 
     }
@@ -4807,6 +4836,13 @@ body {
         .carousel-item {
             img {
                 width: inherit;
+            }
+        }
+
+        .carousel-inner {
+            @media screen and (max-width: $screen-768) {
+                left: -40px;
+                width: 150%;
             }
         }
 

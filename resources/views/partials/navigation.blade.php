@@ -217,7 +217,7 @@
 <div id="nav-mobile" class="container-fluid sticky-top d-sm-block d-md-none position-fixed">
     <div class="nav_container d-flex justify-content-between">
         <div class="logo-mobile">
-            <a href="#"><img src="/img/logo-cadm@3x.png"
+            <a href="{{ route("home") }}"><img src="/img/logo-cadm@3x.png"
                              srcset="/img/logo-cadm@2x.png 2x,
              /img/logo-cadm@3x.png 3x"></a>
         </div>

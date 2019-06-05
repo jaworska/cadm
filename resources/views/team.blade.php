@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="jumbotron video_main services career team">
-        <div id="slides" class="carousel slide" data-ride="carousel">
+        <div id="slides" class="carousel slide position-relative" data-ride="carousel">
 
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>

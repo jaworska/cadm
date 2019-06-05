@@ -174,7 +174,7 @@
             <div class="row">
                 <div class="col-12 image-col">
                     <video id="video-group" preload autoplay controls loop>
-                        <source src="/img/movie.webm" type="video/webm">
+                        <source src="/img/cadm-video.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div class="col-md-10 offset-md-1 col-12 d-flex flex-column justify-content-center team-box position-relative">
