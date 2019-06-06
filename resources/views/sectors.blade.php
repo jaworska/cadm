@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid sectors img-text automotive-container">
-        <div id="automotive" class="sectors-scroll-fix"></div>
+    <div id="automotive" class="container-fluid sectors img-text automotive-container">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 automotive-img">
             </div>
@@ -21,8 +20,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors text-img">
-        <div id="rolling-stock" class="sectors-scroll-fix"></div>
+    <div id="rolling-stock" class="container-fluid sectors text-img">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
@@ -41,8 +39,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors img-text">
-        <div id="maritime" class="sectors-scroll-fix"></div>
+    <div id="maritime" class="container-fluid sectors img-text">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-1 order-md-1 pr-0 pl-0 maritime-img">
             </div>
@@ -60,8 +57,7 @@
         </div>
     </div>
 
-    <div class="container-fluid sectors text-img">
-        <div id="aerospace" class="sectors-scroll-fix"></div>
+    <div id="aerospace" class="container-fluid sectors text-img">
         <div class="row">
             <div class="col-md-5 col-12 order-sm-2 order-md-1 d-flex flex-column align-self-center col-text">
                 <div class="text-md-left title-big text-sm-center ">
@@ -79,8 +75,7 @@
         </div>
     </div>
 
-    <div class="container-fluid help others sectors">
-        <div id="others" class="sectors-scroll-fix"></div>
+    <div id="others" class="container-fluid help others sectors">
         <div class="container padding-others">
             <div class="row">
                 <div class="col-md-8 col-12 offset-md-2 text-center">
@@ -94,7 +89,5 @@
             </div>
         </div>
     </div>
-
-
 
 @endsection

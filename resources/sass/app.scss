@@ -1858,6 +1858,7 @@ body {
 
             @media screen and (max-width: $screen-768) {
                 padding-left: 0;
+                padding-right:0;
             }
         }
 
@@ -1866,6 +1867,7 @@ body {
 
             @media screen and (max-width: $screen-768) {
                 padding-right: 0;
+                padding-left: 0;
             }
         }
 
@@ -1882,6 +1884,8 @@ body {
 
                 @media screen and (max-width: $screen-768) {
                     font-weight: 14px;
+                    font-size: 15px;
+                    line-height:21px;
                     @include padding-x(0,0);
                 }
 
@@ -1898,8 +1902,15 @@ body {
                         content: "";
                         left: 33%;
                         position: absolute;
+
+                        @media screen and (max-width: $screen-768) {
+                            top:27px;
+                        }
                     }
                 }
+            }
+            @media screen and (max-width: $screen-768) {
+                margin-bottom:41px;
             }
         }
     }
@@ -2066,10 +2077,11 @@ body {
     .image-col {
         margin-bottom: 60px;
         padding-top: 68px;
-
+        height: 680px;
         @media screen and (max-width: $screen-768) {
             padding-top: 32px;
             margin-bottom: 40px;
+            height: auto;
         }
     }
 
@@ -2634,6 +2646,7 @@ body {
             padding-bottom: 70px;
             background-size: cover;
             background-repeat: repeat;
+            height: 495px;
 
             .logos-partners {
                 @include padding-y(60px,80px);
@@ -2705,6 +2718,7 @@ body {
 
     &.carousel-group {
         padding-bottom: 50px;
+        height:290px;
 
         .carousel-inner {
             overflow: visible;

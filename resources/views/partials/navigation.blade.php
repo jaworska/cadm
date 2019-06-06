@@ -115,7 +115,7 @@
             </div>
         </div>
     </div>
-    <div class="nav-drop-sectors d-none">
+    <div class="nav-drop-sectors @if (Request::path() != 'sectors') d-none @endif">
         <div class="row">
             <div class="col-12 text-center sectors-menu">
                 <ul>

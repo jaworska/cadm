@@ -13,7 +13,7 @@
     // }
 
 
-    jQuery(document).ready(function(){
+    jQuery(document).ready(function() {
         // scalePage();
         // jQuery(window).on("resize", scalePage);
 
@@ -28,6 +28,7 @@
             resize: doResize
         });
         var scale = 1;
+
         function doResize(event, ui) {
 
             var origin;
@@ -48,8 +49,8 @@
 
             htmlHeight = (newHeight * elHeight) - 10;
 
-            $wrapper.css({ height: htmlHeight + "px"});
-            $el.css({ height: htmlHeight + "px"});
+            $wrapper.css({height: htmlHeight + "px"});
+            $el.css({height: htmlHeight + "px"});
 
         }
 
@@ -62,23 +63,24 @@
 
         if (jQuery(window).width() < 1440 & jQuery(window).width() > 767) {
             doResize(null, starterData);
-        };
+        }
+        ;
 
         //menu
 
 
-        jQuery(".sectors-main-drop").mouseover(function() {
+        jQuery(".sectors-main-drop").mouseover(function () {
             jQuery(".nav-drop-sectors").removeClass('d-none');
         });
 
-        jQuery(".sectors-main-drop").siblings().mouseover(function() {
+        jQuery(".sectors-main-drop").siblings().mouseover(function () {
 
             if (document.location.pathname.indexOf("/sectors") == 0) {
-               if (jQuery(this).hasClass('contact-main-drop')) {
-                   jQuery(".nav-drop-sectors").removeClass('d-none');
-               } else {
-                   jQuery(".nav-drop-sectors").addClass('d-none');
-               }
+                if (jQuery(this).hasClass('contact-main-drop')) {
+                    jQuery(".nav-drop-sectors").removeClass('d-none');
+                } else {
+                    jQuery(".nav-drop-sectors").addClass('d-none');
+                }
 
             } else {
                 jQuery(".nav-drop-sectors").addClass('d-none');
@@ -87,17 +89,17 @@
 
         //active menu
 
-        $(function(){
+        $(function () {
 
             var getUrl = window.location;
-            var baseUrl = getUrl .protocol + "//" + getUrl.host + "/";
+            var baseUrl = getUrl.protocol + "//" + getUrl.host + "/";
 
-            var activeUrl =   window.location.pathname;
+            var activeUrl = window.location.pathname;
             var temp = activeUrl.split("/");
             var activeUrlCut = temp[1];
 
             // now grab every link from the navigation
-            $('.nav_container a').each(function(){
+            $('.nav_container a').each(function () {
                 var navUrl = $(this).attr('href');
                 var temp2 = navUrl.split(baseUrl);
                 var navUrlCut = temp2[1];
@@ -131,33 +133,33 @@
 
         //show dropdown menu
 
-        jQuery(".careers-main-drop").mouseover(function() {
+        jQuery(".careers-main-drop").mouseover(function () {
             jQuery(".nav-drop-careers").removeClass('d-none');
-            jQuery(".nav-drop-careers ul").css("left",positionMenuScaled);
+            jQuery(".nav-drop-careers ul").css("left", positionMenuScaled);
         });
 
-        jQuery(".careers-main-drop").siblings().mouseover(function() {
+        jQuery(".careers-main-drop").siblings().mouseover(function () {
             jQuery(".nav-drop-careers").addClass('d-none');
         });
 
 
-        jQuery(".group-main-drop").mouseover(function() {
+        jQuery(".group-main-drop").mouseover(function () {
             jQuery(".nav-drop-group").removeClass('d-none');
         });
 
-        jQuery(".group-main-drop").siblings().mouseover(function() {
+        jQuery(".group-main-drop").siblings().mouseover(function () {
             jQuery(".nav-drop-group").addClass('d-none');
         });
 
-        jQuery(".services-main-drop").mouseover(function() {
+        jQuery(".services-main-drop").mouseover(function () {
             jQuery(".nav-drop-services").removeClass('d-none');
         });
 
-        jQuery(".services-main-drop").siblings().mouseover(function() {
+        jQuery(".services-main-drop").siblings().mouseover(function () {
             jQuery(".nav-drop-services").addClass('d-none');
         });
 
-        jQuery("#nav").parent().siblings().mouseover(function() {
+        jQuery("#nav").parent().siblings().mouseover(function () {
             if (document.location.pathname.indexOf("/sectors") == 0) {
                 jQuery('.sectors-main-drop a').addClass('menu-trigger');
                 jQuery('.nav-drop-sectors').removeClass('d-none');
@@ -170,35 +172,35 @@
 
         //chart
 
-        jQuery(".grow-click").click(function() {
+        jQuery(".grow-click").click(function () {
             jQuery(this).siblings().find("span").removeClass("active");
             jQuery(this).find("span").addClass("active");
 
             if (jQuery(this).hasClass("empl")) {
-                jQuery(".img-project").animate({'opacity':'0'},800);
-                jQuery(".img-employee").animate({'opacity':'1'},800);
+                jQuery(".img-project").animate({'opacity': '0'}, 800);
+                jQuery(".img-employee").animate({'opacity': '1'}, 800);
             }
 
             if (jQuery(this).hasClass("proj")) {
-                jQuery(".img-employee").animate({'opacity':'0'},800);
-                jQuery(".img-project").animate({'opacity':'1'},800);
+                jQuery(".img-employee").animate({'opacity': '0'}, 800);
+                jQuery(".img-project").animate({'opacity': '1'}, 800);
             }
 
         });
 
         //click boxes career
 
-        jQuery(".click-meet").click(function() {
+        jQuery(".click-meet").click(function () {
             document.location.href = '/team';
         });
 
-        jQuery(".click-application").click(function() {
+        jQuery(".click-application").click(function () {
             document.location.href = '/application';
         });
 
-        jQuery(".click-positions").click(function() {
+        jQuery(".click-positions").click(function () {
             jQuery('html, body').animate({
-                scrollTop: $(".positions").offset().top-$("#nav").height()
+                scrollTop: $(".positions").offset().top - $("#nav").height()
             }, 800);
         });
 
@@ -226,31 +228,31 @@
 
         // services toggle
 
-        jQuery('.services-toggle-inner').click(function(){
+        jQuery('.services-toggle-inner').click(function () {
             jQuery(this).toggleClass('active');
             jQuery(this).siblings().find('ul').slideToggle("slow");
         });
 
         //menu services toggle boxes
 
-        if(window.location.href.indexOf("concept") > -1 || window.location.href.indexOf("development") > -1 || window.location.href.indexOf("simulation") > -1 || window.location.href.indexOf("production") > -1 || window.location.href.indexOf("managment") > -1) {
-            var servicesUrl =  document.location.href;
+        if (window.location.href.indexOf("concept") > -1 || window.location.href.indexOf("development") > -1 || window.location.href.indexOf("simulation") > -1 || window.location.href.indexOf("production") > -1 || window.location.href.indexOf("managment") > -1) {
+            var servicesUrl = document.location.href;
             var servicesUrlCut = servicesUrl.split("#").pop();
             toggleServices(servicesUrlCut);
         }
 
-        jQuery(".services-menu li a, .services-toggle li a").click(function() {
-            var servicesUrl =  $(this).attr('href');
+        jQuery(".services-menu li a, .services-toggle li a").click(function () {
+            var servicesUrl = $(this).attr('href');
             var servicesUrlCut = servicesUrl.split("#").pop();
             toggleServices(servicesUrlCut);
         });
 
         function toggleServices(servicesUrlCut) {
             jQuery('html, body').animate({
-                scrollTop: $("#toggle-services").offset().top-$("#nav").height()
+                scrollTop: $("#toggle-services").offset().top - $("#nav").height()
             }, 800);
-            jQuery('.services-toggle').each(function() {
-                if(jQuery(this).hasClass(servicesUrlCut)) {
+            jQuery('.services-toggle').each(function () {
+                if (jQuery(this).hasClass(servicesUrlCut)) {
                     if (!jQuery(this).find('.why-content').hasClass('active')) {
                         jQuery(this).find('.why-content').toggleClass('active');
                         jQuery(this).find('ul').slideToggle("slow");
@@ -261,48 +263,60 @@
             });
         }
 
-        //menu sectors scroll on page
+        function scrollToID(target, $offset) {
+            $(target).click(function (e) {
+                e.preventDefault();
 
-        // if (document.location.pathname.indexOf("/sectors") == 0) {
-        //     jQuery(".sectors-menu li a").click(function(event) {
-        //
-        //
-        //     });
-        //
-        // }
+                var element = $(this).attr('href').split("#").pop();
 
-        //sectors scroll menu
-
-        if(window.location.href.indexOf("sectors") > -1) {
-            jQuery(".nav-drop-sectors li a").click(function(e) {
-               e.preventDefault();
-
-                var sectorsUrl =  $(this).attr('href');
-                var sectorsUrlCut = sectorsUrl.split("#").pop();
-
-                jQuery('html, body').animate({
-                    scrollTop: $('#'+sectorsUrlCut).offset().top
+                $('html, body').animate({
+                    scrollTop: $('#' + element).offset().top - $offset
                 }, 800);
-
             });
+        }
+
+        @if (Request::path() != 'sectors')
+        $('.sectors-menu a').click(function (e) {
+            e.preventDefault();
+            var element = $(this).attr('href').split("#").pop();
+            window.location.href = '/sectors?' + element;
+        })
+        @endif
+
+        // Te warunki będą do usunięcia po przygotowaniu stron sektorów
+        if (window.location.href.indexOf("sectors?") > -1) {
+            var element = window.location.href.split("?").pop();
+            $('html, body').animate({
+                scrollTop: $('#' + element).offset().top - ($("#nav").height() + $(".nav-drop-sectors").height())
+            });
+            window.history.pushState({}, document.title, "/" + "sectors");
+        }
+
+        if (window.location.href.indexOf("sectors") > -1) {
+            scrollToID(".nav-drop-sectors li a", $("#nav").height() + $(".nav-drop-sectors").height());
         }
 
         //group scroll menu
+        @if (Request::path() != 'group')
+        $('.group-menu a').click(function (e) {
+            e.preventDefault();
+            var element = $(this).attr('href').split("#").pop();
+            window.location.href = '/group?' + element;
+        })
+        @endif
 
-        if(window.location.href.indexOf("group") > -1) {
-            jQuery(".nav-drop-group li a").click(function(e) {
-                e.preventDefault();
-
-                var groupUrl =  $(this).attr('href');
-                var groupUrlCut = groupUrl.split("#").pop();
-
-                jQuery('html, body').animate({
-                    scrollTop: $('#'+groupUrlCut).offset().top
-                }, 800);
-
+        // Te warunki będą do usunięcia po przygotowaniu stron grupy
+        if (window.location.href.indexOf("group?") > -1) {
+            var element = window.location.href.split("?").pop();
+            $('html, body').animate({
+                scrollTop: $('#' + element).offset().top - ($("#nav").height())
             });
+            window.history.pushState({}, document.title, "/" + "group");
         }
 
+        if(window.location.href.indexOf("group") > -1) {
+            scrollToID(".nav-drop-group li a", ($("#nav").height()));
+        }
         //ethics img height group
         var ethicsColHeight = [];
 
@@ -437,28 +451,26 @@
         }
 
 
-        //value circle
+        //value circle animation
 
-        jQuery(".values-circle svg, .values-circle .value-title").click(function(){
+        /*jQuery(".values-circle svg, .values-circle .value-title").click(function(){
 
             if(jQuery(".values-box").hasClass("chose")) {
                 jQuery(".values-box").removeClass("chose");
             }
 
-      /*      if(jQuery(this).closest("svg").hasClass("d-none")) {
+      /     if(jQuery(this).closest("svg").hasClass("d-none")) {
                 jQuery(this).closest("svg").removeClass("d-none");
             }
             jQuery(this).closest("svg").addClass("d-none");
 
-    */
             jQuery(this).closest(".values-box").addClass("chose");
             jQuery(".values-box.active").addClass("disactive");
-
 
             if(jQuery(this).parent().hasClass("disactive")) {
                 jQuery(".values-box.active").removeClass("disactive");
             }
-
+*/
             {{--if(jQuery(this).hasClass("lock")) {--}}
                 {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
             {{--}--}}
@@ -892,6 +904,5 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCft8gnloFEwT9u_3Rl8O0w_fDQkqrSWc8&callback=initMap"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
 
 
