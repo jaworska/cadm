@@ -20,7 +20,7 @@
                         <span class="title-big position-relative">{{ $offer -> title }}</span>
                     </div>
                     <div class="col-md-12 details">
-                        <h5>@lang('pages.career.location.text'):<strong> @lang('pages.career.location.'.$offer -> location)</strong></h5>
+                        <h5>@lang('pages.career.location.text'):<strong> {{ $offer-> location_name??trans('pages.career.location.'.$offer-> location) }}</strong></h5>
                         <h5>@lang('pages.career.start'):<strong> {{$offer -> start_date}}</strong></h5>
                     </div>
                     <div class="col-md-12 block-offer">
