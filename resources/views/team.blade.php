@@ -210,18 +210,8 @@
         @include('career.list')
     </div>
 
-    <div class="container-fluid help others sectors career">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-12 offset-md-2 text-center">
-                    <div class="title-big text-center">
-                        <span class="">@lang('pages.career.notfound')</span>
-                    </div>
-                    <p class="text-center text-p2">@lang('pages.career.notfound-text')</p>
-                    <button type="button" class="btn btn-more">@lang('pages.career.apply')</button>
-                </div>
-            </div>
-        </div>
+    <div class="container-fluid help others sectors career position-relative">
+        @include('career.apply')
     </div>
 
 @endsection

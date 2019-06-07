@@ -68,6 +68,12 @@ body {
     }
 }
 
+main {
+    @media screen and (max-width: $screen-768) {
+        margin-top: 53px !important;
+    }
+}
+
 #body-wrapper {
     overflow-x: hidden;
 }
@@ -1071,7 +1077,7 @@ body {
                flex: 0 0 25%;
 
                 @media screen and (max-width: $screen-768) {
-                    flex: 0 0 91.6666666667%;
+                    flex: 0 0 100%;
                 }
 
             }
@@ -3342,6 +3348,183 @@ body {
         }
     }
 
+    //.modal {
+    //    background: #00000078;
+    //}
+
+    .modal-content {
+        border-radius: 0;
+        box-shadow: 1px 3px 18px 5px rgba(35, 32, 32, 0.08);
+        padding-bottom: 30px;
+        @include padding-x(20px,20px);
+    }
+
+    .modal-dialog {
+        @media screen and (min-width: $screen-768) {
+            max-width: 70%;
+        }
+
+        @media screen and (min-width: $screen-1440) {
+            max-width: 1200px;
+        }
+
+        .title-big-mini {
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            color: $gray-nav;
+            @include padding-y(32px,11px);
+        }
+
+        .modal-title-mini {
+            opacity: 0.6;
+            font-size: 18px;
+            line-height: 1.67;
+            text-align: center;
+            color: $group-span;
+        }
+
+        .orange {
+            color: $main-orange;
+            font-weight: 500;
+        }
+
+        .custom-control {
+            padding-left: 0;
+
+            @media screen and (max-width: $screen-768) {
+                @include padding-x(20px,20px);
+            }
+        }
+
+        .custom-checkbox {
+            .custom-control-label::before {
+                border-radius: 0;
+                border-color: #e9e9e9;
+            }
+
+        }
+
+        .custom-control-input:checked ~ .custom-control-label::before {
+            color: $white;
+            border-color: $primary;
+            background-color: $primary;
+            border-radius: 0;
+            width: 16px;
+            height: 16px;
+        }
+
+        .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+            background-image: url('/img/checkmark@2x.png');
+            width: 24px;
+            height: 22px;
+            left: -28px;
+            top: 0px;
+        }
+
+        .custom-control-input:focus ~ .custom-control-label::before {
+            box-shadow: none;
+        }
+
+        .custom-control-label {
+            font-size: 14px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.67;
+            letter-spacing: normal;
+            color: $gray-nav;
+            margin-bottom: 7px;
+            outline: none;
+        }
+
+        .bold {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background: $main-orange;
+            border-radius: 0;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 8px;
+            box-shadow: 1px 3px 18px 5px rgba(233, 92, 27, 0.12);
+            width: 120px;
+            height: 36px;
+        }
+
+        input {
+            border: solid 1px #c7c8c985;
+            background-color: $white;
+            border-radius: 0;
+
+            &::placeholder {
+                opacity: 0.4;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $group-span;
+            }
+        }
+
+        .custom-file {
+
+            label {
+                font-size: 16px;
+                line-height: 1.5;
+                color: $group-span;
+            }
+
+            .small-upload {
+                opacity: 0.6;
+                font-size: 12px;
+                line-height: 1.67;
+                color: $group-span;
+            }
+
+            .bigger-upload {
+                font-size: 16px;
+                line-height: 1.5;
+                color: $group-span;
+            }
+
+            .custom-file-input {
+                border: none;
+
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+
+            .custom-file-label {
+                border: none;
+                padding-top: 3px;
+                padding-left: 0;
+
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                }
+
+                &::after {
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                    color: $main-orange;
+                    @include area(120px,36px);
+                    border-radius: 0;
+                    background: transparent;
+                    border: 1px solid $main-orange;
+                    content: 'Upload CV';
+                    cursor: pointer;
+                    top: 2px;
+                }
+            }
+        }
+    }
+
     .career-scroll-fix {
         width: 1px;
         height: 1px;
@@ -3996,6 +4179,7 @@ body {
                     background: $white;
                     border: solid 3.2px $main-orange;
                     border-radius: 50%;
+
                     top: -30px;
                 }
             }
@@ -4668,6 +4852,11 @@ body {
             @media screen and (max-width: $screen-768) {
                 min-height: 300px;
                 max-height: 350px;
+            }
+
+            @media screen and (max-width: $screen-450) {
+                min-height: 200px;
+                max-height: 300px;
             }
         }
 
