@@ -976,7 +976,7 @@ body {
             height: 200px;
             padding: 20px;
             margin-bottom: 10px;
-            @include padding-x(30px,30px);
+            @include padding-x(10px,10px);
         }
 
         &:hover {
