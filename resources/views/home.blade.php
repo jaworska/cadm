@@ -89,7 +89,7 @@
 
 <div class="container-fluid companies d-flex flex-column align-items-center">
     <div class="row w-100">
-        <a href="{{ route("sectors") }}/#automotive" class="col-md-3 col-11 companies-hover click-automotive">
+        <a href="{{ route("sectors") }}/#automotive" class="col-md-3 col-12 companies-hover click-automotive">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="80px" height="29px" viewBox="0 0 80 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -108,7 +108,7 @@
                 <span>@lang('pages.home.automotive-span')</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#rolling-stock" class="col-md-3 col-11 companies-hover click-rolling">
+        <a href="{{ route("sectors") }}/#rolling-stock" class="col-md-3 col-12 companies-hover click-rolling">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="71px" height="33px" viewBox="0 0 71 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -137,7 +137,7 @@
                 <span>@lang('pages.home.rolling-span')k</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#maritime" class="col-md-3 col-11 companies-hover d-flex click-maritime">
+        <a href="{{ route("sectors") }}/#maritime" class="col-md-3 col-12 companies-hover d-flex click-maritime">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="64px" height="34px" viewBox="0 0 64 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -156,7 +156,7 @@
                 <span>@lang('pages.home.maritime-span')</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#aerospace" class="col-md-3 col-11 text-center flex-column align-items-center companies-hover d-flex click-aerospace">
+        <a href="{{ route("sectors") }}/#aerospace" class="col-md-3 col-12 text-center flex-column align-items-center companies-hover d-flex click-aerospace">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="45px" height="44px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -171,7 +171,7 @@
         </a>
     </div>
     <div class="row justify-content-center w-100">
-        <a href="{{ route("sectors") }}/#others" class="col-md-3 col-11 companies-hover text-center flex-column align-items-center d-flex click-others">
+        <a href="{{ route("sectors") }}/#others" class="col-md-3 col-12 companies-hover text-center flex-column align-items-center d-flex click-others">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="50.3px" height="57px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                     <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
