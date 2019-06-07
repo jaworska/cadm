@@ -3,7 +3,7 @@
 @section('content')
 <div class="jumbotron video_main flex-row home">
     <video id="video-background" preload muted autoplay loop>
-        <source src="img/movie.webm" type="video/webm">
+        <source src="/img/movie.webm" type="video/webm">
     </video>
     <div class="container-fluid video-text position-absolute">
         <div class="row">
@@ -20,17 +20,17 @@
         <div class="col-12 d-flex align-items-md-center flex-sm-column flex-xs-column flex-md-row justify-content-between padding-container">
             <div class="text-left d-flex float-left align-items-center justify-content-between">
                 <span>@lang("pages.home.trusted")</span>
-                <img src="img/volkswagen2.png" class="bw volkswagen-logo">
-                <img src="img/varroc2.png" class="bw varroc-logo">
-                <img src="img/magna2.png" class="bw magna-logo">
-                <img src="img/alstom-logo2.png" class="bw alstom-logo">
-                <img src="img/aptiv2.png" class="bw aptiv-logo">
-                <img src="img/csi2.png" class="bw csi">
-                <img src="img/h2.png" class="bw h">
+                <img src="/img/volkswagen2.png" class="bw volkswagen-logo">
+                <img src="/img/varroc2.png" class="bw varroc-logo">
+                <img src="/img/magna2.png" class="bw magna-logo">
+                <img src="/img/alstom-logo2.png" class="bw alstom-logo">
+                <img src="/img/aptiv2.png" class="bw aptiv-logo">
+                <img src="/img/csi2.png" class="bw csi">
+                <img src="/img/h2.png" class="bw h">
 
             </div>
             <div class="text-right float-right">
-                <img src="img/fe-ir-rgb-2.png" srcset="img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2">
+                <img src="/img/fe-ir-rgb-2.png" srcset="/img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2">
             </div>
         </div>
     </div>
@@ -173,7 +173,7 @@
     <div class="row justify-content-center w-100">
         <a href="{{ route("sectors") }}/#others" class="col-md-3 col-11 companies-hover text-center flex-column align-items-center d-flex click-others">
             <div class="text-center d-flex flex-column align-items-center">
-                <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
+                <svg width="50.3px" height="57px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                     <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Others/dark" fill="#2C2E34" fill-rule="nonzero">
@@ -191,50 +191,50 @@
 <div class="container-fluid logos">
     <div class="row text-center">
         <div class="col-12 d-none d-md-flex align-items-center justify-content-between">
-            <img src="img/catia.png" class="bw catia">
-            <img src="img/bw_10.png" class="bw bw_10">
-            <img src="img/bw_11.png" class="bw bw_11">
-            <img src="img/bw.png" class="bw bw_w">
-            <img src="img/bw_9.png" class="bw bw_9">
-            <img src="img/bw_7.png" class="bw bw_7">
-            <img src="img/bw_13.png" class="bw bw_13">
+            <img src="/img/catia.png" class="bw catia">
+            <img src="/img/bw_10.png" class="bw bw_10">
+            <img src="/img/bw_11.png" class="bw bw_11">
+            <img src="/img/bw.png" class="bw bw_w">
+            <img src="/img/bw_9.png" class="bw bw_9">
+            <img src="/img/bw_7.png" class="bw bw_7">
+            <img src="/img/bw_13.png" class="bw bw_13">
         </div>
     </div>
     <div class="row text-center">
         <div class="col-12 d-none d-md-flex align-items-center justify-content-between">
-            <img src="img/bw_12.png" class="bw bw_12">
-            <img src="img/bw_14.png" class="bw bw_14">
-            <img src="img/bw_4.png" class="bw bw_4">
-            <img src="img/bw_2.png" class="bw bw_2">
-            <img src="img/bw_15.png" class="bw bw_15">
-            <img src="img/bw_6.png" class="bw bw_6">
-            <img src="img/bw_5.png" class="bw bw_5">
-            <img src="img/bw_3.png" class="bw bw_3">
+            <img src="/img/bw_12.png" class="bw bw_12">
+            <img src="/img/bw_14.png" class="bw bw_14">
+            <img src="/img/bw_4.png" class="bw bw_4">
+            <img src="/img/bw_2.png" class="bw bw_2">
+            <img src="/img/bw_15.png" class="bw bw_15">
+            <img src="/img/bw_6.png" class="bw bw_6">
+            <img src="/img/bw_5.png" class="bw bw_5">
+            <img src="/img/bw_3.png" class="bw bw_3">
         </div>
     </div>
     <div class="row text-center d-md-none d-sm-flex">
         <div class="col-12">
-            <img src="img/catia.png" class="bw catia">
-            <img src="img/bw_10.png" class="bw bw_10">
-            <img src="img/bw_11.png" class="bw bw_11">
-            <img src="img/bw_12.png" class="bw bw_12">
+            <img src="/img/catia.png" class="bw catia">
+            <img src="/img/bw_10.png" class="bw bw_10">
+            <img src="/img/bw_11.png" class="bw bw_11">
+            <img src="/img/bw_12.png" class="bw bw_12">
         </div>
         <div class="col-12">
-            <img src="img/bw_9.png" class="bw bw_9">
-            <img src="img/bw_7.png" class="bw bw_7">
-            <img src="img/bw_13.png" class="bw bw_13">
-            <img src="img/bw.png" class="bw bw_w">
+            <img src="/img/bw_9.png" class="bw bw_9">
+            <img src="/img/bw_7.png" class="bw bw_7">
+            <img src="/img/bw_13.png" class="bw bw_13">
+            <img src="/img/bw.png" class="bw bw_w">
         </div>
         <div class="col-12">
-            <img src="img/bw_14.png" class="bw bw_14">
-            <img src="img/bw_4.png" class="bw bw_4">
-            <img src="img/bw_2.png" class="bw bw_2">
-            <img src="img/bw_15.png" class="bw bw_15">
+            <img src="/img/bw_14.png" class="bw bw_14">
+            <img src="/img/bw_4.png" class="bw bw_4">
+            <img src="/img/bw_2.png" class="bw bw_2">
+            <img src="/img/bw_15.png" class="bw bw_15">
         </div>
         <div class="col-12">
-            <img src="img/bw_6.png" class="bw bw_6">
-            <img src="img/bw_5.png" class="bw bw_5">
-            <img src="img/bw_3.png" class="bw bw_3">
+            <img src="/img/bw_6.png" class="bw bw_6">
+            <img src="/img/bw_5.png" class="bw bw_5">
+            <img src="/img/bw_3.png" class="bw bw_3">
         </div>
     </div>
 </div>
@@ -243,7 +243,7 @@
     <div class="container">
         <div class="row d-none d-md-flex">
             <div class="col-6 image-col d-flex flex-column align-items-end">
-                <img src="img/join.jpeg" class="image-triangle"/>
+                <img src="/img/join.jpeg" class="image-triangle"/>
                 <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-6 d-flex flex-column justify-content-center text-left image-col2">
@@ -255,7 +255,7 @@
         <div class="row d-sm-block d-md-none">
             <div class="col-12 image-col-responsive2">
                 <p class="title-join">@lang('pages.home.team')</p>
-                <img src="img/join.jpeg" class=""/>
+                <img src="/img/join.jpeg" class=""/>
                 <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-12 image-col-responsive">
@@ -274,8 +274,8 @@
             <p class="company-name text-left d-flex align-baseline"><span class="hq">HQ</span>CADM Automotive Sp. z o.o.<p>
             <p class="address">Lindego 1c<br/>30-148 Kraków</p>
             <p class="phone">
-                <img src="img/phone.png"/>+48 12 397 21 82, fax +48 12 397 92<br/>
-                <img src="img/mail.png" class="mail">info@cadm-a.com</p>
+                <img src="/img/phone.png"/>+48 12 397 21 82, fax +48 12 397 92<br/>
+                <img src="/img/mail.png" class="mail">info@cadm-a.com</p>
         </div>
     </div>
 </div>

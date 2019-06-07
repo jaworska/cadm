@@ -212,7 +212,7 @@
         <div class="row justify-content-center w-100">
             <a href="{{ route("sectors") }}/#others"  class="col-md-3 col-11 text-center d-flex flex-column align-items-center companies-hover d-flex click-others">
                 <div class="text-center d-flex flex-column align-items-center">
-                    <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
+                    <svg width="50.3px" height="57px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                         <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
                         <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Others/dark" fill="#2C2E34" fill-rule="nonzero">

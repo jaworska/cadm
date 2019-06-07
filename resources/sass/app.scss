@@ -976,7 +976,7 @@ body {
             height: 200px;
             padding: 20px;
             margin-bottom: 10px;
-            @include padding-x(60px,60px);
+            @include padding-x(30px,30px);
         }
 
         &:hover {
@@ -1069,6 +1069,10 @@ body {
 
         .others-icon {
             @include area(50.3px,57px);
+
+            @media screen and (max-width: $screen-768) {
+                @include area(50.3px,57px);
+            }
         }
     }
 }
