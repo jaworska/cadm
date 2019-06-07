@@ -2,8 +2,8 @@
 
 @section('content')
 <div class="jumbotron video_main flex-row home">
-    <video id="video-background" preload muted autoplay loop>
-        <source src="img/movie.webm" type="video/webm">
+    <video id="video-background" preload muted autoplay loop playsinline poster="/img/movie.webm">
+        <source src="/img/movie.webm" type="video/webm">
     </video>
     <div class="container-fluid video-text position-absolute">
         <div class="row">
@@ -20,17 +20,17 @@
         <div class="col-12 d-flex align-items-md-center flex-sm-column flex-xs-column flex-md-row justify-content-between padding-container">
             <div class="text-left d-flex float-left align-items-center justify-content-between">
                 <span>@lang("pages.home.trusted")</span>
-                <img src="img/volkswagen2.png" class="bw volkswagen-logo">
-                <img src="img/varroc2.png" class="bw varroc-logo">
-                <img src="img/magna2.png" class="bw magna-logo">
-                <img src="img/alstom-logo2.png" class="bw alstom-logo">
-                <img src="img/aptiv2.png" class="bw aptiv-logo">
-                <img src="img/csi2.png" class="bw csi">
-                <img src="img/h2.png" class="bw h">
+                <img src="/img/volkswagen2.png" class="bw volkswagen-logo">
+                <img src="/img/varroc2.png" class="bw varroc-logo">
+                <img src="/img/magna2.png" class="bw magna-logo">
+                <img src="/img/alstom-logo2.png" class="bw alstom-logo">
+                <img src="/img/aptiv2.png" class="bw aptiv-logo">
+                <img src="/img/csi2.png" class="bw csi">
+                <img src="/img/h2.png" class="bw h">
 
             </div>
             <div class="text-right float-right">
-                <img src="img/fe-ir-rgb-2.png" srcset="img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2">
+                <img src="/img/fe-ir-rgb-2.png" srcset="/img/fe-ir-rgb-2@2x.png 2x, img/fe-ir-rgb-2@3x.png 3x" class="FE_IR_rgb-2">
             </div>
         </div>
     </div>
@@ -89,7 +89,7 @@
 
 <div class="container-fluid companies d-flex flex-column align-items-center">
     <div class="row w-100">
-        <a href="{{ route("sectors") }}/#automotive" class="col-md-3 col-11 companies-hover click-automotive">
+        <a href="{{ route("sectors") }}/#automotive" class="col-md-3 col-12 companies-hover click-automotive">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="80px" height="29px" viewBox="0 0 80 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -108,7 +108,7 @@
                 <span>@lang('pages.home.automotive-span')</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#rolling-stock" class="col-md-3 col-11 companies-hover click-rolling">
+        <a href="{{ route("sectors") }}/#rolling-stock" class="col-md-3 col-12 companies-hover click-rolling">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="71px" height="33px" viewBox="0 0 71 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -137,7 +137,7 @@
                 <span>@lang('pages.home.rolling-span')k</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#maritime" class="col-md-3 col-11 companies-hover d-flex click-maritime">
+        <a href="{{ route("sectors") }}/#maritime" class="col-md-3 col-12 companies-hover d-flex click-maritime">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="64px" height="34px" viewBox="0 0 64 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -156,7 +156,7 @@
                 <span>@lang('pages.home.maritime-span')</span>
             </div>
         </a>
-        <a href="{{ route("sectors") }}/#aerospace" class="col-md-3 col-11 text-center flex-column align-items-center companies-hover d-flex click-aerospace">
+        <a href="{{ route("sectors") }}/#aerospace" class="col-md-3 col-12 text-center flex-column align-items-center companies-hover d-flex click-aerospace">
             <div class="text-center d-flex flex-column align-items-center">
                 <svg width="45px" height="44px" viewBox="0 0 52 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -171,9 +171,9 @@
         </a>
     </div>
     <div class="row justify-content-center w-100">
-        <a href="{{ route("sectors") }}/#others" class="col-md-3 col-11 companies-hover text-center flex-column align-items-center d-flex click-others">
+        <a href="{{ route("sectors") }}/#others" class="col-md-3 col-12 companies-hover text-center flex-column align-items-center d-flex click-others">
             <div class="text-center d-flex flex-column align-items-center">
-                <svg width="30px" height="34px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
+                <svg width="50.3px" height="57px" viewBox="0 0 30 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="others-icon">
                     <!-- Generator: sketchtool 53.2 (72643) - https://sketchapp.com -->
                     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Others/dark" fill="#2C2E34" fill-rule="nonzero">
@@ -191,50 +191,50 @@
 <div class="container-fluid logos">
     <div class="row text-center">
         <div class="col-12 d-none d-md-flex align-items-center justify-content-between">
-            <img src="img/catia.png" class="bw catia">
-            <img src="img/bw_10.png" class="bw bw_10">
-            <img src="img/bw_11.png" class="bw bw_11">
-            <img src="img/bw.png" class="bw bw_w">
-            <img src="img/bw_9.png" class="bw bw_9">
-            <img src="img/bw_7.png" class="bw bw_7">
-            <img src="img/bw_13.png" class="bw bw_13">
+            <img src="/img/catia.png" class="bw catia">
+            <img src="/img/bw_10.png" class="bw bw_10">
+            <img src="/img/bw_11.png" class="bw bw_11">
+            <img src="/img/bw.png" class="bw bw_w">
+            <img src="/img/bw_9.png" class="bw bw_9">
+            <img src="/img/bw_7.png" class="bw bw_7">
+            <img src="/img/bw_13.png" class="bw bw_13">
         </div>
     </div>
     <div class="row text-center">
         <div class="col-12 d-none d-md-flex align-items-center justify-content-between">
-            <img src="img/bw_12.png" class="bw bw_12">
-            <img src="img/bw_14.png" class="bw bw_14">
-            <img src="img/bw_4.png" class="bw bw_4">
-            <img src="img/bw_2.png" class="bw bw_2">
-            <img src="img/bw_15.png" class="bw bw_15">
-            <img src="img/bw_6.png" class="bw bw_6">
-            <img src="img/bw_5.png" class="bw bw_5">
-            <img src="img/bw_3.png" class="bw bw_3">
+            <img src="/img/bw_12.png" class="bw bw_12">
+            <img src="/img/bw_14.png" class="bw bw_14">
+            <img src="/img/bw_4.png" class="bw bw_4">
+            <img src="/img/bw_2.png" class="bw bw_2">
+            <img src="/img/bw_15.png" class="bw bw_15">
+            <img src="/img/bw_6.png" class="bw bw_6">
+            <img src="/img/bw_5.png" class="bw bw_5">
+            <img src="/img/bw_3.png" class="bw bw_3">
         </div>
     </div>
     <div class="row text-center d-md-none d-sm-flex">
         <div class="col-12">
-            <img src="img/catia.png" class="bw catia">
-            <img src="img/bw_10.png" class="bw bw_10">
-            <img src="img/bw_11.png" class="bw bw_11">
-            <img src="img/bw_12.png" class="bw bw_12">
+            <img src="/img/catia.png" class="bw catia">
+            <img src="/img/bw_10.png" class="bw bw_10">
+            <img src="/img/bw_11.png" class="bw bw_11">
+            <img src="/img/bw_12.png" class="bw bw_12">
         </div>
         <div class="col-12">
-            <img src="img/bw_9.png" class="bw bw_9">
-            <img src="img/bw_7.png" class="bw bw_7">
-            <img src="img/bw_13.png" class="bw bw_13">
-            <img src="img/bw.png" class="bw bw_w">
+            <img src="/img/bw_9.png" class="bw bw_9">
+            <img src="/img/bw_7.png" class="bw bw_7">
+            <img src="/img/bw_13.png" class="bw bw_13">
+            <img src="/img/bw.png" class="bw bw_w">
         </div>
         <div class="col-12">
-            <img src="img/bw_14.png" class="bw bw_14">
-            <img src="img/bw_4.png" class="bw bw_4">
-            <img src="img/bw_2.png" class="bw bw_2">
-            <img src="img/bw_15.png" class="bw bw_15">
+            <img src="/img/bw_14.png" class="bw bw_14">
+            <img src="/img/bw_4.png" class="bw bw_4">
+            <img src="/img/bw_2.png" class="bw bw_2">
+            <img src="/img/bw_15.png" class="bw bw_15">
         </div>
         <div class="col-12">
-            <img src="img/bw_6.png" class="bw bw_6">
-            <img src="img/bw_5.png" class="bw bw_5">
-            <img src="img/bw_3.png" class="bw bw_3">
+            <img src="/img/bw_6.png" class="bw bw_6">
+            <img src="/img/bw_5.png" class="bw bw_5">
+            <img src="/img/bw_3.png" class="bw bw_3">
         </div>
     </div>
 </div>
@@ -243,7 +243,7 @@
     <div class="container">
         <div class="row d-none d-md-flex">
             <div class="col-6 image-col d-flex flex-column align-items-end">
-                <img src="img/join.jpeg" class="image-triangle"/>
+                <img src="/img/join.jpeg" class="image-triangle"/>
                 <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-6 d-flex flex-column justify-content-center text-left image-col2">
@@ -255,7 +255,7 @@
         <div class="row d-sm-block d-md-none">
             <div class="col-12 image-col-responsive2">
                 <p class="title-join">@lang('pages.home.team')</p>
-                <img src="img/join.jpeg" class=""/>
+                <img src="/img/join.jpeg" class=""/>
                 <span>{!! trans('pages.home.forbes-span') !!}</span>
             </div>
             <div class="col-12 image-col-responsive">
@@ -274,9 +274,341 @@
             <p class="company-name text-left d-flex align-baseline"><span class="hq">HQ</span>CADM Automotive Sp. z o.o.<p>
             <p class="address">Lindego 1c<br/>30-148 Kraków</p>
             <p class="phone">
-                <img src="img/phone.png"/>+48 12 397 21 82, fax +48 12 397 92<br/>
-                <img src="img/mail.png" class="mail">info@cadm-a.com</p>
+                <img src="/img/phone.png"/>+48 12 397 21 82, fax +48 12 397 92<br/>
+                <img src="/img/mail.png" class="mail">info@cadm-a.com</p>
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The map, centered at Uluru
+            if (jQuery(window).width() > 776) {
+                var makeZoom = 6;
+                var myLat = 51.533909;
+                var myLng = 14.731688;
+            } else {
+                var makeZoom = 5;
+                var myLat = 49.096167;
+                var myLng = 17.024754;
+
+            };
+
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: makeZoom,
+                minZoom: 5,
+                center: {lat: myLat, lng: myLng },
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "saturation": 36
+                        },
+                        {
+                            "color": "#333333"
+                        },
+                        {
+                            "lightness": 40
+                        }
+                    ]
+                },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#cfcfcf"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dedede"
+                            },
+                            {
+                                "lightness": 21
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 18
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f2f2f2"
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e9e9e9"
+                            },
+                            {
+                                "lightness": 17
+                            }
+                        ]
+                    }
+                ]
+            });
+            setMarkers(map);
+
+        }
+
+        var locations = [
+            ['<span class="hq">HQ</span>CADM Automotive Sp. z o.o.', 50.078560, 19.879270,'Lindego 1c','30-148 Kraków','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['CADM Automotive Sp. z o.o.', 51.096167, 17.024754,'Powstańców Śląskich 48','53-333 Wrocław','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['CADM Automotive Sp. z o.o.', 50.263567, 19.093314,'ks. bpa Herberta Bednorza 2a-6','40-384 Katowice','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['DES ART. Sp. z o.o.', 54.533146, 18.517756,'Czechosłowacka 3','81-969 Gdynia','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['CADM Automotive Sp. z o.o.', 49.546515, 22.219024,'Lipińskiego 113','38-500 Sanok','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['CADM Automotive Sp. z o.o.', 51.273985, 22.564424,'Mariana Rapackiego 25','20-150 Lublin','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10],
+            ['CADM Automotive GmbH', 48.134737, 11.663307,'Schatzbogen 38','D – 81829 München','+48 12 397 21 82, fax +48 12 397 92','info@cadm-a.com',10]
+        ];
+
+        var allMarkers = [];
+
+        function setMarkers(map) {
+
+            var image = {
+                url : 'img/dot.png'
+            };
+
+            var image2 = {
+                url : 'img/dot-2.png'
+            };
+
+            var marker, i;
+            for (var i = 0; i < locations.length; i++) {
+
+                var location = locations[i];
+                var company = locations[i][0];
+                var address = locations[i][3];
+                var address2 = locations[i][4];
+                var phone = locations[i][5];
+                var email = locations[i][6];
+                var iconIndex = locations[i][7];
+
+                var pin = locations[i];
+                var myLatLng = new google.maps.LatLng(pin[1], pin[2]);
+
+
+                if (i < 1) {
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        icon: image2,
+                        zIndex : iconIndex
+                    });
+                };
+
+
+                if (i >= 1) {
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        icon: image,
+                        zIndex : iconIndex
+                    });
+                };
+
+
+                allMarkers.push(marker);
+
+                if (phone) {
+                    var content = '<div id="map-box"><p class="company-name">' + company + '<p><p class="address">' + address + '<br/>' + address2 + '</p><p class="phone"><img src="img/phone.png"/>' + phone + '<br/><img src="img/mail.png" class="mail">' + email + '</p></div>';
+                } else {
+                    var content = '<div id="map-box"><p class="company-name">' + company + '<p><p class="address">' + address + '<br/>' + address2 + '</div>';
+                }
+
+                var infoWindow = new google.maps.InfoWindow();
+
+                // google.maps.event.addListener( map,'click', (function(marker){
+                //     return function() {
+                //         // infoWindow.close();
+                //         //Change the marker icon
+                //         marker.setIcon("img/dot.png");
+                //         console.log(jQuery(this));
+                //         marker.setZIndex(21);
+                //     };
+                // })(marker));
+
+
+                google.maps.event.addListener(marker,'click', (function(marker,content,infoWindow){
+
+                    return function() {
+
+                        allMarkers.forEach(markAsDot);
+
+                        // infoWindow.close();
+                        document.getElementById('map-container').innerHTML = content;
+                        infoWindow.setContent(content);
+                        // infoWindow.open(map,marker);
+                        // console.log(jQuery(this));
+                        // console.log(marker);
+                        if (marker.icon == 'img/dot-5.png') marker.setIcon("img/dot-2.png");
+                        else marker.setIcon("img/dot-4.png");
+
+                        marker.setZIndex(-20);
+                    };
+                })(marker,content,infoWindow));
+
+            }
+        }
+
+        function markAsDot(element, index, array) {
+
+            //console.log(locations[i]);
+
+            if (index === 0) {
+                element.setIcon("img/dot-5.png");
+            }
+            else {
+                element.setIcon("img/dot.png");
+            }
+
+            element.setZIndex(21);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCft8gnloFEwT9u_3Rl8O0w_fDQkqrSWc8&callback=initMap"></script>
 @endsection

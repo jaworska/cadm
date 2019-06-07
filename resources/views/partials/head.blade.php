@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="/css/app.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
-<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 6122323,playbookId: 1921};</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
+<script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 6122323,playbookId: 1921};</script>
+<script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" defer></script>
 
 <title>CADM Automotive</title>
 </head>
