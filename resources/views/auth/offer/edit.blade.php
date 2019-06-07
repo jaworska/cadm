@@ -37,6 +37,7 @@
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację
                         </div>
+                        <input @if($offer -> location !=3) style="display:none;" @endif type="text" name="location_name" id="location_name" class="form-control" placeholder="Nazwa" value="{{$offer -> location_name}}">
                     </div>
                     <label class="col-lg-1 col-form-label">Data startu:</label>
                     <div class="col-lg-3">
@@ -134,5 +135,8 @@
             tabsize: 2,
             height: 100
         });
+        $('#location').change(function(){
+            $(this).val() == 3? $('#location_name').slideDown(300):$('#location_name').slideUp(300).val('');
+        })
     </script>
 @endsection

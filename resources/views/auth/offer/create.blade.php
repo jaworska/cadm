@@ -17,7 +17,7 @@
                 @csrf
                 <div class="form-group row form-group-marginless kt-margin-t-20">
                     <label class="col-lg-1 col-form-label">Tytuł:</label>
-                    <div class="col-lg-12">
+                    <div class="col-lg-11">
                         <input type="text" name="title" id="title" class="form-control" placeholder="Tytuł">
                         <div class="invalid-feedback" style="width: 100%;">
                             Tytuł jest wymagany
@@ -36,7 +36,9 @@
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację
                         </div>
+                        <input style="display:none;" type="text" name="location_name" id="location_name" class="form-control" placeholder="Nazwa">
                     </div>
+
                     <label class="col-lg-1 col-form-label">Data startu:</label>
                     <div class="col-lg-3">
                         <div class="input-group">
@@ -126,5 +128,8 @@
             placeholder: 'Zakres obowiązków',
             height:100
         });
+        $('#location').change(function(){
+            $(this).val() == 3? $('#location_name').slideDown(300):$('#location_name').slideUp(300).val('');
+        })
     </script>
 @endsection
