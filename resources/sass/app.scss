@@ -979,6 +979,12 @@ body {
             @include padding-x(14px,14px);
         }
 
+        &.click-others {
+            @media screen and (max-width: $screen-768) {
+                height: 240px;
+            }
+        }
+
         &:hover {
             text-decoration: none;
 
@@ -1039,6 +1045,10 @@ body {
             z-index: 20;
             margin-top: -10px;
             @include padding-y(30px,30px);
+
+            @media screen and (max-width: $screen-768) {
+                //transform: none;
+            }
 
             span {
                 &:first-of-type {
