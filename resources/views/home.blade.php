@@ -2,7 +2,9 @@
 
 @section('content')
 <div class="jumbotron video_main flex-row home">
-    <video id="video-background" preload muted autoplay loop playsinline src="/img/movie.webm" type="video/webm"></video>
+    <video id="video-background" preload muted autoplay loop playsinline poster="/img/movie.webm">
+        <source src="/img/movie.webm" type="video/webm">
+    </video>
     <div class="container-fluid video-text position-absolute">
         <div class="row">
             <div class="col-md-10 col-sm-12 offset-md-1 text-center d-flex justify-content-center flex-column align-items-center">
