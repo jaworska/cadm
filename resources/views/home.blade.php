@@ -585,7 +585,7 @@
                         infoWindow.setContent(content);
                         // infoWindow.open(map,marker);
                         // console.log(jQuery(this));
-                        console.log(marker);
+                        // console.log(marker);
                         if (marker.icon == 'img/dot-5.png') marker.setIcon("img/dot-2.png");
                         else marker.setIcon("img/dot-4.png");
 
