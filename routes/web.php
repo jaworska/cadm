@@ -42,6 +42,7 @@ Route::post('/admin/offer/activate/{offer?}','OfferController@updateActive') -> 
 
 
 Route::resource('/cv','CVController');
+Route::post('/sendCV','CVController@sendMail') -> name('cv.send');
 Route::get('/export/all','CVController@exportAll')->name('cv.export.all');
 Route::get('/export/{offer}','CVController@export')->name('cv.export');
 Route::post('/password/email','Auth\ForgotPasswordController@sendResetLinkEmail') -> name('password.email');
