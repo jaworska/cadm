@@ -169,8 +169,8 @@
         </div>
     </div>
 
-    <div class="container-fluid why services career mobile-team team d-block d-md-none">
-        <div class="row row-team position-relative">
+    <div class="container-fluid why services career team d-block d-md-none">
+        {{--<div class="row row-team position-relative">
             <div class="col-12 mb-4 d-flex justify-content-between">
                 <div class="d-flex flex-column hover-team">
                     <div class="team-img"><img src="/img/team1.jpg"></div>
@@ -194,7 +194,73 @@
                     </div>
                 </div>
             </div>
+        </div>--}}
+        <div class="mobile-team-carousel">
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team1.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team2.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team1.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team2.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team1.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team2.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team1.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team2.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column hover-team">
+                <div class="team-img"><img src="/img/team1.jpg"></div>
+                <div class="d-flex flex-column text-center bottom-team">
+                    <span class="bold">Jan Kowalski</span>
+                    <span class="text-p2">@lang('pages.career.job')</span>
+                </div>
+            </div>
         </div>
+
         <div class="row justify-content-center">
             <div class="d-flex flex-column hover-team2 justify-content-center align-items-center">
                 <div class="d-flex flex-column text-center justify-content-center align-items-center">

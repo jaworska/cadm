@@ -204,6 +204,12 @@
             }, 800);
         });
 
+        jQuery(".see-positions").click(function () {
+            jQuery('html, body').animate({
+                scrollTop: $("#open-positions").offset().top - $("#nav").height()
+            }, 800);
+        });
+
         //click boxes sectors
 
         // jQuery(".click-automotive").click(function() {
@@ -287,13 +293,13 @@
         if (window.location.href.indexOf("sectors?") > -1) {
             var element = window.location.href.split("?").pop();
             $('html, body').animate({
-                scrollTop: $('#' + element).offset().top - ($("#nav").height() + $(".nav-drop-sectors").height())
+                scrollTop: $('#' + element).offset().top - ($("#nav").height() + $(".nav-drop-sectors").outerHeight())
             });
             window.history.pushState({}, document.title, "/" + "sectors");
         }
 
         if (window.location.href.indexOf("sectors") > -1) {
-            scrollToID(".nav-drop-sectors li a", $("#nav").height() + $(".nav-drop-sectors").height());
+            scrollToID(".nav-drop-sectors li a", $("#nav").height() + $(".nav-drop-sectors").outerHeight());
         }
 
         //group scroll menu
@@ -450,52 +456,74 @@
 
         }
 
+        //our values circle animation
 
-        //value circle animation
+  /*      let rotateValue = 0;
 
-        /*jQuery(".values-circle svg, .values-circle .value-title").click(function(){
+        $(".values-circle svg, .values-circle .value-title").click(function(){
 
-            if(jQuery(".values-box").hasClass("chose")) {
-                jQuery(".values-box").removeClass("chose");
+            $(".middle-circle-div span").addClass("d-none");
+
+            if($(".values-box").hasClass("chose")) {
+                $(".values-box").removeClass("chose");
             }
 
-      /     if(jQuery(this).closest("svg").hasClass("d-none")) {
-                jQuery(this).closest("svg").removeClass("d-none");
+            if($(this).closest("svg").hasClass("d-none")) {
+                $(this).closest("svg").removeClass("d-none");
             }
-            jQuery(this).closest("svg").addClass("d-none");
 
-            jQuery(this).closest(".values-box").addClass("chose");
-            jQuery(".values-box.active").addClass("disactive");
+            $(this).closest(".values-box").addClass("chose");
+            $(".values-box.active").addClass("disactive");
 
-            if(jQuery(this).parent().hasClass("disactive")) {
-                jQuery(".values-box.active").removeClass("disactive");
+            if($(this).parent().hasClass("disactive")) {
+                $(".values-box.active").removeClass("disactive");
             }
-*/
-            {{--if(jQuery(this).hasClass("lock")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
-            {{--}--}}
 
-            {{--if(jQuery(this).hasClass("puzzle")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');--}}
-            {{--}--}}
+            rotateValue -= 72;
 
-            {{--if(jQuery(this).hasClass("quality")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');--}}
-            {{--}--}}
+            let oppositeRotateValue = 0 - rotateValue;
 
-            {{--if(jQuery(this).hasClass("arrow-up")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');--}}
-            {{--}--}}
+            $(".middle-circle-div, .values-circle svg").css({
+                'transform' : 'rotate(' + oppositeRotateValue + 'deg' + ')',
+                'z-index' : 2000,
+                'transition' : 'transform 1s'
+            });
 
-            {{--if(jQuery(this).hasClass("chats")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');--}}
-            {{--}--}}
+            $(".values-circle").css({
+                'transform' : 'rotate(' + rotateValue + 'deg' + ')',
+                'transition' : 'transform 1s'
+            });
 
-            {{--if(jQuery(this).hasClass("bulb")) {--}}
-                {{--jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');--}}
-            {{--}--}}
+            $(".middle-circle-div svg").css({
+                'transform' : 'none'
+            });*/
 
-        });
+            /* if(jQuery(this).hasClass("lock")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');
+            }
+
+            if(jQuery(this).hasClass("puzzle")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');
+            }
+
+            if(jQuery(this).hasClass("quality")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');
+            }
+
+            if(jQuery(this).hasClass("arrow-up")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');
+            }
+
+            if(jQuery(this).hasClass("chats")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');
+            }
+
+            if(jQuery(this).hasClass("bulb")) {
+                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');
+            }*/
+
+      //  });
+
 
         //carousel group
 
@@ -899,10 +927,22 @@
         element.setZIndex(21);
     }
 
-
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCft8gnloFEwT9u_3Rl8O0w_fDQkqrSWc8&callback=initMap"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
-
+<script>
+    $('.mobile-team-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '80px',
+        variableWidth: true
+    });
+</script>
