@@ -63,8 +63,7 @@
 
         if (jQuery(window).width() < 1440 & jQuery(window).width() > 767) {
             doResize(null, starterData);
-        }
-        ;
+        };
 
         //menu
 
@@ -458,7 +457,7 @@
 
         //our values circle animation
 
-  /*      let rotateValue = 0;
+        let rotateValue = 0;
 
         $(".values-circle svg, .values-circle .value-title").click(function(){
 
@@ -496,33 +495,33 @@
 
             $(".middle-circle-div svg").css({
                 'transform' : 'none'
-            });*/
+            });
 
-            /* if(jQuery(this).hasClass("lock")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');
-            }
+            {{-- if(jQuery(this).hasClass("lock")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("puzzle")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("puzzle")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.puzzle")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.puzzle-p")</p><p>@lang("pages.group.puzzle-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("quality")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("quality")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.quality")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.quality-p")</p><p>@lang("pages.group.quality-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("arrow-up")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("arrow-up")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.arrow-up")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.arrow-up-p")3</p><p>@lang("pages.group.arrow-up-p2").</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("chats")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');
-            }
+            {{--if(jQuery(this).hasClass("chats")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.chats")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.chats-p")</p><p>@lang("pages.group.chats-p2")</p></div>');--}}
+            {{--}--}}
 
-            if(jQuery(this).hasClass("bulb")) {
-                jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');
-            }*/
+            {{--if(jQuery(this).hasClass("bulb")) {--}}
+            {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');--}}
+            {{--}--}}
 
-      //  });
+        });
 
 
         //carousel group
@@ -595,11 +594,7 @@
             }, 800);
         });
 
-    //});
-
-
-
-
+    });
 
 </script>
 
