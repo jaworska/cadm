@@ -56,7 +56,6 @@ class CVController extends Controller
 
         if($cv -> validator($request) -> fails())
             return back() -> withErrors($cv -> validator($request) -> errors())->withInput($request->all());
-
         $cv -> name = $request -> name;
         $cv -> surname = $request -> surname;
         $cv -> phone = $request -> phone;
@@ -70,6 +69,7 @@ class CVController extends Controller
 
         $cv -> file = $path;
         $cv -> save();
+
         Mail::to('contact@cadm.pl') -> send(new NewCV($cv));
         return back() -> withErrors(['success' => true]);
     }
@@ -134,6 +134,7 @@ class CVController extends Controller
             'type' => ['required', 'string'],
             'location' => ['required', 'string'],
             'term_1' => ['required', 'string'],
+            'term_2' => ['required', 'string'],
             'file' => ['required','max:2048','mimes:pdf,doc']
         ]);
 

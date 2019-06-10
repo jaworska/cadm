@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="jumbotron video_main services career team">
-        <div id="slides" class="carousel slide position-relative" data-ride="carousel">
+        <div id="slides" class="carousel slide position-relative w-100" data-ride="carousel">
 
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -17,10 +17,10 @@
                     <img src="/img/meet-slider.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/meet-slider2.jpg" alt="">
+                    <img src="/img/meet-slider-2.jpg" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/meet-slider3.jpg" alt="">
+                    <img src="/img/meet-slider-3.jpg" alt="">
                 </div>
                 {{--<div class="carousel-item">--}}
                     {{--<img src="/img/meet-slider4.jpg" alt="">--}}
