@@ -24,7 +24,6 @@ class CV extends Model
             'phone' => ['required', 'numeric'],
             'email' => ['required', 'email'],
             'term_1' => ['required', 'string'],
-            'term_2' => ['required', 'string'],
             'term_3' => ['required', 'string'],
             'file' => ['required','max:2048','mimes:pdf,doc']
         ]);
