@@ -457,7 +457,7 @@
 
         //our values circle animation
 
-        let rotateValue = 0;
+      /*  let rotateValue = 0;
 
         $(".values-circle svg, .values-circle .value-title").click(function(){
 
@@ -495,7 +495,7 @@
 
             $(".middle-circle-div svg").css({
                 'transform' : 'none'
-            });
+            });*/
 
             {{-- if(jQuery(this).hasClass("lock")) {--}}
             {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
@@ -521,8 +521,8 @@
             {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');--}}
             {{--}--}}
 
-        });
-
+      /*  });
+*/
 
         //carousel group
 
