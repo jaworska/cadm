@@ -133,7 +133,7 @@
                     <hr class="mb-4">
                     <div class="custom-control custom-checkbox ">
                         <input type="checkbox" @if( old('term_1')) checked="checked" @endif class="custom-control-input @error('term_1') is-invalid @enderror" id="term_1" name="term_1" value="1" required>
-                        <label class="custom-control-label form-check-label @error('term_1') text-danger @enderror" for="term_1">{!! trans('pages.career.checkbox1') !!}</label>
+                        <label class="custom-control-label form-check-label @error('term_1') text-danger @enderror" for="term_1"><span class="orange">*</span>{!! trans('pages.career.checkbox1') !!}</label>
                         @error('term_1')
                         <span class="invalid-feedback mt-0" role="alert">
                             <strong>{{ $message }}</strong>
@@ -146,7 +146,7 @@
                     </div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" @if( old('term_2')) checked="checked" @endif class="custom-control-input @error('term_2') is-invalid @enderror" id="term_2" name="term_2" value="1" required>
-                        <label class="custom-control-label @error('term_2') text-danger @enderror" for="term_2">{!! trans('pages.career.checkbox2') !!}</label>
+                        <label class="custom-control-label @error('term_2') text-danger @enderror" for="term_2"><span class="orange">*</span>{!! trans('pages.career.checkbox2') !!}</label>
                         @error('term_2')
                         <span class="invalid-feedback mt-0" role="alert">
                             <strong>{{ $message }}</strong>

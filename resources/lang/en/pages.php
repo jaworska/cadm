@@ -405,8 +405,8 @@ The ideal CV (depending on work experience) should be not be longer than 3 pages
         'phone' => 'Phone number',
         'attach' => 'Attach CV in English language',
         'attach2' => 'Up to 2MB, .doc or .pdf',
-        'checkbox1' => '<span class="orange">*</span> Zapoznałem się z treścią <span class="orange">Szczegółowej informacji o przetwarzaniu danych osobowych<span></span>',
-        'checkbox2' => '<span class="orange">*</span> Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumentach aplikacyjnych dla potrzeb rekrutacji na stanowisko Modelarz Powierzchni klasy A - Project leader, prowadzonej przez CADM Automotive spółka z ograniczoną odpowiedzialnością z siedzibą w Krakowie, ul. Lindego 1C, 31-148 Kraków, KRS: 0000420015.',
+        'checkbox1' => 'Zapoznałem się z treścią <span class="orange">Szczegółowej informacji o przetwarzaniu danych osobowych<span></span>',
+        'checkbox2' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumentach aplikacyjnych dla potrzeb rekrutacji na stanowisko Modelarz Powierzchni klasy A - Project leader, prowadzonej przez CADM Automotive spółka z ograniczoną odpowiedzialnością z siedzibą w Krakowie, ul. Lindego 1C, 31-148 Kraków, KRS: 0000420015.',
         'checkbox3' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w dokumentach aplikacyjnych dla potrzeb przyszłych rekrutacji prowadzonych przez CADM Automotive bspółka z ograniczoną odpowiedzialnością z siedzibą w Krakowie, ul. Lindego 1C, 31-148 Kraków, KRS: 0000420015 oraz przez inne podmioty wchodzące w skład grupy kapitałowej.'
 
     ],
