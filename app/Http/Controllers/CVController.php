@@ -140,7 +140,7 @@ class CVController extends Controller
         if($validator -> fails())
             return response() -> json(['status' =>'validation_errors','errors' => $validator -> errors()]);
         $path = request() ->file('file')->store('cv','public');
-        Mail::to('contact@cadm.pl') -> send(new NewSpontaneousCv($request,$path));
+        Mail::to('dariusz.rajek@gmail.com') -> send(new NewSpontaneousCv($request,$path));
         Storage::disk('public')->delete($path,'public');
         return response() -> json(request() -> all());
     }
