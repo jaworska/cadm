@@ -94,8 +94,11 @@
                                             </span>
                                         </div>
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input"  @if( old('term_3')) checked="checked" @endif id="term_3" name="term_3" value="1">
-                                            <label class="custom-control-label" for="term_3">{!! trans('pages.career.checkbox3') !!}</label>
+                                            <input type="checkbox" class="custom-control-input @error('term_2') is-invalid @enderror"  @if( old('term_2')) checked="checked" @endif id="term_2" name="term_2" value="1">
+                                            <label class="custom-control-label @error('term_1') text-danger @enderror " for="term_2">{!! trans('pages.career.checkbox3') !!}</label>
+                                            <span class="invalid-feedback mt-0" style="width: 100%;">
+
+                                            </span>
                                         </div>
                                         <div class="custom-control custom-checkbox">
                                           <span class="bold">@lang('pages.career.apply-span')</span>
