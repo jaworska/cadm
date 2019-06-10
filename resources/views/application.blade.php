@@ -19,7 +19,6 @@
             </div>
         </div>
     </div>
-
     <div class="container-fluid why services career application d-none d-md-block">
         <div class="row">
             <div class="col-md-6 offset-md-3 col-12 padding-container">
@@ -28,73 +27,74 @@
                 </div>
             </div>
         </div>
-    <div class="container margin-top">
-        <div class="row services-row timeline position-relative align-items-baseline justify-content-sm-between">
-            <div class="col-12 d-flex timeline-inactive">
-                <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
-                    <div class="timeline-element timeline-left text-center why-content apply d-flex align-items-center justify-content-center position-relative timeline2 col-hover3">
-                        <span>@lang('pages.career.apply-for')</span>
-                    </div>
-                    <div class="timeline-element timeline-left text-right why-content f2 d-flex flex-column align-items-end justify-content-center position-relative timeline4 col-hover3">
-                        <span class="text-uppercase">@lang('pages.career.f2')</span>
-                        <p class="text-p2">@lang('pages.career.f2-text')</p>
-                        <p class="text-p2 bold interview-click">@lang('pages.career.f2-text2')</p>
-                    </div>
-                    <div class="timeline-element timeline-left text-center why-content technical d-flex flex-column align-items-center justify-content-center position-relative timeline6 col-hover3">
-                        <span>@lang('pages.career.technical')</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
-                    <div class="timeline-element timeline-right text-left why-content mt-0 position-relative find d-flex flex-column align-items-start justify-content-center timeline1 col-hover3">
-                        <span>@lang('pages.career.find')</span>
-                        <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
-                    </div>
-                    <div class="timeline-element timeline-right text-left why-content position-relative initial d-flex flex-column align-items-start justify-content-center timeline3 col-hover3">
-                        <span class="">@lang('pages.career.initial')</span>
-                        <p class="text-p2">@lang('pages.career.initial-text')</p>
-                        <p class="text-p2 bold friendly-recruitment-click">@lang('pages.career.initial-text2')</p>
-                    </div>
-                    <div class="timeline-element timeline-right text-left why-content position-relative receive d-flex flex-column align-items-start justify-content-center timeline5 col-hover3">
-                        <span>@lang('pages.career.receive')</span>
-                        <p class="text-p2">@lang('pages.career.receive-text')</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 position-absolute overflow-hidden timeline active">
-                <div class="col-12 d-flex">
+        <div class="container margin-top">
+            <div class="row services-row timeline position-relative align-items-baseline justify-content-sm-between">
+                <div class="col-12 d-flex timeline-inactive">
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
-                        <div class="bg-transparent text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
-
+                        <div class="timeline-element timeline-left text-center why-content apply d-flex align-items-center justify-content-center position-relative timeline2 col-hover3">
+                            <span>@lang('pages.career.apply-for')</span>
                         </div>
-                        <div class="bg-transparent text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2">
-
+                        <div class="timeline-element timeline-left text-right why-content f2 d-flex flex-column align-items-end justify-content-center position-relative timeline4 col-hover3">
+                            <span class="text-uppercase">@lang('pages.career.f2')</span>
+                            <p class="text-p2">@lang('pages.career.f2-text')</p>
+                            <p class="text-p2 bold interview-click">@lang('pages.career.f2-text2')</p>
                         </div>
-                        <div class="bg-transparent text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2">
+                        <div class="timeline-element timeline-left text-center why-content technical d-flex flex-column align-items-center justify-content-center position-relative timeline6 col-hover3">
+                            <span>@lang('pages.career.technical')</span>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
-                        <div id="timeline-start" class="bg-transparent text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
+                        <div class="timeline-element timeline-right text-left why-content mt-0 position-relative find d-flex flex-column align-items-start justify-content-center timeline1 col-hover3">
                             <span>@lang('pages.career.find')</span>
                             <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
                         </div>
-                        <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center">
-
+                        <div class="timeline-element timeline-right text-left why-content position-relative initial d-flex flex-column align-items-start justify-content-center timeline3 col-hover3">
+                            <span class="">@lang('pages.career.initial')</span>
+                            <p class="text-p2">@lang('pages.career.initial-text')</p>
+                            <p class="text-p2 bold friendly-recruitment-click">@lang('pages.career.initial-text2')</p>
                         </div>
-                        <div class="bg-transparent text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center">
-
+                        <div class="timeline-element timeline-right text-left why-content position-relative receive d-flex flex-column align-items-start justify-content-center timeline5 col-hover3">
+                            <span>@lang('pages.career.receive')</span>
+                            <p class="text-p2">@lang('pages.career.receive-text')</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <div class="welcome position-relative timeline-element">
-                    <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center ">
-                        <p class="bold">@lang('pages.career.welcome')</p>
-                        <p class="text-p2">@lang('pages.career.welcome-text')</p>
-                        <p></p>
-                        <a href="{{ route("team") }}" class="btn btn-more">@lang('pages.career.meet-button')</a>
+                <div class="col-12 position-absolute overflow-hidden timeline active">
+                    <div class="col-12 d-flex">
+                        <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
+                            <div class="bg-transparent text-center why-content apply d-flex align-items-center justify-content-center col-hover2">
+
+                            </div>
+                            <div class="bg-transparent text-right why-content f2 d-flex flex-column align-items-end justify-content-center col-hover2">
+
+                            </div>
+                            <div class="bg-transparent text-center why-content technical d-flex flex-column align-items-center justify-content-center col-hover2">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
+                            <div id="timeline-start" class="bg-transparent text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
+                                <span>@lang('pages.career.find')</span>
+                                <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
+                            </div>
+                            <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center">
+
+                            </div>
+                            <div class="bg-transparent text-left why-content col-hover2 receive d-flex flex-column align-items-start justify-content-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="welcome position-relative timeline-element">
+                        <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center ">
+                            <p class="bold">@lang('pages.career.welcome')</p>
+                            <p class="text-p2">@lang('pages.career.welcome-text')</p>
+                            <p></p>
+                            <a href="{{ route("team") }}" class="btn btn-more">@lang('pages.career.meet-button')</a>
+                        </div>
                     </div>
                 </div>
             </div>
