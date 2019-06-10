@@ -146,7 +146,7 @@
                 <li>CADM Automotive Sp. z o.o.</li>
                 <li>Lindego 1c 30-148 Kraków</li>
             </ul>
-            <button type="button" class="btn btn-see">@lang("pages.navigation.locations")</button>
+            <button action="{{ route("contact") }}" type="button" class="btn btn-see">@lang("pages.navigation.locations")</button>
         </div>
         <div class="col-6 nav-footer">
             <div class="socials d-flex">
