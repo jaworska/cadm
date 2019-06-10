@@ -480,6 +480,242 @@ main {
 
 }
 
+/*******mobile menu*******/
+.hide-chat {
+    display: none!important;
+}
+
+#nav-mobile {
+    background: $white;
+
+    .nav_container {
+        padding-bottom: 6px;
+    }
+
+    .navbar-light {
+        padding-right: 0;
+
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &[aria-expanded="false"] {
+                .navbar-toggler-icon {
+                    background-image: url('/img/menu.png');
+                    width: 23px;
+                    height: 18px;
+                    object-fit: contain;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                .navbar-toggler-icon {
+                    background-image: url('/img/close-menu.png');
+                    width: 22px;
+                    height: 22px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    #navbarToggleExternalContent {
+        padding-top: 58px;
+        margin-top: 4px;
+        height: 100vh;
+
+        .main-menu-mobile {
+            padding-left: 30px;
+
+            ul {
+                padding-bottom: 17px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 1.71;
+                    color: $gray-nav;
+                    font-weight: normal;
+                    padding-bottom: 0;
+
+                    &.bold {
+                        font-weight: 600;
+                    }
+
+                    a {
+                        position: relative;
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .more-menu-toggle {
+                display: none;
+                padding-top: 20px;
+            }
+
+            li {
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 1.36;
+                color: $gray-nav;
+                padding-bottom: 36px;
+                position: relative;
+
+                &.more-menu-mobile {
+                    position: relative;
+
+                   img {
+                       @include area(31px,31px);
+                        cursor: pointer;
+                    }
+
+                    &.open {
+                        padding-bottom: 0;
+
+                        >a {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            &::after {
+                                @include area(42px,3px);
+                                top: 37px;
+                                background: $main-orange;
+                                content: '';
+                                left: 0;
+                                position: absolute;
+                            }
+                        }
+
+                    }
+
+                }
+
+                a {
+                    position: relative;
+
+                    &:hover {
+                        color: $main-orange;
+                        border-bottom: 0px solid transparent;
+
+                        &::after {
+                            @include area(42px,3px);
+                            top: 37px;
+                            background: $main-orange;
+                            content: '';
+                            left: 0;
+                            position: absolute;
+                        }
+                    }
+
+                    &.active {
+
+                    }
+                }
+            }
+        }
+
+        .bottom-menu-mobile {
+            padding-left: 30px;
+            bottom: 0;
+            background: $white;
+            border-top: 1px solid #f6f6f6;
+            @include padding-y(14px,14px);
+        }
+
+        .btn-login {
+            color: $white;
+            background: $main-orange;
+            border-radius: 0;
+            font-size: 12px;
+            font-weight: 500;
+            //margin-right: 50px;
+            padding: 6px 36px;
+            margin-top: -3px;
+        }
+
+        .socials {
+            margin-right: 30px;
+
+            a {
+                color: $gray-nav;
+                margin-left: 20px;
+                filter: brightness(10%);
+
+                &:hover {
+                    filter: brightness(100%);
+                }
+            }
+        }
+
+        .logo {
+            img {
+                @include area(130px,36px);
+            }
+        }
+
+        .linkedin {
+            @include area(14.7px,14.7px);
+        }
+
+        .instagram {
+            @include area(15px,15px);
+        }
+
+        .facebook {
+            @include area(16px,16px);
+        }
+
+        .bw {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            &:hover {
+                -webkit-filter: none;
+                filter: none;
+            }
+        }
+    }
+}
+
+.logo-mobile {
+    img {
+        width: 130px;
+        margin-top: 10px;
+    }
+}
+
+#navbarToggleExternalContent {
+    left: 0;
+    background: $white;
+    width: 100%;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+
 /*******video*******/
 
 .jumbotron {
@@ -1660,6 +1896,11 @@ main {
             margin-top: 8px;
             @include area(100%,36px);
             max-width: 200px;
+            a{
+                &:hover{
+                    color:$main-orange;
+                }
+            }
         }
 
         .socials {
@@ -1780,38 +2021,6 @@ main {
     }
 }
 
-/*******mobile home*******/
-
-#nav-mobile {
-    background: $white;
-}
-
-.logo-mobile {
-    img {
-        width: 130px;
-        margin-top: 10px;
-    }
-}
-
-#navbarToggleExternalContent {
-    left: 0;
-    background: $white;
-    width: 100%;
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        color: $black;
-        text-decoration: none;
-
-        &:hover {
-            color: $black;
-            text-decoration: none;
-        }
-    }
-}
 
 /*******group*******/
 
@@ -3560,7 +3769,7 @@ main {
         .custom-control-input:checked ~ .custom-control-label::before {
             color: $white;
             border-color: $primary;
-            background-color: $primary;
+            background-color: $white;
             border-radius: 0;
             width: 16px;
             height: 16px;
@@ -4811,7 +5020,7 @@ main {
             .custom-control-input:checked ~ .custom-control-label::before {
                 color: $white;
                 border-color: $primary;
-                background-color: $primary;
+                background-color: $white;
                 border-radius: 0;
                 width: 16px;
                 height: 16px;

@@ -139,14 +139,14 @@
     <div class="row">
         <div class="col-6 nav-footer margin-nav">
             <a href="{{ route("home") }}"><img src="/img/logo-cadm-white.png" srcset="/img/logo-cadm-white@2x.png 2x, /img/logo-cadm-white@3x.png 3x" class="logoCADM_white"></a>
-            <p>@lang("pages.navigation.contact")</p>
+            <p><a  href="{{ route("contact") }}">@lang("pages.navigation.contact")</a></p>
             <ul>
                 <li>info@cadm-a.com</li>
                 <li>+48 12 397 21 82</li>
                 <li>CADM Automotive Sp. z o.o.</li>
                 <li>Lindego 1c 30-148 Kraków</li>
             </ul>
-            <button action="{{ route("contact") }}" type="button" class="btn btn-see">@lang("pages.navigation.locations")</button>
+            <button type="button" class="btn btn-see"><a href="{{ route("contact") }}">@lang("pages.navigation.locations")</a></button>
         </div>
         <div class="col-6 nav-footer">
             <div class="socials d-flex">
