@@ -59,7 +59,7 @@
                             <p class="text-p2">@lang('pages.career.receive-text')</p>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-12 position-absolute overflow-hidden timeline active">
                     <div class="col-12 d-flex">
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-end align-items-end col-left">
