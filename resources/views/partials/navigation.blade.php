@@ -231,12 +231,92 @@
                 <div class="collapse position-absolute" id="navbarToggleExternalContent">
                     <ul class="main-menu-mobile">
                         <li><a href="{{ route("home") }}">@lang("pages.navigation.home")</a></li>
-                        <li><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
-                        <li><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
-                        <li><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>
-                        <li><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a></li>
+                        <li class="more-group more-menu-mobile"><a href="{{ route("group") }}">@lang("pages.navigation.group")</a><img class="click-menu-mobile-toggle" src="/img/menu-more-inactive.png" />
+                            <ul class="group-mobile more-menu-toggle position-relative">
+                                <li class="position-relative"><a href="{{ route("group") }}/#about-us">@lang("pages.navigation.about")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#customers">@lang("pages.navigation.clients")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#our-values">@lang("pages.navigation.values")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#code-of-ethics">@lang("pages.navigation.ethics")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#eu-grants">@lang("pages.navigation.grants")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#we-love-to-help">@lang("pages.navigation.help")</a></li>
+                                <li class="position-relative"><a href="{{ route("group") }}/#partners">@lang("pages.navigation.partners")</a></li>
+                            </ul>
+                        </li>
+                        <li class="more-services more-menu-mobile"><a href="{{ route("services") }}">@lang("pages.navigation.services")</a><img class="click-menu-mobile-toggle" src="/img/menu-more-inactive.png" />
+                            <ul class="services-mobile more-menu-toggle position-relative">
+                                <li class="bold"><a href="{{ route("services") }}/#concept" class="bold">@lang("pages.navigation.concept")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.benchmarking")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.product")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.sales")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.definition")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.capacity")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.costing")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.model")</a></li>
+                                <li><a href="{{ route("services") }}/#concept">@lang("pages.navigation.styling")</a></li>
+                                <li class="bold mt-4"><a href="{{ route("services") }}/#development" class="bold">@lang("pages.navigation.development")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.cas")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.cad")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.apqp")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.documentation")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.prototyping")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.test")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.electronic-hardware")</a></li>
+                                <li><a href="{{ route("services") }}/#development">@lang("pages.navigation.electronic-software")</a></li>
+                                <li class="bold mt-4"><a href="{{ route("services") }}/#simulation" class="bold">@lang("pages.navigation.simulation")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.implict")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.explict")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.cfd")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.mbd")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.em")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.stackup")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.optical")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.gap")</a></li>
+                                <li><a href="{{ route("services") }}/#simulation">@lang("pages.navigation.thickness")</a></li>
+                                <li class="bold mt-4"><a href="{{ route("services") }}/#production" class="bold">@lang("pages.navigation.production")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.mold")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.tooling")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.gauges")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.launch")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.trouble")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.transfer")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.improvements")</a></li>
+                                <li><a href="{{ route("services") }}/#production">@lang("pages.navigation.optimization")</a></li>
+                                <li class="bold mt-4"><a href="{{ route("services") }}/#managment" class="bold">@lang("pages.navigation.management")</a></li>
+                                <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.project-management")</a></li>
+                                <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.interim-management")</a></li>
+                                <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.supplier")</a></li>
+                                <li><a href="{{ route("services") }}/#managment">@lang("pages.navigation.quality")</a></li>
+                            </ul>
+                        </li>
+                        <li class="more-sectors more-menu-mobile"><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a><img class="click-menu-mobile-toggle" src="/img/menu-more-inactive.png" />
+                            <ul class="sectors-mobile more-menu-toggle position-relative">
+                                <li class="position-relative"><a href="{{ route("sectors") }}/#automotive">@lang("pages.navigation.automotive")</a></li>
+                                <li class="position-relative"><a href="{{ route("sectors") }}/#rolling-stock">@lang("pages.navigation.rolling")</a></li>
+                                <li class="position-relative"><a href="{{ route("sectors") }}/#maritime">@lang("pages.navigation.maritime")</a></li>
+                                <li class="position-relative"><a href="{{ route("sectors") }}/#aerospace">@lang("pages.navigation.aerospace")</a></li>
+                                <li class="position-relative"><a href="{{ route("sectors") }}/#others">@lang("pages.navigation.others")</a></li>
+                            </ul>
+                        </li>
+                        <li class="more-career more-menu-mobile"><a href="{{ route("career") }}">@lang("pages.navigation.careers")</a><img class="click-menu-mobile-toggle" src="/img/menu-more-inactive.png" />
+                            <ul class="career-mobile more-menu-toggle position-relative">
+                                <li class="position-relative"><a href="{{ route("team") }}">@lang("pages.navigation.meet")/a></li>
+                                <li class="position-relative"><a href="{{ route("career") }}/#friendly-company">@lang("pages.navigation.friendly")</a></li>
+                                <li class="position-relative"><a href="{{ route("application") }}">@lang("pages.navigation.application")</a></li>
+                                <li class="position-relative"><a href="{{ route("career") }}/#current-job-offers">@lang("pages.navigation.current-job")</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{ route("contact") }}">@lang("pages.navigation.contact")</a></li>
                     </ul>
+                    <div class="d-flex justify-content-between bottom-menu-mobile w-100 position-fixed">
+                        <div class="">
+                            <a href="http://localhost:8000/admin" target="_blank" class="btn btn-login">Login</a>
+                        </div>
+                        <div class="socials d-inline">
+                            <a href="https://www.facebook.com/CADM.Automotive" target="_blank"><img src="/img/fb.svg" class="facebook bw"></a>
+                            <a href="https://www.linkedin.com/company/cadm-automotive" target="_blank"><img src="/img/link.svg" class="linkedin bw"></a>
+                            <a href="https://www.instagram.com/cadmautomotive/" target="_blank"><img src="/img/insta.svg" class="instagram bw"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

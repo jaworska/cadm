@@ -481,9 +481,16 @@ main {
 }
 
 /*******mobile menu*******/
+.hide-chat {
+    display: none!important;
+}
 
 #nav-mobile {
     background: $white;
+
+    .nav_container {
+        padding-bottom: 6px;
+    }
 
     .navbar-light {
         padding-right: 0;
@@ -517,8 +524,46 @@ main {
 
     #navbarToggleExternalContent {
         padding-top: 58px;
+        margin-top: 4px;
+        height: 100vh;
 
         .main-menu-mobile {
+            padding-left: 30px;
+
+            ul {
+                padding-bottom: 17px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 1.71;
+                    color: $gray-nav;
+                    font-weight: normal;
+                    padding-bottom: 0;
+
+                    &.bold {
+                        font-weight: 600;
+                    }
+
+                    a {
+                        position: relative;
+
+                        &:hover {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .more-menu-toggle {
+                display: none;
+                padding-top: 20px;
+            }
+
             li {
                 font-size: 22px;
                 font-weight: bold;
@@ -527,12 +572,40 @@ main {
                 padding-bottom: 36px;
                 position: relative;
 
+                &.more-menu-mobile {
+                    position: relative;
+
+                   img {
+                       @include area(31px,31px);
+                        cursor: pointer;
+                    }
+
+                    &.open {
+                        padding-bottom: 0;
+
+                        >a {
+                            color: $main-orange;
+                            border-bottom: 0px solid transparent;
+
+                            &::after {
+                                @include area(42px,3px);
+                                top: 37px;
+                                background: $main-orange;
+                                content: '';
+                                left: 0;
+                                position: absolute;
+                            }
+                        }
+
+                    }
+
+                }
+
                 a {
                     position: relative;
 
                     &:hover {
                         color: $main-orange;
-                        font-weight: 500;
                         border-bottom: 0px solid transparent;
 
                         &::after {
@@ -546,20 +619,70 @@ main {
                     }
 
                     &.active {
-                        color: $main-orange;
-                        font-weight: 500;
-                        border-bottom: 0px solid transparent;
 
-                        &::after {
-                            @include area(42px,3px);
-                            top: 37px;
-                            background: $main-orange;
-                            content: '';
-                            left: 0;
-                            position: absolute;
-                        }
                     }
                 }
+            }
+        }
+
+        .bottom-menu-mobile {
+            padding-left: 30px;
+            bottom: 0;
+            background: $white;
+            border-top: 1px solid #f6f6f6;
+            @include padding-y(14px,14px);
+        }
+
+        .btn-login {
+            color: $white;
+            background: $main-orange;
+            border-radius: 0;
+            font-size: 12px;
+            font-weight: 500;
+            //margin-right: 50px;
+            padding: 6px 36px;
+            margin-top: -3px;
+        }
+
+        .socials {
+            margin-right: 30px;
+
+            a {
+                color: $gray-nav;
+                margin-left: 20px;
+                filter: brightness(10%);
+
+                &:hover {
+                    filter: brightness(100%);
+                }
+            }
+        }
+
+        .logo {
+            img {
+                @include area(130px,36px);
+            }
+        }
+
+        .linkedin {
+            @include area(14.7px,14.7px);
+        }
+
+        .instagram {
+            @include area(15px,15px);
+        }
+
+        .facebook {
+            @include area(16px,16px);
+        }
+
+        .bw {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            &:hover {
+                -webkit-filter: none;
+                filter: none;
             }
         }
     }

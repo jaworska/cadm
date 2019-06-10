@@ -99,6 +99,8 @@
 
             // now grab every link from the navigation
 
+            //desktop
+
             if ($('#nav').is(":visible")) {
                 $('.nav_container a').each(function () {
                     var navUrl = $(this).attr('href');
@@ -118,27 +120,29 @@
                 });
             }
 
-            if ($('#nav-mobile').is(":visible")) {
-                $('.main-menu-mobile a').each(function () {
-                    var navUrl = $(this).attr('href');
-                    var temp2 = navUrl.split(baseUrl);
-                    var navUrlCut = temp2[1];
+            //mobile
 
-                    if (navUrlCut === activeUrlCut) {
-                        $(this).addClass('active');
-                        return false;
-                    }
-
-                    //exceptions
-                    if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
-                        $(this).addClass('active');
-                        return false;
-                    } else if (activeUrlCut === ''){
-                        $(this).addClass('active');
-                        return false;
-                    }
-                });
-            }
+            // if ($('#nav-mobile').is(":visible")) {
+            //     $('.main-menu-mobile a').each(function () {
+            //         var navUrl = $(this).attr('href');
+            //         var temp2 = navUrl.split(baseUrl);
+            //         var navUrlCut = temp2[1];
+            //
+            //         if (navUrlCut === activeUrlCut) {
+            //             $(this).addClass('active');
+            //             return false;
+            //         }
+            //
+            //         //exceptions
+            //         if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
+            //             $(this).addClass('active');
+            //             return false;
+            //         } else if (activeUrlCut === ''){
+            //             $(this).addClass('active');
+            //             return false;
+            //         }
+            //     });
+            // }
 
         });
 
@@ -194,9 +198,27 @@
 
         });
 
+        //menu mobile dropdowns
+
+        jQuery(".click-menu-mobile-toggle").click(function () {
+            jQuery(this).parent().toggleClass('open');
+            jQuery(this).parent().find('.more-menu-toggle').slideToggle("slow");
+
+            if ($(this).parent().hasClass('open')) {
+                jQuery(this).attr('src','/img/menu-more.png');
+            } else {
+                jQuery(this).attr('src','/img/menu-more-inactive.png');
+            }
+        });
+
+        jQuery(".navbar-light").click(function () {
+            console.log('sfsdf');
+            $('#pipedrive-chat-holder').toggleClass('hide-chat');
+        });
+
         //chart
 
-        jQuery(".grow-click").click(function () {
+        jQuery(".more-menu-mobile").click(function () {
             jQuery(this).siblings().find("span").removeClass("active");
             jQuery(this).find("span").addClass("active");
 
@@ -272,7 +294,7 @@
 
         jQuery('.services-toggle-inner').click(function () {
             jQuery(this).toggleClass('active');
-            jQuery(this).siblings().find('ul').slideToggle("slow");
+            jQuery(this).siblings().find('ul');
         });
 
         //menu services toggle boxes
