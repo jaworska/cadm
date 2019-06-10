@@ -542,6 +542,7 @@
             rotateValue -= 72;
 
             let oppositeRotateValue = 0 - rotateValue;
+            let previous = $('.values-circle').css('transform');
 
             $(".middle-circle-div, .values-circle svg").css({
                 'transform' : 'rotate(' + oppositeRotateValue + 'deg' + ')',
@@ -549,14 +550,19 @@
                 'transition' : 'transform 1s'
             });
 
+
             $(".values-circle").css({
-                'transform' : 'rotate(' + rotateValue + 'deg' + ')',
+                'transform' : 'rotate(' + previous + ' ' + rotateValue + 'deg' + ')',
                 'transition' : 'transform 1s'
             });
 
+            let actually = $('.values-circle').css('transform');
+
             $(".middle-circle-div svg").css({
                 'transform' : 'none'
-            });*/
+            });
+                   });
+*/
 
             {{-- if(jQuery(this).hasClass("lock")) {--}}
             {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.lock")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.lock-p")</p><p>@lang("pages.group.lock-p2")</p></div>');--}}
@@ -582,8 +588,6 @@
             {{--    jQuery(".value-change").html('<div class="text-left title-big"><span>@lang("pages.group.bulb")</span> </div> <div class="text-left text-value"><p>@lang("pages.group.bulb-p")</p><p>@lang("pages.group.bulb-p2")</p></div>');--}}
             {{--}--}}
 
-      /*  });
-*/
 
         //carousel group
 
@@ -665,13 +669,14 @@
 
 <script>
     $('.mobile-team-carousel').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
         centerMode: true,
         centerPadding: '80px',
-        variableWidth: true
+        variableWidth: true,
+        focusOnSelect:true
     });
 </script>

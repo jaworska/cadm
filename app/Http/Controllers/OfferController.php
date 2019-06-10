@@ -52,7 +52,7 @@ class OfferController extends Controller
         $offer -> range  = $request -> range;
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
-        if($request -> location ==3)
+        if($request -> location !==1)
             $offer -> location_name = $request -> location_name;
         $offer -> priority = Offer::all() -> max('priority')+1??1;
         $offer -> active = isset($request -> active)?1:0;
@@ -104,7 +104,7 @@ class OfferController extends Controller
         $offer -> range  = $request -> range;
         $offer -> offer  = $request -> offer;
         $offer -> requirements  = $request -> requirements;
-        if($request -> location ==3)
+        if($request -> location !==1)
             $offer -> location_name = $request -> location_name;
         $offer -> active = isset($request -> active)?1:0;
         if(($offer-> validator ->fails())) {
