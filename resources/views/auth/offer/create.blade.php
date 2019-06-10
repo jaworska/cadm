@@ -36,7 +36,7 @@
                         <div class="invalid-feedback">
                             Proszę wybrać lokalizację
                         </div>
-                        <input style="display:none;" type="text" name="location_name" id="location_name" class="form-control" placeholder="Nazwa">
+                        <input style="display:none;" type="text" name="location_name" id="location_name" class="form-control mt-1" placeholder="Nazwa">
                     </div>
 
                     <label class="col-lg-1 col-form-label">Data startu:</label>
@@ -129,7 +129,7 @@
             height:100
         });
         $('#location').change(function(){
-            $(this).val() == 3? $('#location_name').slideDown(300):$('#location_name').slideUp(300).val('');
+            $(this).val() !== 1? $('#location_name').slideDown(300):$('#location_name').slideUp(300).val('');
         })
     </script>
 @endsection
