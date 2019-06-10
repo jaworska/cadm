@@ -901,10 +901,12 @@ main {
     .alstom-logo {
         @include svg-img(105px,66px);
         margin-top: -6px;
+
     }
 
     .aptiv-logo {
         @include svg-img(94px,12px);
+        margin-top: 6px;
     }
 
     .csi {
