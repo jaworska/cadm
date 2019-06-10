@@ -99,22 +99,47 @@
             var activeUrlCut = temp[1];
 
             // now grab every link from the navigation
-            $('.nav_container a').each(function () {
-                var navUrl = $(this).attr('href');
-                var temp2 = navUrl.split(baseUrl);
-                var navUrlCut = temp2[1];
 
-                if (navUrlCut === activeUrlCut) {
-                    $(this).addClass('active');
-                    return false;
-                }
+            if ($('#nav').is(":visible")) {
+                $('.nav_container a').each(function () {
+                    var navUrl = $(this).attr('href');
+                    var temp2 = navUrl.split(baseUrl);
+                    var navUrlCut = temp2[1];
 
-                //exceptions
-                if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
-                    $(this).addClass('active');
-                    return false;
-                }
-            });
+                    if (navUrlCut === activeUrlCut) {
+                        $(this).addClass('active');
+                        return false;
+                    }
+
+                    //exceptions
+                    if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
+                        $(this).addClass('active');
+                        return false;
+                    }
+                });
+            }
+
+            if ($('#nav-mobile').is(":visible")) {
+                $('.main-menu-mobile a').each(function () {
+                    var navUrl = $(this).attr('href');
+                    var temp2 = navUrl.split(baseUrl);
+                    var navUrlCut = temp2[1];
+
+                    if (navUrlCut === activeUrlCut) {
+                        $(this).addClass('active');
+                        return false;
+                    }
+
+                    //exceptions
+                    if (((activeUrlCut === 'application') || (activeUrlCut === 'team')) && (navUrlCut === 'career')) {
+                        $(this).addClass('active');
+                        return false;
+                    } else if (activeUrlCut === ''){
+                        $(this).addClass('active');
+                        return false;
+                    }
+                });
+            }
 
         });
 
@@ -385,6 +410,8 @@
                         if (timelineElementOffset.top < ($currentScroll-timelineElementHeight)) {
                             markTimelineElementAsCurrent($(this));
                         }
+
+
 
                         // Unmark as current and mark as past
 

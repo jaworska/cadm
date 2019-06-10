@@ -109,7 +109,7 @@
         function initMap() {
             // The map, centered at Uluru
             if (jQuery(window).width() > 776) {
-                var makeZoom = 9;
+                var makeZoom = 15;
                 var makeZoom2 = 6;
                 var myLat = 51.533909;
                 var myLng = 14.731688;

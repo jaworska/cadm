@@ -64,6 +64,7 @@
                 </div>
                 <div class="col-12 why-content d-flex align-items-center justify-content-center col-hover">
                     <div class="text-center">
+                        <p class="mb-2">@lang("pages.home.portfolio-span")</p>
                         <span>@lang("pages.home.portfolio")</span>
 
                     </div>

@@ -229,7 +229,8 @@
                     </button>
                 </nav>
                 <div class="collapse position-absolute" id="navbarToggleExternalContent">
-                    <ul>
+                    <ul class="main-menu-mobile">
+                        <li><a href="{{ route("home") }}">@lang("pages.navigation.home")</a></li>
                         <li><a href="{{ route("group") }}">@lang("pages.navigation.group")</a></li>
                         <li><a href="{{ route("services") }}">@lang("pages.navigation.services")</a></li>
                         <li><a href="{{ route("sectors") }}">@lang("pages.navigation.sectors")</a></li>

@@ -13,9 +13,9 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content border-0">
             <div class="modal-header border-0 d-flex flex-column align-items-center justify-content-center">
-                {{--<button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
-                    {{--<span aria-hidden="true">&times;</span>--}}
-                {{--</button>--}}
+                <button type="button" class="close d-md-none d-sm-block" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <span class="modal-title title-big-mini">@lang('pages.career.spontaneous')</span>
                 <span class="modal-title-mini">@lang('pages.career.spontaneous-span')</span>
             </div>

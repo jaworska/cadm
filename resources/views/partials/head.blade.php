@@ -10,7 +10,17 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
 <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 6122323,playbookId: 1921};</script>
-<script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" defer></script>
+{{--<script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" defer>--}}
+<script>
+    setTimeout(function() {
+        var headID = document.getElementsByTagName("head")[0];
+        var newScript = document.createElement('script');
+        newScript.type = 'text/javascript';
+        newScript.src = 'https://leadbooster-chat.pipedrive.com/assets/loader.js';
+        headID.appendChild(newScript);
+    }, 3000);
+</script>
+
 
 <title>CADM Automotive</title>
 </head>

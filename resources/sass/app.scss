@@ -480,6 +480,119 @@ main {
 
 }
 
+/*******mobile menu*******/
+
+#nav-mobile {
+    background: $white;
+
+    .navbar-light {
+        padding-right: 0;
+
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &[aria-expanded="false"] {
+                .navbar-toggler-icon {
+                    background-image: url('/img/menu.png');
+                    width: 23px;
+                    height: 18px;
+                    object-fit: contain;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                .navbar-toggler-icon {
+                    background-image: url('/img/close-menu.png');
+                    width: 22px;
+                    height: 22px;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    #navbarToggleExternalContent {
+        padding-top: 58px;
+
+        .main-menu-mobile {
+            li {
+                font-size: 22px;
+                font-weight: bold;
+                line-height: 1.36;
+                color: $gray-nav;
+                padding-bottom: 36px;
+                position: relative;
+
+                a {
+                    position: relative;
+
+                    &:hover {
+                        color: $main-orange;
+                        font-weight: 500;
+                        border-bottom: 0px solid transparent;
+
+                        &::after {
+                            @include area(42px,3px);
+                            top: 37px;
+                            background: $main-orange;
+                            content: '';
+                            left: 0;
+                            position: absolute;
+                        }
+                    }
+
+                    &.active {
+                        color: $main-orange;
+                        font-weight: 500;
+                        border-bottom: 0px solid transparent;
+
+                        &::after {
+                            @include area(42px,3px);
+                            top: 37px;
+                            background: $main-orange;
+                            content: '';
+                            left: 0;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logo-mobile {
+    img {
+        width: 130px;
+        margin-top: 10px;
+    }
+}
+
+#navbarToggleExternalContent {
+    left: 0;
+    background: $white;
+    width: 100%;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+
 /*******video*******/
 
 .jumbotron {
@@ -1778,38 +1891,6 @@ main {
     }
 }
 
-/*******mobile home*******/
-
-#nav-mobile {
-    background: $white;
-}
-
-.logo-mobile {
-    img {
-        width: 130px;
-        margin-top: 10px;
-    }
-}
-
-#navbarToggleExternalContent {
-    left: 0;
-    background: $white;
-    width: 100%;
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        color: $black;
-        text-decoration: none;
-
-        &:hover {
-            color: $black;
-            text-decoration: none;
-        }
-    }
-}
 
 /*******group*******/
 
