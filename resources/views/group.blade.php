@@ -215,7 +215,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none orange">Trust</span>
+                            <span class="d-none orange">@lang('pages.group.lock')</span>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none orange">Responsibility</span>
+                            <span class="d-none orange">@lang('pages.group.puzzle')</span>
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center middle-circle-div">
@@ -285,7 +285,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none orange">Consequence</span>
+                            <span class="d-none orange">@lang('pages.group.arrow-up')</span>
                         </div>
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none orange">Communication</span>
+                            <span class="d-none orange">@lang('pages.group.chats')</span>
                         </div>
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
@@ -331,7 +331,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="d-none orange">Creativity</span>
+                            <span class="d-none orange">@lang('pages.group.bulb')</span>
                         </div>
                     </div>
                 </div>

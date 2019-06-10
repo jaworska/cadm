@@ -2022,7 +2022,7 @@ main {
 
     &.grow {
         background: $white;
-        padding-bottom: 73px;
+        padding-bottom: 13px;
 
         @media screen and (max-width: $screen-768) {
             padding-bottom: 64px;
@@ -2115,7 +2115,7 @@ main {
                         top: 37px;
                         background: #e95c1b;
                         content: "";
-                        left: 33%;
+                        left: calc(50% - 18px)!important;
                         position: absolute;
 
                         @media screen and (max-width: $screen-768) {
@@ -2131,7 +2131,7 @@ main {
     }
     &.logos {
         @include padding-x(112px,112px);
-        @include padding-y(0,60px);
+        @include padding-y(60px,60px);
         background: $white;
 
         &::before {
@@ -2173,7 +2173,7 @@ main {
         }
 
         .csi {
-            width: 42x;
+            width: 42px;
         }
 
         .saargummi {
@@ -2660,7 +2660,7 @@ main {
                 span{
                     transform: rotate(-144deg);
                     bottom: -11px;
-                    right: -54px;
+                    right: -42px;
                 }
 
                 &.chose {
@@ -3239,7 +3239,7 @@ main {
         }
 
         .col-text {
-            padding-right: 120px;
+            padding-right: 164px;
             @include padding-y(40px,40px);
 
             @media screen and (max-width: $screen-768) {
@@ -3262,7 +3262,7 @@ main {
         }
 
         .col-text {
-            padding-left: 120px;
+            padding-left: 133px;
             @include padding-y(40px,40px);
 
             @media screen and (max-width: $screen-768) {
@@ -3278,7 +3278,10 @@ main {
         background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 250px;
+        min-height: 390px;
+        @media screen and (max-width: $screen-768) {
+            min-height:190px
+        }
     }
 
     .rolling-img {
@@ -3286,7 +3289,10 @@ main {
         background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 250px;
+        min-height: 390px;
+        @media screen and (max-width: $screen-768) {
+            min-height:190px
+        }
     }
 
     .maritime-img {
@@ -3294,7 +3300,10 @@ main {
         background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 250px;
+        min-height: 390px;
+        @media screen and (max-width: $screen-768) {
+            min-height:190px
+        }
      }
 
     .aerospace-img {
@@ -3302,7 +3311,10 @@ main {
         background-position: left bottom;
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 250px;
+        min-height: 390px;
+        @media screen and (max-width: $screen-768) {
+            min-height:190px
+        }
     }
 
     &.img-text, &.text-img {
@@ -4328,7 +4340,7 @@ main {
         }
 
         .btn-see {
-            color: #e95c1b;
+            color: #e95c1b!important;
             border: 1px solid #e95c1b;
             background: transparent;
             border-radius: 0;
@@ -5280,4 +5292,11 @@ main {
     }
 }
 
+.mobile-team-carousel{
+    margin-bottom:40px;
 
+    .d-flex{
+        margin-left:15px;
+        margin-right:15px;
+    }
+}

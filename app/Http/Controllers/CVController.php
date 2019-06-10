@@ -8,7 +8,10 @@ use App\Mail\NewCV;
 use App\Offer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Validator;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Mail\NewSpontaneousCv;
 
 class CVController extends Controller
 {
@@ -19,7 +22,7 @@ class CVController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth') -> except('store');
+        $this->middleware('auth') -> except('store','sendMail');
     }
     /**
      * Display a listing of the resource.
@@ -120,5 +123,25 @@ class CVController extends Controller
     }
     public function exportAll(){
         return Excel::download(new CVExport, 'cvs.xlsx');
+    }
+    public function sendMail(Request $request){
+
+        $validator =  Validator::make(request() -> all(), [
+            'name' => ['required', 'string'],
+            'surname' => ['required', 'string'],
+            'phone' => ['required', 'numeric'],
+            'email' => ['required', 'email'],
+            'type' => ['required', 'string'],
+            'location' => ['required', 'string'],
+            'term_1' => ['required', 'string'],
+            'file' => ['required','max:2048','mimes:pdf,doc']
+        ]);
+
+        if($validator -> fails())
+            return response() -> json(['status' =>'validation_errors','errors' => $validator -> errors()]);
+        $path = request() ->file('file')->store('cv','public');
+        Mail::to('contact@cadm.pl') -> send(new NewSpontaneousCv($request,$path));
+        Storage::disk('public')->delete($path,'public');
+        return response() -> json(request() -> all());
     }
 }

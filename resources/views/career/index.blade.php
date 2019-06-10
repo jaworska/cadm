@@ -104,3 +104,42 @@
     </div>
 
 @endsection
+
+@section('scripts')
+<script>
+$('#cv_send').on('submit',function(e){
+    e.preventDefault();
+    $('#submit_btn').attr('disabled','disabled');
+    var form = this;
+    var formData = new FormData(form);
+    $(form).find('input').addClass('is-valid').removeClass('is-invalid').siblings('span').text('').removeClass('invalid-feedback text-muted');
+    axios.post($(form).attr('action'), formData, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+    }).then(function(response){
+        $('#submit_btn').removeAttr('disabled');
+        if (response.data.status === 'validation_errors') {
+            $('#cv_send_success').removeClass('show');
+            for (var error in response.data.errors) {
+                response.data.errors[error].forEach(element => {
+                    console.log(element);
+                    $(form).find('input[name="' + error + '"]').addClass('is-invalid').siblings('span').text(element).addClass('invalid-feedback')
+                }
+            );
+            }
+        }else{
+            $('#submit_btn').removeAttr('disabled');
+            $(form).find('input').removeClass('is-invalid').siblings('span').text('').removeClass('invalid-feedback text-muted');
+            $(form).find('input').removeClass('is-valid').val('');
+            $('#cv_send_success').addClass('show');
+        }
+    }).catch(function(error){
+        $('#submit_btn').removeAttr('disabled');
+        console.log(error);
+    })
+})
+
+</script>
+
+@endsection

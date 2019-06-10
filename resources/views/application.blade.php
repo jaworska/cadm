@@ -48,7 +48,7 @@
                     <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
                         <div class="timeline-element timeline-right text-left why-content mt-0 position-relative find d-flex flex-column align-items-start justify-content-center timeline1 col-hover3">
                             <span>@lang('pages.career.find')</span>
-                            <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
+                            <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
                         </div>
                         <div class="timeline-element timeline-right text-left why-content position-relative initial d-flex flex-column align-items-start justify-content-center timeline3 col-hover3">
                             <span class="">@lang('pages.career.initial')</span>
@@ -77,7 +77,7 @@
                         <div class="col-md-6 col-11 d-flex flex-column justify-content-start col-right">
                             <div id="timeline-start" class="bg-transparent text-left why-content mt-0 col-hover2 find d-flex flex-column align-items-start justify-content-center">
                                 <span>@lang('pages.career.find')</span>
-                                <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
+                                <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
                             </div>
                             <div class="bg-transparent text-left why-content col-hover2 initial d-flex flex-column align-items-start justify-content-center">
 
@@ -116,7 +116,7 @@
                 <div class="col-12 align-items-center justify-content-center d-flex flex-column">
                     <div class="timeline-element text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                         <span>@lang('pages.career.find')</span>
-                        <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
+                        <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
                     </div>
                 </div>
 
@@ -159,7 +159,7 @@
                     <div class="col-12 align-items-center justify-content-center d-flex flex-column">
                         <div class="bg-transparent text-center why-content mt-0 col-hover2 find d-flex flex-column align-items-center justify-content-center">
                             <span>@lang('pages.career.find')</span>
-                            <a href="{{ route("career") }}" class="btn btn-see">@lang('pages.career.see-button')</a>
+                            <a class="btn btn-see see-positions">@lang('pages.career.see-button')</a>
                         </div>
                     </div>
 
@@ -300,7 +300,7 @@
         </div>
     </div>
 
-    <div class="container-fluid positions career d-flex justify-content-center">
+    <div id="open-positions" class="container-fluid positions career d-flex justify-content-center">
         @include('career.list')
     </div>
 
