@@ -198,18 +198,16 @@
                         </div>
                     </div>
                 </div>
-
-                </div>
             </div>
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center welcome-timeline">
-                    <div class="welcome w-100 position-relative timeline-element">
-                        <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center">
-                            <p class="bold">@lang('pages.career.welcome')</p>
-                            <p class="text-p2">@lang('pages.career.welcome-text')</p>
-                            <p></p>
-                            <a href="{{ route("team") }}" class="btn btn-more">@lang('pages.career.meet-button')</a>
-                        </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center welcome-timeline">
+                <div class="welcome w-100 position-relative timeline-element">
+                    <div class="text-center welcome-cadm d-flex flex-column align-items-center justify-content-center">
+                        <p class="bold">@lang('pages.career.welcome')</p>
+                        <p class="text-p2">@lang('pages.career.welcome-text')</p>
+                        <p></p>
+                        <a href="{{ route("team") }}" class="btn btn-more">@lang('pages.career.meet-button')</a>
                     </div>
                 </div>
             </div>
