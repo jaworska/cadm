@@ -234,6 +234,18 @@
             }, 800);
         });
 
+        jQuery(".friendly-recruitment-click").click(function () {
+            jQuery('html, body').animate({
+                scrollTop: $("#friendly-recruitment-block").offset().top - $("#nav").height()
+            }, 800);
+        });
+
+        jQuery(".interview-click").click(function () {
+            jQuery('html, body').animate({
+                scrollTop: $("#interview-block").offset().top - $("#nav").height()
+            }, 800);
+        });
+
         //click boxes sectors
 
         // jQuery(".click-automotive").click(function() {
