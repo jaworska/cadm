@@ -489,7 +489,7 @@ main {
     background: $white;
 
     .nav_container {
-        padding-bottom: 6px;
+        @include padding-y(6px,6px)
     }
 
     .navbar-light {
@@ -1818,6 +1818,20 @@ main {
 
 .map2 > div > div > div:nth-child(11) {
     display: none;
+}
+
+#map {
+    &.map2 {
+        >div {
+            top: 0 !important;
+        }
+    }
+}
+
+.map2 {
+    >div {
+        top: 20% !important;
+    }
 }
 
 /*******footer*******/
@@ -5207,17 +5221,15 @@ main {
         &.jumbotron {
             height: unset;
             background: none;
-            min-height: 566px;
+            min-height: unset;
             max-height: 566px;
             overflow: hidden;
 
             @media screen and (max-width: $screen-768) {
-                min-height: 300px;
                 max-height: 350px;
             }
 
             @media screen and (max-width: $screen-450) {
-                min-height: 200px;
                 max-height: 300px;
             }
         }
@@ -5406,7 +5418,6 @@ main {
     }
 
     .carousel {
-        height: -webkit-fill-available;
 
         @media screen and (max-width: $screen-768) {
             height: auto;
